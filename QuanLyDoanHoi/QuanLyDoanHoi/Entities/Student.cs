@@ -18,7 +18,7 @@ namespace QuanLyDoanHoi.Entities
         // Ghi đè phương thức [cite: 36]
         public override void DisplayInfo()
         {
-            Console.WriteLine("Student: " + this.FullName + " - MSSV: " + this.studentId);
+            Console.WriteLine("Student: " + this.FullName + " - ID: " + this.studentId);
         }
 
         // Hàm tính điểm ảo để lớp con (CanBoDoan) có thể ghi đè

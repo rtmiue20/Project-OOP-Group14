@@ -9,37 +9,33 @@ namespace QuanLyDoanHoi.Data
     // Lớp xử lý File
     public class FileHelper
     {
-        // Hàm Ghi File
-        public static void SaveJsonFile(List<Human> list, string link)
+        // Hàm Ghi File 
+        public static void SaveJsonFile<T>(List<T> list, string link)
         {
-            JsonSerializerOptions install  = new JsonSerializerOptions();
+            JsonSerializerOptions install = new JsonSerializerOptions();
             install.WriteIndented = true;
-
             string jsonString = JsonSerializer.Serialize(list, install);
-
             File.WriteAllText(link, jsonString);
         }
 
-        // Hàm Đọc File
-        public static List<Human> ReadJsonFile(string link)
+        // Hàm Đọc File 
+        public static List<T> ReadJsonFile<T>(string link)
         {
             if (File.Exists(link) == false)
             {
-                return new List<Human>();
+                return new List<T>();
             }
-
             string jsonString = File.ReadAllText(link);
-
             JsonSerializerOptions install = new JsonSerializerOptions();
 
-            List<Human> list = JsonSerializer.Deserialize<List<Human>>(jsonString, install);
+            List<T> list = JsonSerializer.Deserialize<List<T>>(jsonString, install);
 
             if (list == null)
             {
-                return new List<Human>();
+                return new List<T>();
             }
 
-            return  list;
+            return list;
         }
     }
 }
