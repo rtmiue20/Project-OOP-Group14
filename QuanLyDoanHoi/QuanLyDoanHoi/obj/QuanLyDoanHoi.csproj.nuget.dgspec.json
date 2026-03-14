@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MinhTrieu\\source\\repos\\Project-OOP-Group14\\QuanLyDoanHoi\\QuanLyDoanHoi\\QuanLyDoanHoi.csproj": {}
+    "C:\\Users\\MinhTrieu\\Source\\Repos\\Project-OOP-Group14\\QuanLyDoanHoi\\QuanLyDoanHoi\\QuanLyDoanHoi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MinhTrieu\\source\\repos\\Project-OOP-Group14\\QuanLyDoanHoi\\QuanLyDoanHoi\\QuanLyDoanHoi.csproj": {
+    "C:\\Users\\MinhTrieu\\Source\\Repos\\Project-OOP-Group14\\QuanLyDoanHoi\\QuanLyDoanHoi\\QuanLyDoanHoi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MinhTrieu\\source\\repos\\Project-OOP-Group14\\QuanLyDoanHoi\\QuanLyDoanHoi\\QuanLyDoanHoi.csproj",
+        "projectUniqueName": "C:\\Users\\MinhTrieu\\Source\\Repos\\Project-OOP-Group14\\QuanLyDoanHoi\\QuanLyDoanHoi\\QuanLyDoanHoi.csproj",
         "projectName": "QuanLyDoanHoi",
-        "projectPath": "C:\\Users\\MinhTrieu\\source\\repos\\Project-OOP-Group14\\QuanLyDoanHoi\\QuanLyDoanHoi\\QuanLyDoanHoi.csproj",
+        "projectPath": "C:\\Users\\MinhTrieu\\Source\\Repos\\Project-OOP-Group14\\QuanLyDoanHoi\\QuanLyDoanHoi\\QuanLyDoanHoi.csproj",
         "packagesPath": "C:\\Users\\MinhTrieu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MinhTrieu\\source\\repos\\Project-OOP-Group14\\QuanLyDoanHoi\\QuanLyDoanHoi\\obj\\",
+        "outputPath": "C:\\Users\\MinhTrieu\\Source\\Repos\\Project-OOP-Group14\\QuanLyDoanHoi\\QuanLyDoanHoi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

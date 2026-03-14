@@ -1,0 +1,17 @@
+C:\Users\MinhTrieu\Source\Repos\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\bin\Debug\net9.0-windows\QuanLyDoanHoi.exe
+C:\Users\MinhTrieu\Source\Repos\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\bin\Debug\net9.0-windows\QuanLyDoanHoi.deps.json
+C:\Users\MinhTrieu\Source\Repos\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\bin\Debug\net9.0-windows\QuanLyDoanHoi.runtimeconfig.json
+C:\Users\MinhTrieu\Source\Repos\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\bin\Debug\net9.0-windows\QuanLyDoanHoi.dll
+C:\Users\MinhTrieu\Source\Repos\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\bin\Debug\net9.0-windows\QuanLyDoanHoi.pdb
+C:\Users\MinhTrieu\Source\Repos\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\QuanLyDoanHoi.Form1.resources
+C:\Users\MinhTrieu\Source\Repos\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\QuanLyDoanHoi.csproj.GenerateResource.cache
+C:\Users\MinhTrieu\Source\Repos\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\QuanLyDoanHoi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MinhTrieu\Source\Repos\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\QuanLyDoanHoi.AssemblyInfoInputs.cache
+C:\Users\MinhTrieu\Source\Repos\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\QuanLyDoanHoi.AssemblyInfo.cs
+C:\Users\MinhTrieu\Source\Repos\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\QuanLyDoanHoi.csproj.CoreCompileInputs.cache
+C:\Users\MinhTrieu\Source\Repos\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\QuanLyDoanHoi.sourcelink.json
+C:\Users\MinhTrieu\Source\Repos\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\QuanLyDoanHoi.dll
+C:\Users\MinhTrieu\Source\Repos\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\refint\QuanLyDoanHoi.dll
+C:\Users\MinhTrieu\Source\Repos\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\QuanLyDoanHoi.pdb
+C:\Users\MinhTrieu\Source\Repos\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\QuanLyDoanHoi.genruntimeconfig.cache
+C:\Users\MinhTrieu\Source\Repos\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\ref\QuanLyDoanHoi.dll
