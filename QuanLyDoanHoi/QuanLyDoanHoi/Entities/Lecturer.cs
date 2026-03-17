@@ -8,8 +8,8 @@ namespace QuanLyDoanHoi.Entities
         private string lecturerId;
         private string department;
 
-        public string LecturerId { get { return lecturerId; } set { lecturerId = value; } } // MaGiangVien [cite: 41]
-        public string Department { get { return department; } set { department = value; } } // Khoa [cite: 41]
+        public string LecturerId { get { return lecturerId; } set { lecturerId = value; } } 
+        public string Department { get { return department; } set { department = value; } } 
 
         public Lecturer() { }
 
