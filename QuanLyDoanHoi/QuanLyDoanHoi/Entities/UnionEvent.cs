@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+
+
 
 namespace QuanLyDoanHoi.Entities
 {
@@ -14,5 +17,7 @@ namespace QuanLyDoanHoi.Entities
         public double BonusScore { get { return bonusScore; } set { bonusScore = value; } }
 
         public UnionEvent() { }
+
+        public List<ParticipationHistory> Participants { get; set; } = new List<ParticipationHistory>();
     }
 }
