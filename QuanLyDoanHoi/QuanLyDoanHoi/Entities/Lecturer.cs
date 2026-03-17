@@ -3,7 +3,7 @@
 namespace QuanLyDoanHoi.Entities
 {
     [Serializable]
-    public class Lecturer : Human
+    public class Lecturer : Human //tính chất kế thừa 
     {
         private string lecturerId;
         private string department;
