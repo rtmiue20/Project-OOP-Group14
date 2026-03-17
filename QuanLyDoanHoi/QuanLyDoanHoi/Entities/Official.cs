@@ -8,7 +8,7 @@ namespace QuanLyDoanHoi.Entities
         private string role;
         private string term;
 
-        public string Role { get { return role; } set { role = value; } } 
+        public string Role { get { return role; } set { role = value; } }  
         public string Term { get { return term; } set { term = value; } } 
 
         public Official() { }
