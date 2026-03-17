@@ -12,7 +12,7 @@ namespace QuanLyDoanHoi.Entities
     {
         private string fullName;
         private int birthYear;
-        private Address residentAddress; // Composition 
+        private Address residentAddress; // Composition/ Association 
 
         public string FullName { get { return fullName; } set { fullName = value; } }
         public int BirthYear { get { return birthYear; } set { birthYear = value; } }
