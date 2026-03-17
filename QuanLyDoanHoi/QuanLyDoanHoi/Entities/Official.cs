@@ -14,10 +14,11 @@ namespace QuanLyDoanHoi.Entities
         public Official() { }
 
 
-        public override void CalculateScore(double eventScore)
+        public override void CalculateScore(UnionEvent unionEvent)
         {
+            // Quan hệ Dependence 
 
-            this.TrainingScore += (eventScore * 1.2);
+            this.TrainingScore += (UnionEvent.bonusScore * 1.2);
         }
 
         public override void DisplayInfo()

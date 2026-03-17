@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace QuanLyDoanHoi.Entities
 {
     [Serializable]
@@ -22,9 +23,9 @@ namespace QuanLyDoanHoi.Entities
         }
 
         // Hàm tính điểm ảo để lớp con (CanBoDoan) có thể ghi đè
-        public virtual void CalculateScore(double eventScore)
+        public virtual void CalculateScore(UnionEvent unionEvent)
         {
-            this.trainingScore += eventScore;
+            this.trainingScore += UnionEvent.bonusScore ; // Quan hệ Dependence 
         }
     }
 }
