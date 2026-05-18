@@ -16,9 +16,8 @@ namespace QuanLyDoanHoi.Entities
 
         public override void CalculateScore(UnionEvent unionEvent)
         {
-            // Quan hệ Dependence 
-
-            this.TrainingScore += (unionEvent.BonusScore * 1.2);
+            // Cán bộ đoàn được nhân hệ số 1.2 điểm thưởng
+            this.TrainingScore += (unionEvent.BonusScore * 1.2); // Quan hệ Dependence 
         }
 
         public override void DisplayInfo()

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Net;
 using System.Text.Json.Serialization;
 
@@ -16,6 +17,7 @@ namespace QuanLyDoanHoi.Entities
 
         public string FullName { get { return fullName; } set { fullName = value; } }
         public int BirthYear { get { return birthYear; } set { birthYear = value; } }
+        [Browsable(false)]
         public Address ResidentAddress { get { return residentAddress; } set { residentAddress = value; } }
 
         public Human() { }

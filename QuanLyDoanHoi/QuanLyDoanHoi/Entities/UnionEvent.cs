@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
-
+using System.ComponentModel;
 
 namespace QuanLyDoanHoi.Entities
 {
@@ -18,6 +17,7 @@ namespace QuanLyDoanHoi.Entities
 
         public UnionEvent() { }
 
+        [Browsable(false)]
         public List<ParticipationHistory> Participants { get; set; } = new List<ParticipationHistory>();
     }
 }

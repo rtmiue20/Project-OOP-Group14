@@ -8,23 +8,23 @@
     "net9.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
-    "E:\\study\\NuGetPackages": {}
+    "C:\\Users\\MinhTrieu\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\OOP-QLĐH\\QuanLyDoanHoi\\QuanLyDoanHoi\\QuanLyDoanHoi.csproj",
+      "projectUniqueName": "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\QuanLyDoanHoi\\QuanLyDoanHoi\\QuanLyDoanHoi.csproj",
       "projectName": "QuanLyDoanHoi",
-      "projectPath": "E:\\OOP-QLĐH\\QuanLyDoanHoi\\QuanLyDoanHoi\\QuanLyDoanHoi.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "E:\\OOP-QLĐH\\QuanLyDoanHoi\\QuanLyDoanHoi\\obj\\",
+      "projectPath": "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\QuanLyDoanHoi\\QuanLyDoanHoi\\QuanLyDoanHoi.csproj",
+      "packagesPath": "C:\\Users\\MinhTrieu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\QuanLyDoanHoi\\QuanLyDoanHoi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "E:\\study\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MinhTrieu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -51,7 +52,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0-windows7.0": {
@@ -75,7 +76,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

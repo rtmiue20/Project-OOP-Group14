@@ -49,3 +49,15 @@ E:\OOP-QLĐH\QuanLyDoanHoi\QuanLyDoanHoi\bin\Debug\net9.0-windows\QuanLyDoanHoi.
 E:\OOP-QLĐH\QuanLyDoanHoi\QuanLyDoanHoi\bin\Debug\net9.0-windows\QuanLyDoanHoi.pdb
 E:\OOP-QLĐH\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\QuanLyDoanHoi.genruntimeconfig.cache
 E:\OOP-QLĐH\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\ref\QuanLyDoanHoi.dll
+C:\Users\MinhTrieu\RiderProjects\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\bin\Debug\net9.0-windows\QuanLyDoanHoi.deps.json
+C:\Users\MinhTrieu\RiderProjects\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\bin\Debug\net9.0-windows\QuanLyDoanHoi.dll
+C:\Users\MinhTrieu\RiderProjects\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\bin\Debug\net9.0-windows\QuanLyDoanHoi.pdb
+C:\Users\MinhTrieu\RiderProjects\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\QuanLyDoanHoi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MinhTrieu\RiderProjects\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\QuanLyDoanHoi.AssemblyInfoInputs.cache
+C:\Users\MinhTrieu\RiderProjects\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\QuanLyDoanHoi.AssemblyInfo.cs
+C:\Users\MinhTrieu\RiderProjects\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\QuanLyDoanHoi.csproj.CoreCompileInputs.cache
+C:\Users\MinhTrieu\RiderProjects\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\QuanLyDoanHoi.sourcelink.json
+C:\Users\MinhTrieu\RiderProjects\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\QuanLyDoanHoi.dll
+C:\Users\MinhTrieu\RiderProjects\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\refint\QuanLyDoanHoi.dll
+C:\Users\MinhTrieu\RiderProjects\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\QuanLyDoanHoi.pdb
+C:\Users\MinhTrieu\RiderProjects\Project-OOP-Group14\QuanLyDoanHoi\QuanLyDoanHoi\obj\Debug\net9.0-windows\ref\QuanLyDoanHoi.dll
