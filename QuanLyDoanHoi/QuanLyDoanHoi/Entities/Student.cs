@@ -9,10 +9,12 @@ namespace QuanLyDoanHoi.Entities
         private string studentId;
         private string className;
         private double trainingScore;
+        private string term;
 
         public string StudentId { get { return studentId; } set { studentId = value; } }
         public string ClassName { get { return className; } set { className = value; } }
         public double TrainingScore { get { return trainingScore; } set { trainingScore = value; } } // DiemRenLuyen [cite: 35]
+        public string Term { get { return term; } set { term = value; } } 
 
         public Student() { }
 
@@ -25,7 +27,9 @@ namespace QuanLyDoanHoi.Entities
         // Hàm tính điểm ảo để lớp con (CanBoDoan) có thể ghi đè
         public virtual void CalculateScore(UnionEvent unionEvent)
         {
-            this.trainingScore += UnionEvent.bonusScore ; // Quan hệ Dependence 
+            this.trainingScore += unionEvent.BonusScore ; // Quan hệ Dependence 
         }
+        
+        
     }
 }

@@ -18,7 +18,7 @@ namespace QuanLyDoanHoi.Entities
         {
             // Quan hệ Dependence 
 
-            this.TrainingScore += (UnionEvent.bonusScore * 1.2);
+            this.TrainingScore += (unionEvent.BonusScore * 1.2);
         }
 
         public override void DisplayInfo()
