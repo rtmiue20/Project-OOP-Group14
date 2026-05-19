@@ -1,0 +1,20 @@
+## Bỏ qua toàn bộ thư mục build và bộ nhớ đệm ẩn của Rider/VS
+.idea/
+.vs/
+bin/
+obj/
+AppPackages/
+BundleArtifacts/
+
+## Bỏ qua tất cả các file chạy, file thư viện tự sinh
+*.exe
+*.dll
+*.pdb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.dtbcache*
+
+## Bỏ qua các file cấu hình kết nối database local tự sinh
+dataSources.xml

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net9.0-windows</TargetFramework>
+        <RootNamespace>Quản_lý_đoàn_hội</RootNamespace>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\QLDH\QLDH.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="FormMain.Designer.cs">
+        <DependentUpon>FormMain.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>

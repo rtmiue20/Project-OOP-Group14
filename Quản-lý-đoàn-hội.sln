@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Winforms", "Winforms\Winforms.csproj", "{0DAFD947-0429-4F15-9681-1A4EDFBEC27E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLDH", "QLDH\QLDH.csproj", "{B504A8C1-308A-419E-8FC4-8DE6D4A13500}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DAFD947-0429-4F15-9681-1A4EDFBEC27E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DAFD947-0429-4F15-9681-1A4EDFBEC27E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DAFD947-0429-4F15-9681-1A4EDFBEC27E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DAFD947-0429-4F15-9681-1A4EDFBEC27E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B504A8C1-308A-419E-8FC4-8DE6D4A13500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B504A8C1-308A-419E-8FC4-8DE6D4A13500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B504A8C1-308A-419E-8FC4-8DE6D4A13500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B504A8C1-308A-419E-8FC4-8DE6D4A13500}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
