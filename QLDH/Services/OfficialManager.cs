@@ -7,40 +7,9 @@ namespace QLDH.Service
 {
     public class OfficialManager : BaseManager<Official>
     {
-        private string connectionString = "Server=localhost;Port=3306;Database=QLDH_DB;User ID=root;Password=your_password;Charset=utf8mb4;";
-
-        protected override string GetId(Official item) => item.StudentId;
-
-        public override List<Official> GetAll()
-        {
-            items.Clear();
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
-            {
-                conn.Open();
-                string query = "SELECT Id, FullName, BirthYear, HouseNumber, Street, District, ClassName, Role, Term, TrainingScore FROM NhanSu WHERE LoaiNhanSu = 'Cán bộ Đoàn'";
-                using (MySqlCommand cmd = new MySqlCommand(query, conn))
-                using (MySqlDataReader r = cmd.ExecuteReader())
-                {
-                    while (r.Read())
-                    {
-                        Address addr = new Address(r["HouseNumber"].ToString(), r["Street"].ToString(), r["District"].ToString());
-                        items.Add(new Official
-                        {
-                            StudentId = r["Id"].ToString(),
-                            FullName = r["FullName"].ToString(),
-                            BirthYear = Convert.ToInt32(r["BirthYear"]),
-                            ResidentAddress = addr,
-                            ClassName = r["ClassName"].ToString(),
-                            Role = r["Role"].ToString(),
-                            Term = r["Term"].ToString(),
-                            TrainingScore = Convert.ToDouble(r["TrainingScore"])
-                        });
-                    }
-                }
-            }
-            return items;
-        }
-
+        private string connectionString = "Server=localhost;Port=3306;Database=QLDH;User ID=root;Password=049206;Charset=utf8mb4;";
+        
+        // 1. C - Create
         public override void Add(Official item)
         {
             base.Add(item);
@@ -65,7 +34,47 @@ namespace QLDH.Service
                 }
             }
         }
+        
+        // 2. R - Read
+        // KHÔNG dùng dấu => ở đây nữa, chuyển về hàm có return rõ ràng
+        protected override string GetId(Official item)
+        {
+            return item.StudentId;
+        }
 
+        public override List<Official> GetAll()
+        {
+            items.Clear();
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT Id, FullName, BirthYear, HouseNumber, Street, District, ClassName, Role, Term, TrainingScore FROM NhanSu WHERE LoaiNhanSu = 'Cán bộ Đoàn'";
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                using (MySqlDataReader r = cmd.ExecuteReader())
+                {
+                    while (r.Read())
+                    {
+                        Address addr = new Address(r["HouseNumber"].ToString(), r["Street"].ToString(), r["District"].ToString());
+                        
+                        // Khai báo tường minh đối tượng cụ thể thay vì dùng khởi tạo nhanh kiểu Object Initializer
+                        Official officialItem = new Official();
+                        officialItem.StudentId = r["Id"].ToString();
+                        officialItem.FullName = r["FullName"].ToString();
+                        officialItem.BirthYear = Convert.ToInt32(r["BirthYear"]);
+                        officialItem.ResidentAddress = addr;
+                        officialItem.ClassName = r["ClassName"].ToString();
+                        officialItem.Role = r["Role"].ToString();
+                        officialItem.Term = r["Term"].ToString();
+                        officialItem.TrainingScore = Convert.ToDouble(r["TrainingScore"]);
+                        
+                        items.Add(officialItem);
+                    }
+                }
+            }
+            return items;
+        }
+
+        // 3. U - Update
         public override void Update(Official item)
         {
             base.Update(item);
@@ -89,7 +98,8 @@ namespace QLDH.Service
                 }
             }
         }
-
+        
+        // 4. D - Delete
         public override void Delete(string id)
         {
             base.Delete(id);
@@ -105,13 +115,19 @@ namespace QLDH.Service
             }
         }
 
+        // Search function
         public override List<Official> Search(string keyword)
         {
             List<Official> result = new List<Official>();
-            foreach (var off in GetAll())
+            List<Official> allOfficials = GetAll(); // Khai báo kiểu rõ ràng
+            
+            // Thay đổi "var" thành kiểu "Official" rõ ràng
+            foreach (Official off in allOfficials)
             {
-                if (off.StudentId.Contains(keyword) || off.FullName.Contains(keyword))
+                if (off.StudentId.Contains(keyword) || off.FullName.Contains(keyword) || off.ClassName.Contains(keyword))
+                {
                     result.Add(off);
+                }
             }
             return result;
         }

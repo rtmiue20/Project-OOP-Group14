@@ -16,4 +16,9 @@ public partial class FormMain : Form
     {
         throw new System.NotImplementedException();
     }
+
+    private void textBox1_TextChanged(object sender, EventArgs e)
+    {
+        throw new System.NotImplementedException();
+    }
 }
