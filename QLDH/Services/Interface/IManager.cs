@@ -8,7 +8,7 @@ namespace QLDH.Service
         void Add(T item);
         void Delete(string id);
         void Update(T item);
-        T? GetById(string id); // thêm ? vì C# mặc định hiểu là "Bắt buộc phải trả về 1 sinh viên có thật" 
+        T? GetById(string id);
         List<T> GetAll();
         List<T> Search(string keyword);
     }

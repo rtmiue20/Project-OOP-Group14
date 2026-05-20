@@ -10,6 +10,7 @@ C:\Users\MinhTrieu\RiderProjects\Quản-lý-đoàn-hội\Winforms\obj\Debug\net9
 C:\Users\MinhTrieu\RiderProjects\Quản-lý-đoàn-hội\Winforms\obj\Debug\net9.0-windows\Winforms.AssemblyInfoInputs.cache
 C:\Users\MinhTrieu\RiderProjects\Quản-lý-đoàn-hội\Winforms\obj\Debug\net9.0-windows\Winforms.AssemblyInfo.cs
 C:\Users\MinhTrieu\RiderProjects\Quản-lý-đoàn-hội\Winforms\obj\Debug\net9.0-windows\Winforms.csproj.CoreCompileInputs.cache
+C:\Users\MinhTrieu\RiderProjects\Quản-lý-đoàn-hội\Winforms\obj\Debug\net9.0-windows\Winforms.sourcelink.json
 C:\Users\MinhTrieu\RiderProjects\Quản-lý-đoàn-hội\Winforms\obj\Debug\net9.0-windows\Winforms.csproj.Up2Date
 C:\Users\MinhTrieu\RiderProjects\Quản-lý-đoàn-hội\Winforms\obj\Debug\net9.0-windows\Winforms.dll
 C:\Users\MinhTrieu\RiderProjects\Quản-lý-đoàn-hội\Winforms\obj\Debug\net9.0-windows\refint\Winforms.dll
