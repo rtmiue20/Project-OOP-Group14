@@ -27,7 +27,6 @@ namespace QLDH.Service
                 }
             }
         }
-
         // 2. R - Read
         protected override string GetId(UnionEvent item) => item.EventId;
 
@@ -89,7 +88,6 @@ namespace QLDH.Service
                 }
             }
         }
-
         // Search function
         public override List<UnionEvent> Search(string keyword)
         {
@@ -102,11 +100,9 @@ namespace QLDH.Service
             }
             return result;
         }
-
         // =========================================================================
         // LOGIC PHỨC TẠP: CRUD CHO LỊCH SỬ THAM GIA & ĐỒNG BỘ TÍNH ĐIỂM RÈN LUYỆN
         // =========================================================================
-        
         // Đọc lịch sử tham gia của một sự kiện cụ thể
         public List<ParticipationHistory> GetParticipantsByEvent(string eventId)
         {
@@ -199,7 +195,6 @@ namespace QLDH.Service
                 }
             }
         }
-
         // Hủy đăng ký tham gia sự kiện (Trừ lại điểm rèn luyện tương ứng)
         public void DeleteParticipation(string studentId, string eventId, double bonusScore)
         {
@@ -232,16 +227,13 @@ namespace QLDH.Service
                         }
                     }
                 }
-
                 // Hoàn tác điểm dựa trên cách tính của từng nhóm thực thể
                 double standardDeduction = bonusScore;
                 if (loaiNhanSu == "Cán bộ Đoàn")
                 {
                     standardDeduction = bonusScore * 1.2;
                 }
-
                 double newScore = Math.Max(0, curScore - standardDeduction);
-
                 // 3. Cập nhật lại điểm sau khi hoàn tác
                 string updateScoreQuery = "UPDATE NhanSu SET TrainingScore = @NewScore WHERE Id = @Id";
                 using (MySqlCommand cmd = new MySqlCommand(updateScoreQuery, conn))
