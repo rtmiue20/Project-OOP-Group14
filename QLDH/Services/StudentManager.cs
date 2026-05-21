@@ -16,7 +16,7 @@ namespace QLDH.Service
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = @"INSERT INTO NhanSu (Id, LoaiNhanSu, FullName, BirthYear, HouseNumber, Street, District, ClassName, TrainingScore) 
+                string query = @"INSERT INTO Officials (Id, Role, FullName, BirthYear, HouseNumber, Street, District, ClassName, TrainingScore) 
                                  VALUES (@Id, 'Sinh viên', @FullName, @BirthYear, @HouseNumber, @Street, @District, @ClassName, @TrainingScore)";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
@@ -34,7 +34,10 @@ namespace QLDH.Service
         }
         
         // 2. R - Read
-        protected override string GetId(Student item) => item.StudentId;
+        protected override string GetId(Student item)
+        {
+            return item.StudentId;
+        } 
 
         public override List<Student> GetAll()
         {
@@ -42,7 +45,7 @@ namespace QLDH.Service
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT Id, FullName, BirthYear, HouseNumber, Street, District, ClassName, TrainingScore FROM NhanSu WHERE LoaiNhanSu = 'Sinh viên'";
+                string query = "SELECT StudentId, FullName, BirthYear, HouseNumber, Street, District, ClassName, TrainingScore FROM Officials WHERE Role = 'Sinh viên'";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 using (MySqlDataReader r = cmd.ExecuteReader())
                 {
@@ -51,7 +54,7 @@ namespace QLDH.Service
                         Address addr = new Address(r["HouseNumber"].ToString(), r["Street"].ToString(), r["District"].ToString());
                         items.Add(new Student
                         {
-                            StudentId = r["Id"].ToString(),
+                            StudentId = r["StudentId"].ToString(),
                             FullName = r["FullName"].ToString(),
                             BirthYear = Convert.ToInt32(r["BirthYear"]),
                             ResidentAddress = addr,
@@ -71,8 +74,8 @@ namespace QLDH.Service
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = @"UPDATE NhanSu SET FullName=@FullName, BirthYear=@BirthYear, HouseNumber=@HouseNumber, 
-                                 Street=@Street, District=@District, ClassName=@ClassName WHERE Id=@Id AND LoaiNhanSu='Sinh viên'";
+                string query = @"UPDATE Officials SET FullName=@FullName, BirthYear=@BirthYear, HouseNumber=@HouseNumber, 
+                                 Street=@Street, District=@District, ClassName=@ClassName WHERE Id=@Id AND Role='Sinh viên'";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@Id", item.StudentId);
@@ -94,7 +97,7 @@ namespace QLDH.Service
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "DELETE FROM NhanSu WHERE Id=@Id AND LoaiNhanSu='Sinh viên'";
+                string query = "DELETE FROM Oficials WHERE Id=@Id AND Role='Sinh viên'";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@Id", id);
@@ -107,7 +110,7 @@ namespace QLDH.Service
         public override List<Student> Search(string keyword)
         {
             List<Student> result = new List<Student>();
-            foreach (var st in GetAll())
+            foreach (Student st in GetAll())
             {
                 if (st.StudentId.Contains(keyword) || st.FullName.Contains(keyword) || st.ClassName.Contains(keyword))
                     result.Add(st);
