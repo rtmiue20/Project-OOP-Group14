@@ -16,4 +16,9 @@ public partial class FormMain : Form
     {
         throw new System.NotImplementedException();
     }
+
+    private void dgv_event_CellContentClick(object sender, DataGridViewCellEventArgs e)
+    {
+        throw new System.NotImplementedException();
+    }
 }
