@@ -33,7 +33,10 @@ namespace QLDH.Service
         }
         
         // 2. R - Read
-        protected override string GetId(Lecturer item) => item.LecturerId;
+        protected override string GetId(Lecturer item)
+        {
+            return item.LecturerId;
+        }
 
         public override List<Lecturer> GetAll()
         {
@@ -106,7 +109,7 @@ namespace QLDH.Service
         public override List<Lecturer> Search(string keyword)
         {
             List<Lecturer> result = new List<Lecturer>();
-            foreach (var lec in GetAll())
+            foreach (Lecturer lec in GetAll())
             {
                 if (lec.LecturerId.Contains(keyword) || lec.FullName.Contains(keyword))
                     result.Add(lec);
