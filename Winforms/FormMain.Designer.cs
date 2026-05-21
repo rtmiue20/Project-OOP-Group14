@@ -84,11 +84,6 @@ partial class FormMain
         label13 = new System.Windows.Forms.Label();
         label12 = new System.Windows.Forms.Label();
         tp_GNTG = new System.Windows.Forms.TabPage();
-        dgvDiemDanh = new System.Windows.Forms.DataGridView();
-        colSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        colMaSo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        colHoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        colThoiGian = new System.Windows.Forms.DataGridViewTextBoxColumn();
         groupBox7 = new System.Windows.Forms.GroupBox();
         btnLamMoi = new System.Windows.Forms.Button();
         btnDiemDanh = new System.Windows.Forms.Button();
@@ -101,14 +96,12 @@ partial class FormMain
         cboSuKien = new System.Windows.Forms.ComboBox();
         label17 = new System.Windows.Forms.Label();
         tp_TH = new System.Windows.Forms.TabPage();
-        dgv_PointsSummary = new System.Windows.Forms.DataGridView();
-        groupBox8 = new System.Windows.Forms.GroupBox();
-        btn_ExportExcel = new System.Windows.Forms.Button();
-        btn_CalculatePoints = new System.Windows.Forms.Button();
-        btn_Search = new System.Windows.Forms.Button();
-        txt_StudentId = new System.Windows.Forms.TextBox();
-        label20 = new System.Windows.Forms.Label();
         STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+        dgvDiemDanh = new System.Windows.Forms.DataGridView();
+        colSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+        colMaSo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+        colHoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+        colThoiGian = new System.Windows.Forms.DataGridViewTextBoxColumn();
         QLDH.SuspendLayout();
         tp_QLNS.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)dgv_human).BeginInit();
@@ -120,12 +113,9 @@ partial class FormMain
         tp_QLSK.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)dgv_event).BeginInit();
         tp_GNTG.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)dgvDiemDanh).BeginInit();
         groupBox7.SuspendLayout();
         groupBox6.SuspendLayout();
-        tp_TH.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)dgv_PointsSummary).BeginInit();
-        groupBox8.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)dgvDiemDanh).BeginInit();
         SuspendLayout();
         // 
         // QLDH
@@ -647,45 +637,6 @@ partial class FormMain
         tp_GNTG.UseVisualStyleBackColor = true;
         tp_GNTG.Click += tp_GNTG_Click;
         // 
-        // dgvDiemDanh
-        // 
-        dgvDiemDanh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-        dgvDiemDanh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colSTT, colMaSo, colHoTen, colThoiGian });
-        dgvDiemDanh.Location = new System.Drawing.Point(30, 353);
-        dgvDiemDanh.Name = "dgvDiemDanh";
-        dgvDiemDanh.RowHeadersWidth = 51;
-        dgvDiemDanh.Size = new System.Drawing.Size(638, 293);
-        dgvDiemDanh.TabIndex = 2;
-        dgvDiemDanh.Text = "dataGridView1";
-        // 
-        // colSTT
-        // 
-        colSTT.HeaderText = "STT";
-        colSTT.MinimumWidth = 6;
-        colSTT.Name = "colSTT";
-        colSTT.Width = 125;
-        // 
-        // colMaSo
-        // 
-        colMaSo.HeaderText = "Mã Số";
-        colMaSo.MinimumWidth = 6;
-        colMaSo.Name = "colMaSo";
-        colMaSo.Width = 125;
-        // 
-        // colHoTen
-        // 
-        colHoTen.HeaderText = "Họ và Tên";
-        colHoTen.MinimumWidth = 6;
-        colHoTen.Name = "colHoTen";
-        colHoTen.Width = 125;
-        // 
-        // colThoiGian
-        // 
-        colThoiGian.HeaderText = "Thời Gian";
-        colThoiGian.MinimumWidth = 6;
-        colThoiGian.Name = "colThoiGian";
-        colThoiGian.Width = 125;
-        // 
         // groupBox7
         // 
         groupBox7.Controls.Add(btnLamMoi);
@@ -789,8 +740,6 @@ partial class FormMain
         // 
         // tp_TH
         // 
-        tp_TH.Controls.Add(dgv_PointsSummary);
-        tp_TH.Controls.Add(groupBox8);
         tp_TH.Location = new System.Drawing.Point(4, 29);
         tp_TH.Name = "tp_TH";
         tp_TH.Padding = new System.Windows.Forms.Padding(3);
@@ -799,84 +748,51 @@ partial class FormMain
         tp_TH.Text = "Tổng hợp & Tính điểm rèn luyện";
         tp_TH.UseVisualStyleBackColor = true;
         // 
-        // dgv_PointsSummary
-        // 
-        dgv_PointsSummary.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-        dgv_PointsSummary.Location = new System.Drawing.Point(590, 12);
-        dgv_PointsSummary.Name = "dgv_PointsSummary";
-        dgv_PointsSummary.RowHeadersWidth = 102;
-        dgv_PointsSummary.Size = new System.Drawing.Size(1317, 999);
-        dgv_PointsSummary.TabIndex = 6;
-        dgv_PointsSummary.Text = "dataGridView1";
-        // 
-        // groupBox8
-        // 
-        groupBox8.Controls.Add(btn_ExportExcel);
-        groupBox8.Controls.Add(btn_CalculatePoints);
-        groupBox8.Controls.Add(btn_Search);
-        groupBox8.Controls.Add(txt_StudentId);
-        groupBox8.Controls.Add(label20);
-        groupBox8.Location = new System.Drawing.Point(7, 6);
-        groupBox8.Name = "groupBox8";
-        groupBox8.Size = new System.Drawing.Size(559, 301);
-        groupBox8.TabIndex = 0;
-        groupBox8.TabStop = false;
-        groupBox8.UseWaitCursor = true;
-        // 
-        // btn_ExportExcel
-        // 
-        btn_ExportExcel.Location = new System.Drawing.Point(314, 211);
-        btn_ExportExcel.Name = "btn_ExportExcel";
-        btn_ExportExcel.Size = new System.Drawing.Size(185, 54);
-        btn_ExportExcel.TabIndex = 18;
-        btn_ExportExcel.Text = "💾 Xuất Báo Cáo Excel";
-        btn_ExportExcel.UseVisualStyleBackColor = true;
-        btn_ExportExcel.UseWaitCursor = true;
-        // 
-        // btn_CalculatePoints
-        // 
-        btn_CalculatePoints.Location = new System.Drawing.Point(39, 211);
-        btn_CalculatePoints.Name = "btn_CalculatePoints";
-        btn_CalculatePoints.Size = new System.Drawing.Size(190, 54);
-        btn_CalculatePoints.TabIndex = 17;
-        btn_CalculatePoints.Text = "🔥 Tính Điểm Rèn Luyện";
-        btn_CalculatePoints.UseVisualStyleBackColor = true;
-        btn_CalculatePoints.UseWaitCursor = true;
-        // 
-        // btn_Search
-        // 
-        btn_Search.Location = new System.Drawing.Point(396, 77);
-        btn_Search.Name = "btn_Search";
-        btn_Search.Size = new System.Drawing.Size(157, 54);
-        btn_Search.TabIndex = 16;
-        btn_Search.Text = "Tìm";
-        btn_Search.UseVisualStyleBackColor = true;
-        btn_Search.UseWaitCursor = true;
-        // 
-        // txt_StudentId
-        // 
-        txt_StudentId.Location = new System.Drawing.Point(164, 26);
-        txt_StudentId.Name = "txt_StudentId";
-        txt_StudentId.Size = new System.Drawing.Size(389, 27);
-        txt_StudentId.TabIndex = 2;
-        txt_StudentId.UseWaitCursor = true;
-        // 
-        // label20
-        // 
-        label20.BackColor = System.Drawing.Color.LightGray;
-        label20.Location = new System.Drawing.Point(6, 23);
-        label20.Name = "label20";
-        label20.Size = new System.Drawing.Size(141, 45);
-        label20.TabIndex = 1;
-        label20.Text = "Mã định danh:";
-        label20.UseWaitCursor = true;
-        // 
         // STT
         // 
         STT.HeaderText = "Column1";
         STT.MinimumWidth = 6;
         STT.Name = "STT";
         STT.Width = 125;
+        // 
+        // dgvDiemDanh
+        // 
+        dgvDiemDanh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+        dgvDiemDanh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { colSTT, colMaSo, colHoTen, colThoiGian });
+        dgvDiemDanh.Location = new System.Drawing.Point(30, 353);
+        dgvDiemDanh.Name = "dgvDiemDanh";
+        dgvDiemDanh.RowHeadersWidth = 51;
+        dgvDiemDanh.Size = new System.Drawing.Size(638, 293);
+        dgvDiemDanh.TabIndex = 2;
+        dgvDiemDanh.Text = "dataGridView1";
+        // 
+        // colSTT
+        // 
+        colSTT.HeaderText = "STT";
+        colSTT.MinimumWidth = 6;
+        colSTT.Name = "colSTT";
+        colSTT.Width = 125;
+        // 
+        // colMaSo
+        // 
+        colMaSo.HeaderText = "Mã Số";
+        colMaSo.MinimumWidth = 6;
+        colMaSo.Name = "colMaSo";
+        colMaSo.Width = 125;
+        // 
+        // colHoTen
+        // 
+        colHoTen.HeaderText = "Họ và Tên";
+        colHoTen.MinimumWidth = 6;
+        colHoTen.Name = "colHoTen";
+        colHoTen.Width = 125;
+        // 
+        // colThoiGian
+        // 
+        colThoiGian.HeaderText = "Thời Gian";
+        colThoiGian.MinimumWidth = 6;
+        colThoiGian.Name = "colThoiGian";
+        colThoiGian.Width = 125;
         // 
         // FormMain
         // 
@@ -902,29 +818,12 @@ partial class FormMain
         tp_QLSK.PerformLayout();
         ((System.ComponentModel.ISupportInitialize)dgv_event).EndInit();
         tp_GNTG.ResumeLayout(false);
-        ((System.ComponentModel.ISupportInitialize)dgvDiemDanh).EndInit();
         groupBox7.ResumeLayout(false);
         groupBox7.PerformLayout();
         groupBox6.ResumeLayout(false);
-        tp_TH.ResumeLayout(false);
-        ((System.ComponentModel.ISupportInitialize)dgv_PointsSummary).EndInit();
-        groupBox8.ResumeLayout(false);
-        groupBox8.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)dgvDiemDanh).EndInit();
         ResumeLayout(false);
     }
-
-    private System.Windows.Forms.DataGridView dgv_PointsSummary;
-
-    private System.Windows.Forms.Button btn_CalculatePoints;
-    private System.Windows.Forms.Button btn_ExportExcel;
-
-    private System.Windows.Forms.Button btn_Search;
-
-    private System.Windows.Forms.TextBox txt_StudentId;
-
-    private System.Windows.Forms.Label label20;
-
-    private System.Windows.Forms.GroupBox groupBox8;
 
     private System.Windows.Forms.DataGridViewTextBoxColumn colThoiGian;
 
