@@ -1,3 +1,6 @@
+using System;
+using System.Windows.Forms;
+
 namespace Quản_lý_đoàn_hội;
 
 public partial class FormMain : Form
