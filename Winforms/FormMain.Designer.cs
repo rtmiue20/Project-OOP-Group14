@@ -29,6 +29,7 @@ partial class FormMain
     /// </summary>
     private void InitializeComponent()
     {
+        components = new System.ComponentModel.Container();
         QLDH = new System.Windows.Forms.TabControl();
         tp_QLNS = new System.Windows.Forms.TabPage();
         dgv_human = new System.Windows.Forms.DataGridView();
@@ -95,6 +96,18 @@ partial class FormMain
         btn_scoreSearch = new System.Windows.Forms.Button();
         txt_humanIDs = new System.Windows.Forms.TextBox();
         label17 = new System.Windows.Forms.Label();
+        label18 = new System.Windows.Forms.Label();
+        groupBox10 = new System.Windows.Forms.GroupBox();
+        groupBox11 = new System.Windows.Forms.GroupBox();
+        label19 = new System.Windows.Forms.Label();
+        cbo_recordChoose = new System.Windows.Forms.ComboBox();
+        label20 = new System.Windows.Forms.Label();
+        btn_recordAttendance = new System.Windows.Forms.Button();
+        btn_recordRefresh = new System.Windows.Forms.Button();
+        contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(components);
+        txt_recordCode = new System.Windows.Forms.TextBox();
+        txt_recordName = new System.Windows.Forms.TextBox();
+        dgv_recordTable = new System.Windows.Forms.DataGridView();
         QLDH.SuspendLayout();
         tp_QLNS.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)dgv_human).BeginInit();
@@ -108,9 +121,13 @@ partial class FormMain
         groupBox7.SuspendLayout();
         groupBox6.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)dgv_event).BeginInit();
+        tp_GNTG.SuspendLayout();
         tp_TH.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)dgv_PointsSummary).BeginInit();
         groupBox9.SuspendLayout();
+        groupBox10.SuspendLayout();
+        groupBox11.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)dgv_recordTable).BeginInit();
         SuspendLayout();
         // 
         // QLDH
@@ -648,6 +665,9 @@ partial class FormMain
         // 
         // tp_GNTG
         // 
+        tp_GNTG.Controls.Add(dgv_recordTable);
+        tp_GNTG.Controls.Add(groupBox11);
+        tp_GNTG.Controls.Add(groupBox10);
         tp_GNTG.Location = new System.Drawing.Point(4, 29);
         tp_GNTG.Name = "tp_GNTG";
         tp_GNTG.Padding = new System.Windows.Forms.Padding(3);
@@ -735,6 +755,110 @@ partial class FormMain
         label17.TabIndex = 1;
         label17.Text = "Mã định danh:";
         // 
+        // label18
+        // 
+        label18.Location = new System.Drawing.Point(21, 29);
+        label18.Name = "label18";
+        label18.Size = new System.Drawing.Size(134, 70);
+        label18.TabIndex = 0;
+        label18.Text = "Chọn Sự Kiện";
+        // 
+        // groupBox10
+        // 
+        groupBox10.Controls.Add(cbo_recordChoose);
+        groupBox10.Controls.Add(label18);
+        groupBox10.Location = new System.Drawing.Point(21, 16);
+        groupBox10.Name = "groupBox10";
+        groupBox10.Size = new System.Drawing.Size(682, 130);
+        groupBox10.TabIndex = 1;
+        groupBox10.TabStop = false;
+        // 
+        // groupBox11
+        // 
+        groupBox11.Controls.Add(txt_recordName);
+        groupBox11.Controls.Add(txt_recordCode);
+        groupBox11.Controls.Add(btn_recordRefresh);
+        groupBox11.Controls.Add(btn_recordAttendance);
+        groupBox11.Controls.Add(label20);
+        groupBox11.Controls.Add(label19);
+        groupBox11.Location = new System.Drawing.Point(21, 152);
+        groupBox11.Name = "groupBox11";
+        groupBox11.Size = new System.Drawing.Size(682, 224);
+        groupBox11.TabIndex = 2;
+        groupBox11.TabStop = false;
+        // 
+        // label19
+        // 
+        label19.Location = new System.Drawing.Point(31, 32);
+        label19.Name = "label19";
+        label19.Size = new System.Drawing.Size(82, 56);
+        label19.TabIndex = 3;
+        label19.Text = "Mã Số";
+        // 
+        // cbo_recordChoose
+        // 
+        cbo_recordChoose.FormattingEnabled = true;
+        cbo_recordChoose.Location = new System.Drawing.Point(146, 29);
+        cbo_recordChoose.Name = "cbo_recordChoose";
+        cbo_recordChoose.Size = new System.Drawing.Size(184, 28);
+        cbo_recordChoose.TabIndex = 1;
+        // 
+        // label20
+        // 
+        label20.Location = new System.Drawing.Point(31, 124);
+        label20.Name = "label20";
+        label20.Size = new System.Drawing.Size(100, 23);
+        label20.TabIndex = 4;
+        label20.Text = "Họ và Tên";
+        // 
+        // btn_recordAttendance
+        // 
+        btn_recordAttendance.Location = new System.Drawing.Point(369, 13);
+        btn_recordAttendance.Name = "btn_recordAttendance";
+        btn_recordAttendance.Size = new System.Drawing.Size(164, 88);
+        btn_recordAttendance.TabIndex = 5;
+        btn_recordAttendance.Text = "Điểm Danh/Ghi Nhận";
+        btn_recordAttendance.UseVisualStyleBackColor = true;
+        // 
+        // btn_recordRefresh
+        // 
+        btn_recordRefresh.Location = new System.Drawing.Point(369, 120);
+        btn_recordRefresh.Name = "btn_recordRefresh";
+        btn_recordRefresh.Size = new System.Drawing.Size(164, 83);
+        btn_recordRefresh.TabIndex = 6;
+        btn_recordRefresh.Text = "Làm Mới";
+        btn_recordRefresh.UseVisualStyleBackColor = true;
+        // 
+        // contextMenuStrip1
+        // 
+        contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+        contextMenuStrip1.Name = "contextMenuStrip1";
+        contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+        // 
+        // txt_recordCode
+        // 
+        txt_recordCode.Location = new System.Drawing.Point(146, 29);
+        txt_recordCode.Name = "txt_recordCode";
+        txt_recordCode.Size = new System.Drawing.Size(184, 27);
+        txt_recordCode.TabIndex = 7;
+        // 
+        // txt_recordName
+        // 
+        txt_recordName.Location = new System.Drawing.Point(179, 120);
+        txt_recordName.Name = "txt_recordName";
+        txt_recordName.Size = new System.Drawing.Size(184, 27);
+        txt_recordName.TabIndex = 8;
+        // 
+        // dgv_recordTable
+        // 
+        dgv_recordTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+        dgv_recordTable.Location = new System.Drawing.Point(21, 382);
+        dgv_recordTable.Name = "dgv_recordTable";
+        dgv_recordTable.RowHeadersWidth = 51;
+        dgv_recordTable.Size = new System.Drawing.Size(682, 276);
+        dgv_recordTable.TabIndex = 3;
+        dgv_recordTable.Text = "dataGridView1";
+        // 
         // FormMain
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -763,12 +887,31 @@ partial class FormMain
         groupBox6.ResumeLayout(false);
         groupBox6.PerformLayout();
         ((System.ComponentModel.ISupportInitialize)dgv_event).EndInit();
+        tp_GNTG.ResumeLayout(false);
         tp_TH.ResumeLayout(false);
         ((System.ComponentModel.ISupportInitialize)dgv_PointsSummary).EndInit();
         groupBox9.ResumeLayout(false);
         groupBox9.PerformLayout();
+        groupBox10.ResumeLayout(false);
+        groupBox11.ResumeLayout(false);
+        groupBox11.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)dgv_recordTable).EndInit();
         ResumeLayout(false);
     }
+
+    private System.Windows.Forms.Button btn_recordAttendance;
+    private System.Windows.Forms.Button btn_recordRefresh;
+    private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+    private System.Windows.Forms.TextBox txt_recordCode;
+    private System.Windows.Forms.TextBox txt_recordName;
+    private System.Windows.Forms.DataGridView dgv_recordTable;
+
+    private System.Windows.Forms.Label label18;
+    private System.Windows.Forms.GroupBox groupBox10;
+    private System.Windows.Forms.GroupBox groupBox11;
+    private System.Windows.Forms.Label label19;
+    private System.Windows.Forms.ComboBox cbo_recordChoose;
+    private System.Windows.Forms.Label label20;
 
     private System.Windows.Forms.Button btn_excelOut;
 
