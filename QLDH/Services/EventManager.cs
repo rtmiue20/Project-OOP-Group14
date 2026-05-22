@@ -16,13 +16,14 @@ namespace QLDH.Service
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = @"INSERT INTO unionevents (EventId, EventName, BonusScore) 
-                                 VALUES (@EventId, @EventName, @BonusScore)";
+                string query = @"INSERT INTO unionevents (EventId, EventName, BonusScore, Address) 
+                                 VALUES (@EventId, @EventName, @BonusScore, @Address)";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@EventId", item.EventId);
                     cmd.Parameters.AddWithValue("@EventName", item.EventName);
                     cmd.Parameters.AddWithValue("@BonusScore", item.BonusScore);
+                    cmd.Parameters.AddWithValue("@Address", item.Address);
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -40,7 +41,7 @@ namespace QLDH.Service
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT EventId, EventName, BonusScore FROM unionevents";
+                string query = "SELECT EventId, EventName, BonusScore, Address FROM unionevents";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 using (MySqlDataReader r = cmd.ExecuteReader())
                 {
@@ -50,7 +51,8 @@ namespace QLDH.Service
                         {
                             EventId = r["EventId"].ToString(),
                             EventName = r["EventName"].ToString(),
-                            BonusScore = Convert.ToDouble(r["BonusScore"])
+                            BonusScore = Convert.ToDouble(r["BonusScore"]),
+                            Address = r["Address"]?.ToString() ?? ""
                         });
                     }
                 }
@@ -65,13 +67,14 @@ namespace QLDH.Service
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = @"UPDATE unionevents SET EventName=@EventName, BonusScore=@BonusScore 
+                string query = @"UPDATE unionevents SET EventName=@EventName, BonusScore=@BonusScore, Address=@Address 
                                  WHERE EventId=@EventId";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@EventId", item.EventId);
                     cmd.Parameters.AddWithValue("@EventName", item.EventName);
                     cmd.Parameters.AddWithValue("@BonusScore", item.BonusScore);
+                    cmd.Parameters.AddWithValue("@Address", item.Address);
                     cmd.ExecuteNonQuery();
                 }
             }
