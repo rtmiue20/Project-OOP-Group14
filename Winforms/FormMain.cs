@@ -24,4 +24,9 @@ public partial class FormMain : Form
     {
         throw new System.NotImplementedException();
     }
+
+    private void txt_eventAddress_TextChanged(object sender, EventArgs e)
+    {
+        throw new System.NotImplementedException();
+    }
 }
