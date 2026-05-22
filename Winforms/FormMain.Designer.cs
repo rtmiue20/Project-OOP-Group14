@@ -66,6 +66,7 @@ partial class FormMain
         tp_QLSK = new System.Windows.Forms.TabPage();
         groupBox8 = new System.Windows.Forms.GroupBox();
         label15 = new System.Windows.Forms.Label();
+        txt_eventAddress = new System.Windows.Forms.TextBox();
         groupBox7 = new System.Windows.Forms.GroupBox();
         label12 = new System.Windows.Forms.Label();
         label14 = new System.Windows.Forms.Label();
@@ -85,9 +86,15 @@ partial class FormMain
         col_eventName = new System.Windows.Forms.DataGridViewTextBoxColumn();
         col_bonusScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
         col_eventAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-        txt_eventAddress = new System.Windows.Forms.TextBox();
         tp_GNTG = new System.Windows.Forms.TabPage();
         tp_TH = new System.Windows.Forms.TabPage();
+        dgv_PointsSummary = new System.Windows.Forms.DataGridView();
+        groupBox9 = new System.Windows.Forms.GroupBox();
+        btn_excelOut = new System.Windows.Forms.Button();
+        button1 = new System.Windows.Forms.Button();
+        btn_pointSearch = new System.Windows.Forms.Button();
+        txt_SearchHumanId = new System.Windows.Forms.TextBox();
+        label17 = new System.Windows.Forms.Label();
         QLDH.SuspendLayout();
         tp_QLNS.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)dgv_human).BeginInit();
@@ -101,6 +108,9 @@ partial class FormMain
         groupBox7.SuspendLayout();
         groupBox6.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)dgv_event).BeginInit();
+        tp_TH.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)dgv_PointsSummary).BeginInit();
+        groupBox9.SuspendLayout();
         SuspendLayout();
         // 
         // QLDH
@@ -455,6 +465,14 @@ partial class FormMain
         label15.TabIndex = 4;
         label15.Text = "Địa điểm";
         // 
+        // txt_eventAddress
+        // 
+        txt_eventAddress.Location = new System.Drawing.Point(315, 25);
+        txt_eventAddress.Name = "txt_eventAddress";
+        txt_eventAddress.Size = new System.Drawing.Size(434, 47);
+        txt_eventAddress.TabIndex = 8;
+        txt_eventAddress.TextChanged += txt_eventAddress_TextChanged;
+        // 
         // groupBox7
         // 
         groupBox7.Controls.Add(label12);
@@ -628,14 +646,6 @@ partial class FormMain
         col_eventAddress.Name = "col_eventAddress";
         col_eventAddress.Resizable = System.Windows.Forms.DataGridViewTriState.True;
         // 
-        // txt_eventAddress
-        // 
-        txt_eventAddress.Location = new System.Drawing.Point(315, 25);
-        txt_eventAddress.Name = "txt_eventAddress";
-        txt_eventAddress.Size = new System.Drawing.Size(434, 47);
-        txt_eventAddress.TabIndex = 8;
-        txt_eventAddress.TextChanged += txt_eventAddress_TextChanged;
-        // 
         // tp_GNTG
         // 
         tp_GNTG.Location = new System.Drawing.Point(10, 58);
@@ -648,6 +658,8 @@ partial class FormMain
         // 
         // tp_TH
         // 
+        tp_TH.Controls.Add(dgv_PointsSummary);
+        tp_TH.Controls.Add(groupBox9);
         tp_TH.Location = new System.Drawing.Point(10, 58);
         tp_TH.Name = "tp_TH";
         tp_TH.Padding = new System.Windows.Forms.Padding(3);
@@ -656,11 +668,78 @@ partial class FormMain
         tp_TH.Text = "Tổng hợp & Tính điểm rèn luyện";
         tp_TH.UseVisualStyleBackColor = true;
         // 
+        // dgv_PointsSummary
+        // 
+        dgv_PointsSummary.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+        dgv_PointsSummary.Location = new System.Drawing.Point(735, 3);
+        dgv_PointsSummary.Name = "dgv_PointsSummary";
+        dgv_PointsSummary.RowHeadersWidth = 102;
+        dgv_PointsSummary.Size = new System.Drawing.Size(1181, 999);
+        dgv_PointsSummary.TabIndex = 6;
+        dgv_PointsSummary.Text = "dataGridView1";
+        // 
+        // groupBox9
+        // 
+        groupBox9.Controls.Add(btn_excelOut);
+        groupBox9.Controls.Add(button1);
+        groupBox9.Controls.Add(btn_pointSearch);
+        groupBox9.Controls.Add(txt_SearchHumanId);
+        groupBox9.Controls.Add(label17);
+        groupBox9.Location = new System.Drawing.Point(0, 6);
+        groupBox9.Name = "groupBox9";
+        groupBox9.Size = new System.Drawing.Size(729, 312);
+        groupBox9.TabIndex = 1;
+        groupBox9.TabStop = false;
+        // 
+        // btn_excelOut
+        // 
+        btn_excelOut.Location = new System.Drawing.Point(468, 205);
+        btn_excelOut.Name = "btn_excelOut";
+        btn_excelOut.Size = new System.Drawing.Size(224, 78);
+        btn_excelOut.TabIndex = 12;
+        btn_excelOut.Text = "Xuất ra Excel\r\n";
+        btn_excelOut.UseVisualStyleBackColor = true;
+        // 
+        // button1
+        // 
+        button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+        button1.Location = new System.Drawing.Point(25, 205);
+        button1.Name = "button1";
+        button1.Size = new System.Drawing.Size(224, 78);
+        button1.TabIndex = 11;
+        button1.Text = "Tổng điểm rèn luyện";
+        button1.UseVisualStyleBackColor = true;
+        // 
+        // btn_pointSearch
+        // 
+        btn_pointSearch.Location = new System.Drawing.Point(535, 111);
+        btn_pointSearch.Name = "btn_pointSearch";
+        btn_pointSearch.Size = new System.Drawing.Size(157, 54);
+        btn_pointSearch.TabIndex = 10;
+        btn_pointSearch.Text = "Tìm";
+        btn_pointSearch.UseVisualStyleBackColor = true;
+        // 
+        // txt_SearchHumanId
+        // 
+        txt_SearchHumanId.Location = new System.Drawing.Point(303, 28);
+        txt_SearchHumanId.Name = "txt_SearchHumanId";
+        txt_SearchHumanId.Size = new System.Drawing.Size(389, 47);
+        txt_SearchHumanId.TabIndex = 2;
+        // 
+        // label17
+        // 
+        label17.BackColor = System.Drawing.Color.LightGray;
+        label17.Location = new System.Drawing.Point(7, 23);
+        label17.Name = "label17";
+        label17.Size = new System.Drawing.Size(277, 50);
+        label17.TabIndex = 1;
+        label17.Text = "Mã định danh:";
+        // 
         // FormMain
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        ClientSize = new System.Drawing.Size(2116, 1421);
+        ClientSize = new System.Drawing.Size(2029, 1055);
         Controls.Add(QLDH);
         Margin = new System.Windows.Forms.Padding(1);
         Text = "FormMain";
@@ -684,8 +763,23 @@ partial class FormMain
         groupBox6.ResumeLayout(false);
         groupBox6.PerformLayout();
         ((System.ComponentModel.ISupportInitialize)dgv_event).EndInit();
+        tp_TH.ResumeLayout(false);
+        ((System.ComponentModel.ISupportInitialize)dgv_PointsSummary).EndInit();
+        groupBox9.ResumeLayout(false);
+        groupBox9.PerformLayout();
         ResumeLayout(false);
     }
+
+    private System.Windows.Forms.Button btn_excelOut;
+
+    private System.Windows.Forms.Button button1;
+
+    private System.Windows.Forms.Button btn_pointSearch;
+
+    private System.Windows.Forms.Label label17;
+    private System.Windows.Forms.TextBox txt_SearchHumanId;
+
+    private System.Windows.Forms.GroupBox groupBox9;
 
     private System.Windows.Forms.GroupBox groupBox6;
     private System.Windows.Forms.GroupBox groupBox7;
@@ -709,7 +803,7 @@ partial class FormMain
     private System.Windows.Forms.TextBox txt_eventName;
     private System.Windows.Forms.TextBox txt_bonusScore;
     private System.Windows.Forms.TextBox txt_eventAddress;
-    private System.Windows.Forms.DataGridView dataGridView1;
+    private System.Windows.Forms.DataGridView dgv_PointsSummary;
 
     private System.Windows.Forms.Label label12;
     private System.Windows.Forms.Label label13;
