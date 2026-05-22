@@ -91,9 +91,9 @@ partial class FormMain
         dgv_PointsSummary = new System.Windows.Forms.DataGridView();
         groupBox9 = new System.Windows.Forms.GroupBox();
         btn_excelOut = new System.Windows.Forms.Button();
-        button1 = new System.Windows.Forms.Button();
-        btn_pointSearch = new System.Windows.Forms.Button();
-        txt_SearchHumanId = new System.Windows.Forms.TextBox();
+        btn_scoreSumary = new System.Windows.Forms.Button();
+        btn_scoreSearch = new System.Windows.Forms.Button();
+        txt_humanIDs = new System.Windows.Forms.TextBox();
         label17 = new System.Windows.Forms.Label();
         QLDH.SuspendLayout();
         tp_QLNS.SuspendLayout();
@@ -133,10 +133,10 @@ partial class FormMain
         tp_QLNS.Controls.Add(groupBox3);
         tp_QLNS.Controls.Add(groupBox2);
         tp_QLNS.Controls.Add(groupBox1);
-        tp_QLNS.Location = new System.Drawing.Point(10, 58);
+        tp_QLNS.Location = new System.Drawing.Point(4, 29);
         tp_QLNS.Name = "tp_QLNS";
         tp_QLNS.Padding = new System.Windows.Forms.Padding(3);
-        tp_QLNS.Size = new System.Drawing.Size(2097, 1412);
+        tp_QLNS.Size = new System.Drawing.Size(2109, 1447);
         tp_QLNS.TabIndex = 0;
         tp_QLNS.Text = "Quản lý Nhân sự";
         tp_QLNS.UseVisualStyleBackColor = true;
@@ -205,7 +205,7 @@ partial class FormMain
         // 
         txt_search.Location = new System.Drawing.Point(458, 37);
         txt_search.Name = "txt_search";
-        txt_search.Size = new System.Drawing.Size(384, 47);
+        txt_search.Size = new System.Drawing.Size(384, 27);
         txt_search.TabIndex = 5;
         // 
         // label11
@@ -236,14 +236,14 @@ partial class FormMain
         // 
         txt_role.Location = new System.Drawing.Point(458, 93);
         txt_role.Name = "txt_role";
-        txt_role.Size = new System.Drawing.Size(384, 47);
+        txt_role.Size = new System.Drawing.Size(384, 27);
         txt_role.TabIndex = 5;
         // 
         // txt_term
         // 
         txt_term.Location = new System.Drawing.Point(458, 163);
         txt_term.Name = "txt_term";
-        txt_term.Size = new System.Drawing.Size(384, 47);
+        txt_term.Size = new System.Drawing.Size(384, 27);
         txt_term.TabIndex = 4;
         // 
         // label8
@@ -268,7 +268,7 @@ partial class FormMain
         // 
         txt_class.Location = new System.Drawing.Point(458, 26);
         txt_class.Name = "txt_class";
-        txt_class.Size = new System.Drawing.Size(384, 47);
+        txt_class.Size = new System.Drawing.Size(384, 27);
         txt_class.TabIndex = 1;
         // 
         // label10
@@ -298,14 +298,14 @@ partial class FormMain
         // 
         txt_street.Location = new System.Drawing.Point(458, 93);
         txt_street.Name = "txt_street";
-        txt_street.Size = new System.Drawing.Size(384, 47);
+        txt_street.Size = new System.Drawing.Size(384, 27);
         txt_street.TabIndex = 5;
         // 
         // txt_district
         // 
         txt_district.Location = new System.Drawing.Point(458, 163);
         txt_district.Name = "txt_district";
-        txt_district.Size = new System.Drawing.Size(384, 47);
+        txt_district.Size = new System.Drawing.Size(384, 27);
         txt_district.TabIndex = 4;
         // 
         // label5
@@ -330,7 +330,7 @@ partial class FormMain
         // 
         txt_houseNum.Location = new System.Drawing.Point(458, 26);
         txt_houseNum.Name = "txt_houseNum";
-        txt_houseNum.Size = new System.Drawing.Size(384, 47);
+        txt_houseNum.Size = new System.Drawing.Size(384, 27);
         txt_houseNum.TabIndex = 1;
         // 
         // label7
@@ -360,14 +360,14 @@ partial class FormMain
         // 
         txt_fullName.Location = new System.Drawing.Point(458, 93);
         txt_fullName.Name = "txt_fullName";
-        txt_fullName.Size = new System.Drawing.Size(389, 47);
+        txt_fullName.Size = new System.Drawing.Size(389, 27);
         txt_fullName.TabIndex = 5;
         // 
         // txt_birthYear
         // 
         txt_birthYear.Location = new System.Drawing.Point(458, 163);
         txt_birthYear.Name = "txt_birthYear";
-        txt_birthYear.Size = new System.Drawing.Size(389, 47);
+        txt_birthYear.Size = new System.Drawing.Size(389, 27);
         txt_birthYear.TabIndex = 4;
         // 
         // label4
@@ -392,7 +392,7 @@ partial class FormMain
         // 
         txt_humanId.Location = new System.Drawing.Point(458, 26);
         txt_humanId.Name = "txt_humanId";
-        txt_humanId.Size = new System.Drawing.Size(389, 47);
+        txt_humanId.Size = new System.Drawing.Size(389, 27);
         txt_humanId.TabIndex = 1;
         // 
         // label2
@@ -420,7 +420,7 @@ partial class FormMain
         cbb_obj.Items.AddRange(new object[] { "Sinh viên", "Cán bộ Đoàn", "Giảng viên" });
         cbb_obj.Location = new System.Drawing.Point(458, 24);
         cbb_obj.Name = "cbb_obj";
-        cbb_obj.Size = new System.Drawing.Size(389, 49);
+        cbb_obj.Size = new System.Drawing.Size(389, 28);
         cbb_obj.TabIndex = 1;
         // 
         // label1
@@ -438,10 +438,10 @@ partial class FormMain
         tp_QLSK.Controls.Add(groupBox7);
         tp_QLSK.Controls.Add(groupBox6);
         tp_QLSK.Controls.Add(dgv_event);
-        tp_QLSK.Location = new System.Drawing.Point(10, 58);
+        tp_QLSK.Location = new System.Drawing.Point(4, 29);
         tp_QLSK.Name = "tp_QLSK";
         tp_QLSK.Padding = new System.Windows.Forms.Padding(3);
-        tp_QLSK.Size = new System.Drawing.Size(2097, 1412);
+        tp_QLSK.Size = new System.Drawing.Size(2109, 1447);
         tp_QLSK.TabIndex = 1;
         tp_QLSK.Text = "Quản lý Sự kiện Đoàn Hội";
         tp_QLSK.UseVisualStyleBackColor = true;
@@ -469,7 +469,7 @@ partial class FormMain
         // 
         txt_eventAddress.Location = new System.Drawing.Point(315, 25);
         txt_eventAddress.Name = "txt_eventAddress";
-        txt_eventAddress.Size = new System.Drawing.Size(434, 47);
+        txt_eventAddress.Size = new System.Drawing.Size(434, 27);
         txt_eventAddress.TabIndex = 8;
         txt_eventAddress.TextChanged += txt_eventAddress_TextChanged;
         // 
@@ -509,21 +509,21 @@ partial class FormMain
         // 
         txt_eventID.Location = new System.Drawing.Point(315, 40);
         txt_eventID.Name = "txt_eventID";
-        txt_eventID.Size = new System.Drawing.Size(434, 47);
+        txt_eventID.Size = new System.Drawing.Size(434, 27);
         txt_eventID.TabIndex = 5;
         // 
         // txt_eventName
         // 
         txt_eventName.Location = new System.Drawing.Point(315, 109);
         txt_eventName.Name = "txt_eventName";
-        txt_eventName.Size = new System.Drawing.Size(434, 47);
+        txt_eventName.Size = new System.Drawing.Size(434, 27);
         txt_eventName.TabIndex = 6;
         // 
         // txt_bonusScore
         // 
         txt_bonusScore.Location = new System.Drawing.Point(315, 171);
         txt_bonusScore.Name = "txt_bonusScore";
-        txt_bonusScore.Size = new System.Drawing.Size(434, 47);
+        txt_bonusScore.Size = new System.Drawing.Size(434, 27);
         txt_bonusScore.TabIndex = 7;
         // 
         // label13
@@ -562,7 +562,7 @@ partial class FormMain
         // 
         txt_eventSearch.Location = new System.Drawing.Point(318, 31);
         txt_eventSearch.Name = "txt_eventSearch";
-        txt_eventSearch.Size = new System.Drawing.Size(434, 47);
+        txt_eventSearch.Size = new System.Drawing.Size(434, 27);
         txt_eventSearch.TabIndex = 11;
         // 
         // btn_eventSearch
@@ -648,10 +648,10 @@ partial class FormMain
         // 
         // tp_GNTG
         // 
-        tp_GNTG.Location = new System.Drawing.Point(10, 58);
+        tp_GNTG.Location = new System.Drawing.Point(4, 29);
         tp_GNTG.Name = "tp_GNTG";
         tp_GNTG.Padding = new System.Windows.Forms.Padding(3);
-        tp_GNTG.Size = new System.Drawing.Size(2097, 1412);
+        tp_GNTG.Size = new System.Drawing.Size(2109, 1447);
         tp_GNTG.TabIndex = 2;
         tp_GNTG.Text = "Điểm danh & Ghi nhận tham gia";
         tp_GNTG.UseVisualStyleBackColor = true;
@@ -660,10 +660,10 @@ partial class FormMain
         // 
         tp_TH.Controls.Add(dgv_PointsSummary);
         tp_TH.Controls.Add(groupBox9);
-        tp_TH.Location = new System.Drawing.Point(10, 58);
+        tp_TH.Location = new System.Drawing.Point(4, 29);
         tp_TH.Name = "tp_TH";
         tp_TH.Padding = new System.Windows.Forms.Padding(3);
-        tp_TH.Size = new System.Drawing.Size(2097, 1412);
+        tp_TH.Size = new System.Drawing.Size(2109, 1447);
         tp_TH.TabIndex = 3;
         tp_TH.Text = "Tổng hợp & Tính điểm rèn luyện";
         tp_TH.UseVisualStyleBackColor = true;
@@ -681,9 +681,9 @@ partial class FormMain
         // groupBox9
         // 
         groupBox9.Controls.Add(btn_excelOut);
-        groupBox9.Controls.Add(button1);
-        groupBox9.Controls.Add(btn_pointSearch);
-        groupBox9.Controls.Add(txt_SearchHumanId);
+        groupBox9.Controls.Add(btn_scoreSumary);
+        groupBox9.Controls.Add(btn_scoreSearch);
+        groupBox9.Controls.Add(txt_humanIDs);
         groupBox9.Controls.Add(label17);
         groupBox9.Location = new System.Drawing.Point(0, 6);
         groupBox9.Name = "groupBox9";
@@ -700,31 +700,31 @@ partial class FormMain
         btn_excelOut.Text = "Xuất ra Excel\r\n";
         btn_excelOut.UseVisualStyleBackColor = true;
         // 
-        // button1
+        // btn_scoreSumary
         // 
-        button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-        button1.Location = new System.Drawing.Point(25, 205);
-        button1.Name = "button1";
-        button1.Size = new System.Drawing.Size(224, 78);
-        button1.TabIndex = 11;
-        button1.Text = "Tổng điểm rèn luyện";
-        button1.UseVisualStyleBackColor = true;
+        btn_scoreSumary.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+        btn_scoreSumary.Location = new System.Drawing.Point(25, 205);
+        btn_scoreSumary.Name = "btn_scoreSumary";
+        btn_scoreSumary.Size = new System.Drawing.Size(224, 78);
+        btn_scoreSumary.TabIndex = 11;
+        btn_scoreSumary.Text = "Tổng điểm rèn luyện";
+        btn_scoreSumary.UseVisualStyleBackColor = true;
         // 
-        // btn_pointSearch
+        // btn_scoreSearch
         // 
-        btn_pointSearch.Location = new System.Drawing.Point(535, 111);
-        btn_pointSearch.Name = "btn_pointSearch";
-        btn_pointSearch.Size = new System.Drawing.Size(157, 54);
-        btn_pointSearch.TabIndex = 10;
-        btn_pointSearch.Text = "Tìm";
-        btn_pointSearch.UseVisualStyleBackColor = true;
+        btn_scoreSearch.Location = new System.Drawing.Point(535, 111);
+        btn_scoreSearch.Name = "btn_scoreSearch";
+        btn_scoreSearch.Size = new System.Drawing.Size(157, 54);
+        btn_scoreSearch.TabIndex = 10;
+        btn_scoreSearch.Text = "Tìm";
+        btn_scoreSearch.UseVisualStyleBackColor = true;
         // 
-        // txt_SearchHumanId
+        // txt_humanIDs
         // 
-        txt_SearchHumanId.Location = new System.Drawing.Point(303, 28);
-        txt_SearchHumanId.Name = "txt_SearchHumanId";
-        txt_SearchHumanId.Size = new System.Drawing.Size(389, 47);
-        txt_SearchHumanId.TabIndex = 2;
+        txt_humanIDs.Location = new System.Drawing.Point(303, 28);
+        txt_humanIDs.Name = "txt_humanIDs";
+        txt_humanIDs.Size = new System.Drawing.Size(389, 27);
+        txt_humanIDs.TabIndex = 2;
         // 
         // label17
         // 
@@ -737,9 +737,9 @@ partial class FormMain
         // 
         // FormMain
         // 
-        AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
+        AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        ClientSize = new System.Drawing.Size(2029, 1055);
+        ClientSize = new System.Drawing.Size(1924, 1055);
         Controls.Add(QLDH);
         Margin = new System.Windows.Forms.Padding(1);
         Text = "FormMain";
@@ -772,12 +772,12 @@ partial class FormMain
 
     private System.Windows.Forms.Button btn_excelOut;
 
-    private System.Windows.Forms.Button button1;
+    private System.Windows.Forms.Button btn_scoreSumary;
 
-    private System.Windows.Forms.Button btn_pointSearch;
+    private System.Windows.Forms.Button btn_scoreSearch;
 
     private System.Windows.Forms.Label label17;
-    private System.Windows.Forms.TextBox txt_SearchHumanId;
+    private System.Windows.Forms.TextBox txt_humanIDs;
 
     private System.Windows.Forms.GroupBox groupBox9;
 
