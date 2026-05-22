@@ -16,22 +16,19 @@ namespace QLDH.Service
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = @"INSERT INTO NhanSu (Id, LoaiNhanSu, FullName, BirthYear, HouseNumber, Street, District, Department) 
-                                 VALUES (@Id, 'Giảng viên', @FullName, @BirthYear, @HouseNumber, @Street, @District, @Department)";
+                string query = @"INSERT INTO lecturers (LecturerId, FullName, BirthYear, Department) 
+                                 VALUES (@Id, @FullName, @BirthYear, @Department)";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@Id", item.LecturerId);
                     cmd.Parameters.AddWithValue("@FullName", item.FullName);
                     cmd.Parameters.AddWithValue("@BirthYear", item.BirthYear);
-                    cmd.Parameters.AddWithValue("@HouseNumber", item.ResidentAddress.HouseNumber);
-                    cmd.Parameters.AddWithValue("@Street", item.ResidentAddress.Street);
-                    cmd.Parameters.AddWithValue("@District", item.ResidentAddress.District);
                     cmd.Parameters.AddWithValue("@Department", item.Department);
                     cmd.ExecuteNonQuery();
                 }
             }
         }
-        
+
         // 2. R - Read
         protected override string GetId(Lecturer item)
         {
@@ -44,27 +41,25 @@ namespace QLDH.Service
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT Id, FullName, BirthYear, HouseNumber, Street, District, Department FROM NhanSu WHERE LoaiNhanSu = 'Giảng viên'";
+                string query = "SELECT LecturerId, FullName, BirthYear, Department FROM lecturers";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 using (MySqlDataReader r = cmd.ExecuteReader())
                 {
                     while (r.Read())
                     {
-                        Address addr = new Address(r["HouseNumber"].ToString(), r["Street"].ToString(), r["District"].ToString());
                         items.Add(new Lecturer
                         {
-                            LecturerId = r["Id"].ToString(),
+                            LecturerId = r["LecturerId"].ToString(),
                             FullName = r["FullName"].ToString(),
                             BirthYear = Convert.ToInt32(r["BirthYear"]),
-                            ResidentAddress = addr,
-                            Department = r["Department"].ToString()
+                            Department = r["Department"].ToString(),
+                            ResidentAddress = new Address("", "", "") // GV không có địa chỉ trong DB
                         });
                     }
                 }
             }
             return items;
         }
-        
 
         // 3. U - Update
         public override void Update(Lecturer item)
@@ -73,16 +68,13 @@ namespace QLDH.Service
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = @"UPDATE NhanSu SET FullName=@FullName, BirthYear=@BirthYear, HouseNumber=@HouseNumber, 
-                                 Street=@Street, District=@District, Department=@Department WHERE Id=@Id AND LoaiNhanSu='Giảng viên'";
+                string query = @"UPDATE lecturers SET FullName=@FullName, BirthYear=@BirthYear, 
+                                 Department=@Department WHERE LecturerId=@Id";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@Id", item.LecturerId);
                     cmd.Parameters.AddWithValue("@FullName", item.FullName);
                     cmd.Parameters.AddWithValue("@BirthYear", item.BirthYear);
-                    cmd.Parameters.AddWithValue("@HouseNumber", item.ResidentAddress.HouseNumber);
-                    cmd.Parameters.AddWithValue("@Street", item.ResidentAddress.Street);
-                    cmd.Parameters.AddWithValue("@District", item.ResidentAddress.District);
                     cmd.Parameters.AddWithValue("@Department", item.Department);
                     cmd.ExecuteNonQuery();
                 }
@@ -96,7 +88,7 @@ namespace QLDH.Service
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "DELETE FROM NhanSu WHERE Id=@Id AND LoaiNhanSu='Giảng viên'";
+                string query = "DELETE FROM lecturers WHERE LecturerId=@Id";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@Id", id);
@@ -111,7 +103,7 @@ namespace QLDH.Service
             List<Lecturer> result = new List<Lecturer>();
             foreach (Lecturer lec in GetAll())
             {
-                if (lec.LecturerId.Contains(keyword) || lec.FullName.Contains(keyword))
+                if (lec.LecturerId.Contains(keyword) || lec.FullName.Contains(keyword) || lec.Department.Contains(keyword))
                     result.Add(lec);
             }
             return result;

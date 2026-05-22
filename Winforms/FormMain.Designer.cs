@@ -64,27 +64,30 @@ partial class FormMain
         cbb_obj = new System.Windows.Forms.ComboBox();
         label1 = new System.Windows.Forms.Label();
         tp_QLSK = new System.Windows.Forms.TabPage();
-        btn_eventSearch = new System.Windows.Forms.Button();
-        btn_eventUpdate = new System.Windows.Forms.Button();
-        btn_eventDelete = new System.Windows.Forms.Button();
-        btn_eventAdd = new System.Windows.Forms.Button();
-        txt_eventSearch = new System.Windows.Forms.TextBox();
-        label16 = new System.Windows.Forms.Label();
-        dgv_event = new System.Windows.Forms.DataGridView();
-        txt_eventAddress = new System.Windows.Forms.TextBox();
-        txt_bonusScore = new System.Windows.Forms.TextBox();
-        txt_eventName = new System.Windows.Forms.TextBox();
-        txt_eventID = new System.Windows.Forms.TextBox();
+        groupBox8 = new System.Windows.Forms.GroupBox();
         label15 = new System.Windows.Forms.Label();
-        label14 = new System.Windows.Forms.Label();
-        label13 = new System.Windows.Forms.Label();
+        groupBox7 = new System.Windows.Forms.GroupBox();
         label12 = new System.Windows.Forms.Label();
-        tp_GNTG = new System.Windows.Forms.TabPage();
-        tp_TH = new System.Windows.Forms.TabPage();
+        label14 = new System.Windows.Forms.Label();
+        txt_eventID = new System.Windows.Forms.TextBox();
+        txt_eventName = new System.Windows.Forms.TextBox();
+        txt_bonusScore = new System.Windows.Forms.TextBox();
+        label13 = new System.Windows.Forms.Label();
+        groupBox6 = new System.Windows.Forms.GroupBox();
+        label16 = new System.Windows.Forms.Label();
+        txt_eventSearch = new System.Windows.Forms.TextBox();
+        btn_eventSearch = new System.Windows.Forms.Button();
+        btn_eventAdd = new System.Windows.Forms.Button();
+        btn_eventDelete = new System.Windows.Forms.Button();
+        btn_eventUpdate = new System.Windows.Forms.Button();
+        dgv_event = new System.Windows.Forms.DataGridView();
         col_eventID = new System.Windows.Forms.DataGridViewTextBoxColumn();
         col_eventName = new System.Windows.Forms.DataGridViewTextBoxColumn();
         col_bonusScore = new System.Windows.Forms.DataGridViewTextBoxColumn();
         col_eventAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+        txt_eventAddress = new System.Windows.Forms.TextBox();
+        tp_GNTG = new System.Windows.Forms.TabPage();
+        tp_TH = new System.Windows.Forms.TabPage();
         QLDH.SuspendLayout();
         tp_QLNS.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)dgv_human).BeginInit();
@@ -94,6 +97,9 @@ partial class FormMain
         groupBox2.SuspendLayout();
         groupBox1.SuspendLayout();
         tp_QLSK.SuspendLayout();
+        groupBox8.SuspendLayout();
+        groupBox7.SuspendLayout();
+        groupBox6.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)dgv_event).BeginInit();
         SuspendLayout();
         // 
@@ -117,10 +123,10 @@ partial class FormMain
         tp_QLNS.Controls.Add(groupBox3);
         tp_QLNS.Controls.Add(groupBox2);
         tp_QLNS.Controls.Add(groupBox1);
-        tp_QLNS.Location = new System.Drawing.Point(4, 24);
+        tp_QLNS.Location = new System.Drawing.Point(10, 58);
         tp_QLNS.Name = "tp_QLNS";
         tp_QLNS.Padding = new System.Windows.Forms.Padding(3);
-        tp_QLNS.Size = new System.Drawing.Size(2109, 1452);
+        tp_QLNS.Size = new System.Drawing.Size(2097, 1412);
         tp_QLNS.TabIndex = 0;
         tp_QLNS.Text = "Quản lý Nhân sự";
         tp_QLNS.UseVisualStyleBackColor = true;
@@ -189,7 +195,7 @@ partial class FormMain
         // 
         txt_search.Location = new System.Drawing.Point(458, 37);
         txt_search.Name = "txt_search";
-        txt_search.Size = new System.Drawing.Size(384, 23);
+        txt_search.Size = new System.Drawing.Size(384, 47);
         txt_search.TabIndex = 5;
         // 
         // label11
@@ -220,14 +226,14 @@ partial class FormMain
         // 
         txt_role.Location = new System.Drawing.Point(458, 93);
         txt_role.Name = "txt_role";
-        txt_role.Size = new System.Drawing.Size(384, 23);
+        txt_role.Size = new System.Drawing.Size(384, 47);
         txt_role.TabIndex = 5;
         // 
         // txt_term
         // 
         txt_term.Location = new System.Drawing.Point(458, 163);
         txt_term.Name = "txt_term";
-        txt_term.Size = new System.Drawing.Size(384, 23);
+        txt_term.Size = new System.Drawing.Size(384, 47);
         txt_term.TabIndex = 4;
         // 
         // label8
@@ -252,7 +258,7 @@ partial class FormMain
         // 
         txt_class.Location = new System.Drawing.Point(458, 26);
         txt_class.Name = "txt_class";
-        txt_class.Size = new System.Drawing.Size(384, 23);
+        txt_class.Size = new System.Drawing.Size(384, 47);
         txt_class.TabIndex = 1;
         // 
         // label10
@@ -282,14 +288,14 @@ partial class FormMain
         // 
         txt_street.Location = new System.Drawing.Point(458, 93);
         txt_street.Name = "txt_street";
-        txt_street.Size = new System.Drawing.Size(384, 23);
+        txt_street.Size = new System.Drawing.Size(384, 47);
         txt_street.TabIndex = 5;
         // 
         // txt_district
         // 
         txt_district.Location = new System.Drawing.Point(458, 163);
         txt_district.Name = "txt_district";
-        txt_district.Size = new System.Drawing.Size(384, 23);
+        txt_district.Size = new System.Drawing.Size(384, 47);
         txt_district.TabIndex = 4;
         // 
         // label5
@@ -314,7 +320,7 @@ partial class FormMain
         // 
         txt_houseNum.Location = new System.Drawing.Point(458, 26);
         txt_houseNum.Name = "txt_houseNum";
-        txt_houseNum.Size = new System.Drawing.Size(384, 23);
+        txt_houseNum.Size = new System.Drawing.Size(384, 47);
         txt_houseNum.TabIndex = 1;
         // 
         // label7
@@ -344,14 +350,14 @@ partial class FormMain
         // 
         txt_fullName.Location = new System.Drawing.Point(458, 93);
         txt_fullName.Name = "txt_fullName";
-        txt_fullName.Size = new System.Drawing.Size(389, 23);
+        txt_fullName.Size = new System.Drawing.Size(389, 47);
         txt_fullName.TabIndex = 5;
         // 
         // txt_birthYear
         // 
         txt_birthYear.Location = new System.Drawing.Point(458, 163);
         txt_birthYear.Name = "txt_birthYear";
-        txt_birthYear.Size = new System.Drawing.Size(389, 23);
+        txt_birthYear.Size = new System.Drawing.Size(389, 47);
         txt_birthYear.TabIndex = 4;
         // 
         // label4
@@ -376,7 +382,7 @@ partial class FormMain
         // 
         txt_humanId.Location = new System.Drawing.Point(458, 26);
         txt_humanId.Name = "txt_humanId";
-        txt_humanId.Size = new System.Drawing.Size(389, 23);
+        txt_humanId.Size = new System.Drawing.Size(389, 47);
         txt_humanId.TabIndex = 1;
         // 
         // label2
@@ -404,7 +410,7 @@ partial class FormMain
         cbb_obj.Items.AddRange(new object[] { "Sinh viên", "Cán bộ Đoàn", "Giảng viên" });
         cbb_obj.Location = new System.Drawing.Point(458, 24);
         cbb_obj.Name = "cbb_obj";
-        cbb_obj.Size = new System.Drawing.Size(389, 23);
+        cbb_obj.Size = new System.Drawing.Size(389, 49);
         cbb_obj.TabIndex = 1;
         // 
         // label1
@@ -418,182 +424,183 @@ partial class FormMain
         // 
         // tp_QLSK
         // 
-        tp_QLSK.Controls.Add(btn_eventSearch);
-        tp_QLSK.Controls.Add(btn_eventUpdate);
-        tp_QLSK.Controls.Add(btn_eventDelete);
-        tp_QLSK.Controls.Add(btn_eventAdd);
-        tp_QLSK.Controls.Add(txt_eventSearch);
-        tp_QLSK.Controls.Add(label16);
+        tp_QLSK.Controls.Add(groupBox8);
+        tp_QLSK.Controls.Add(groupBox7);
+        tp_QLSK.Controls.Add(groupBox6);
         tp_QLSK.Controls.Add(dgv_event);
-        tp_QLSK.Controls.Add(txt_eventAddress);
-        tp_QLSK.Controls.Add(txt_bonusScore);
-        tp_QLSK.Controls.Add(txt_eventName);
-        tp_QLSK.Controls.Add(txt_eventID);
-        tp_QLSK.Controls.Add(label15);
-        tp_QLSK.Controls.Add(label14);
-        tp_QLSK.Controls.Add(label13);
-        tp_QLSK.Controls.Add(label12);
-        tp_QLSK.Location = new System.Drawing.Point(4, 24);
+        tp_QLSK.Location = new System.Drawing.Point(10, 58);
         tp_QLSK.Name = "tp_QLSK";
         tp_QLSK.Padding = new System.Windows.Forms.Padding(3);
-        tp_QLSK.Size = new System.Drawing.Size(2109, 1452);
+        tp_QLSK.Size = new System.Drawing.Size(2097, 1412);
         tp_QLSK.TabIndex = 1;
         tp_QLSK.Text = "Quản lý Sự kiện Đoàn Hội";
         tp_QLSK.UseVisualStyleBackColor = true;
         // 
+        // groupBox8
+        // 
+        groupBox8.Controls.Add(label15);
+        groupBox8.Controls.Add(txt_eventAddress);
+        groupBox8.Location = new System.Drawing.Point(6, 251);
+        groupBox8.Name = "groupBox8";
+        groupBox8.Size = new System.Drawing.Size(791, 100);
+        groupBox8.TabIndex = 19;
+        groupBox8.TabStop = false;
+        // 
+        // label15
+        // 
+        label15.BackColor = System.Drawing.Color.LightGray;
+        label15.Location = new System.Drawing.Point(11, 22);
+        label15.Name = "label15";
+        label15.Size = new System.Drawing.Size(293, 50);
+        label15.TabIndex = 4;
+        label15.Text = "Địa điểm";
+        // 
+        // groupBox7
+        // 
+        groupBox7.Controls.Add(label12);
+        groupBox7.Controls.Add(label14);
+        groupBox7.Controls.Add(txt_eventID);
+        groupBox7.Controls.Add(txt_eventName);
+        groupBox7.Controls.Add(txt_bonusScore);
+        groupBox7.Controls.Add(label13);
+        groupBox7.Location = new System.Drawing.Point(6, 6);
+        groupBox7.Name = "groupBox7";
+        groupBox7.Size = new System.Drawing.Size(791, 239);
+        groupBox7.TabIndex = 18;
+        groupBox7.TabStop = false;
+        // 
+        // label12
+        // 
+        label12.BackColor = System.Drawing.Color.LightGray;
+        label12.Location = new System.Drawing.Point(6, 43);
+        label12.Name = "label12";
+        label12.Size = new System.Drawing.Size(298, 50);
+        label12.TabIndex = 1;
+        label12.Text = "Mã sự kiện";
+        // 
+        // label14
+        // 
+        label14.BackColor = System.Drawing.Color.LightGray;
+        label14.Location = new System.Drawing.Point(6, 106);
+        label14.Name = "label14";
+        label14.Size = new System.Drawing.Size(298, 50);
+        label14.TabIndex = 3;
+        label14.Text = "Tên sự kiện";
+        // 
+        // txt_eventID
+        // 
+        txt_eventID.Location = new System.Drawing.Point(315, 40);
+        txt_eventID.Name = "txt_eventID";
+        txt_eventID.Size = new System.Drawing.Size(434, 47);
+        txt_eventID.TabIndex = 5;
+        // 
+        // txt_eventName
+        // 
+        txt_eventName.Location = new System.Drawing.Point(315, 109);
+        txt_eventName.Name = "txt_eventName";
+        txt_eventName.Size = new System.Drawing.Size(434, 47);
+        txt_eventName.TabIndex = 6;
+        // 
+        // txt_bonusScore
+        // 
+        txt_bonusScore.Location = new System.Drawing.Point(315, 171);
+        txt_bonusScore.Name = "txt_bonusScore";
+        txt_bonusScore.Size = new System.Drawing.Size(434, 47);
+        txt_bonusScore.TabIndex = 7;
+        // 
+        // label13
+        // 
+        label13.BackColor = System.Drawing.Color.LightGray;
+        label13.Location = new System.Drawing.Point(6, 168);
+        label13.Name = "label13";
+        label13.Size = new System.Drawing.Size(298, 50);
+        label13.TabIndex = 2;
+        label13.Text = "Điểm cộng rèn luyện";
+        // 
+        // groupBox6
+        // 
+        groupBox6.Controls.Add(label16);
+        groupBox6.Controls.Add(txt_eventSearch);
+        groupBox6.Controls.Add(btn_eventSearch);
+        groupBox6.Controls.Add(btn_eventAdd);
+        groupBox6.Controls.Add(btn_eventDelete);
+        groupBox6.Controls.Add(btn_eventUpdate);
+        groupBox6.Location = new System.Drawing.Point(3, 357);
+        groupBox6.Name = "groupBox6";
+        groupBox6.Size = new System.Drawing.Size(794, 171);
+        groupBox6.TabIndex = 17;
+        groupBox6.TabStop = false;
+        // 
+        // label16
+        // 
+        label16.BackColor = System.Drawing.Color.LightGray;
+        label16.Location = new System.Drawing.Point(6, 31);
+        label16.Name = "label16";
+        label16.Size = new System.Drawing.Size(301, 50);
+        label16.TabIndex = 10;
+        label16.Text = "Tìm kiếm";
+        // 
+        // txt_eventSearch
+        // 
+        txt_eventSearch.Location = new System.Drawing.Point(318, 31);
+        txt_eventSearch.Name = "txt_eventSearch";
+        txt_eventSearch.Size = new System.Drawing.Size(434, 47);
+        txt_eventSearch.TabIndex = 11;
+        // 
         // btn_eventSearch
         // 
-        btn_eventSearch.Location = new System.Drawing.Point(586, 648);
+        btn_eventSearch.Location = new System.Drawing.Point(595, 101);
         btn_eventSearch.Name = "btn_eventSearch";
         btn_eventSearch.Size = new System.Drawing.Size(157, 54);
         btn_eventSearch.TabIndex = 15;
         btn_eventSearch.Text = "Tìm";
         btn_eventSearch.UseVisualStyleBackColor = true;
         // 
-        // btn_eventUpdate
-        // 
-        btn_eventUpdate.Location = new System.Drawing.Point(200, 648);
-        btn_eventUpdate.Name = "btn_eventUpdate";
-        btn_eventUpdate.Size = new System.Drawing.Size(157, 54);
-        btn_eventUpdate.TabIndex = 14;
-        btn_eventUpdate.Text = "Sửa";
-        btn_eventUpdate.UseVisualStyleBackColor = true;
-        // 
-        // btn_eventDelete
-        // 
-        btn_eventDelete.Location = new System.Drawing.Point(389, 648);
-        btn_eventDelete.Name = "btn_eventDelete";
-        btn_eventDelete.Size = new System.Drawing.Size(157, 54);
-        btn_eventDelete.TabIndex = 13;
-        btn_eventDelete.Text = "Xóa";
-        btn_eventDelete.UseVisualStyleBackColor = true;
-        // 
         // btn_eventAdd
         // 
-        btn_eventAdd.Location = new System.Drawing.Point(27, 648);
+        btn_eventAdd.Location = new System.Drawing.Point(1, 101);
         btn_eventAdd.Name = "btn_eventAdd";
         btn_eventAdd.Size = new System.Drawing.Size(157, 54);
         btn_eventAdd.TabIndex = 12;
         btn_eventAdd.Text = "Thêm";
         btn_eventAdd.UseVisualStyleBackColor = true;
         // 
-        // txt_eventSearch
+        // btn_eventDelete
         // 
-        txt_eventSearch.Location = new System.Drawing.Point(396, 478);
-        txt_eventSearch.Name = "txt_eventSearch";
-        txt_eventSearch.Size = new System.Drawing.Size(389, 23);
-        txt_eventSearch.TabIndex = 11;
+        btn_eventDelete.Location = new System.Drawing.Point(405, 101);
+        btn_eventDelete.Name = "btn_eventDelete";
+        btn_eventDelete.Size = new System.Drawing.Size(157, 54);
+        btn_eventDelete.TabIndex = 13;
+        btn_eventDelete.Text = "Xóa";
+        btn_eventDelete.UseVisualStyleBackColor = true;
         // 
-        // label16
+        // btn_eventUpdate
         // 
-        label16.BackColor = System.Drawing.Color.LightGray;
-        label16.Location = new System.Drawing.Point(17, 465);
-        label16.Name = "label16";
-        label16.Size = new System.Drawing.Size(346, 50);
-        label16.TabIndex = 10;
-        label16.Text = "Tìm kiếm";
+        btn_eventUpdate.Location = new System.Drawing.Point(206, 101);
+        btn_eventUpdate.Name = "btn_eventUpdate";
+        btn_eventUpdate.Size = new System.Drawing.Size(157, 54);
+        btn_eventUpdate.TabIndex = 14;
+        btn_eventUpdate.Text = "Sửa";
+        btn_eventUpdate.UseVisualStyleBackColor = true;
         // 
         // dgv_event
         // 
         dgv_event.AllowUserToOrderColumns = true;
         dgv_event.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
         dgv_event.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { col_eventID, col_eventName, col_bonusScore, col_eventAddress });
-        dgv_event.Location = new System.Drawing.Point(800, 3);
+        dgv_event.Location = new System.Drawing.Point(803, 6);
         dgv_event.Name = "dgv_event";
         dgv_event.RowHeadersWidth = 102;
-        dgv_event.Size = new System.Drawing.Size(1181, 999);
+        dgv_event.Size = new System.Drawing.Size(1288, 999);
         dgv_event.TabIndex = 9;
         dgv_event.Text = "dataGridView1";
         dgv_event.CellContentClick += dgv_event_CellContentClick;
-        // 
-        // txt_eventAddress
-        // 
-        txt_eventAddress.Location = new System.Drawing.Point(396, 340);
-        txt_eventAddress.Name = "txt_eventAddress";
-        txt_eventAddress.Size = new System.Drawing.Size(389, 23);
-        txt_eventAddress.TabIndex = 8;
-        // 
-        // txt_bonusScore
-        // 
-        txt_bonusScore.Location = new System.Drawing.Point(405, 243);
-        txt_bonusScore.Name = "txt_bonusScore";
-        txt_bonusScore.Size = new System.Drawing.Size(389, 23);
-        txt_bonusScore.TabIndex = 7;
-        // 
-        // txt_eventName
-        // 
-        txt_eventName.Location = new System.Drawing.Point(405, 154);
-        txt_eventName.Name = "txt_eventName";
-        txt_eventName.Size = new System.Drawing.Size(389, 23);
-        txt_eventName.TabIndex = 6;
-        // 
-        // txt_eventID
-        // 
-        txt_eventID.Location = new System.Drawing.Point(405, 69);
-        txt_eventID.Name = "txt_eventID";
-        txt_eventID.Size = new System.Drawing.Size(389, 23);
-        txt_eventID.TabIndex = 5;
-        // 
-        // label15
-        // 
-        label15.BackColor = System.Drawing.Color.LightGray;
-        label15.Location = new System.Drawing.Point(17, 328);
-        label15.Name = "label15";
-        label15.Size = new System.Drawing.Size(346, 50);
-        label15.TabIndex = 4;
-        label15.Text = "Địa điểm";
-        // 
-        // label14
-        // 
-        label14.BackColor = System.Drawing.Color.LightGray;
-        label14.Location = new System.Drawing.Point(17, 140);
-        label14.Name = "label14";
-        label14.Size = new System.Drawing.Size(346, 50);
-        label14.TabIndex = 3;
-        label14.Text = "Tên sự kiện";
-        // 
-        // label13
-        // 
-        label13.BackColor = System.Drawing.Color.LightGray;
-        label13.Location = new System.Drawing.Point(17, 233);
-        label13.Name = "label13";
-        label13.Size = new System.Drawing.Size(346, 50);
-        label13.TabIndex = 2;
-        label13.Text = "Điểm cộng rèn luyện";
-        // 
-        // label12
-        // 
-        label12.BackColor = System.Drawing.Color.LightGray;
-        label12.Location = new System.Drawing.Point(17, 53);
-        label12.Name = "label12";
-        label12.Size = new System.Drawing.Size(346, 50);
-        label12.TabIndex = 1;
-        label12.Text = "Mã sự kiện";
-        // 
-        // tp_GNTG
-        // 
-        tp_GNTG.Location = new System.Drawing.Point(4, 24);
-        tp_GNTG.Name = "tp_GNTG";
-        tp_GNTG.Padding = new System.Windows.Forms.Padding(3);
-        tp_GNTG.Size = new System.Drawing.Size(2109, 1452);
-        tp_GNTG.TabIndex = 2;
-        tp_GNTG.Text = "Điểm danh & Ghi nhận tham gia";
-        tp_GNTG.UseVisualStyleBackColor = true;
-        // 
-        // tp_TH
-        // 
-        tp_TH.Location = new System.Drawing.Point(4, 24);
-        tp_TH.Name = "tp_TH";
-        tp_TH.Padding = new System.Windows.Forms.Padding(3);
-        tp_TH.Size = new System.Drawing.Size(2109, 1452);
-        tp_TH.TabIndex = 3;
-        tp_TH.Text = "Tổng hợp & Tính điểm rèn luyện";
-        tp_TH.UseVisualStyleBackColor = true;
         // 
         // col_eventID
         // 
         col_eventID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
         col_eventID.HeaderText = "Mã sự kiện ";
+        col_eventID.MinimumWidth = 12;
         col_eventID.Name = "col_eventID";
         col_eventID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
         // 
@@ -601,6 +608,7 @@ partial class FormMain
         // 
         col_eventName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
         col_eventName.HeaderText = "Tên sự kiện ";
+        col_eventName.MinimumWidth = 12;
         col_eventName.Name = "col_eventName";
         col_eventName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
         // 
@@ -608,6 +616,7 @@ partial class FormMain
         // 
         col_bonusScore.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
         col_bonusScore.HeaderText = "Điểm cộng rèn luyện";
+        col_bonusScore.MinimumWidth = 12;
         col_bonusScore.Name = "col_bonusScore";
         col_bonusScore.Resizable = System.Windows.Forms.DataGridViewTriState.True;
         // 
@@ -615,12 +624,41 @@ partial class FormMain
         // 
         col_eventAddress.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
         col_eventAddress.HeaderText = "Địa điểm";
+        col_eventAddress.MinimumWidth = 12;
         col_eventAddress.Name = "col_eventAddress";
         col_eventAddress.Resizable = System.Windows.Forms.DataGridViewTriState.True;
         // 
+        // txt_eventAddress
+        // 
+        txt_eventAddress.Location = new System.Drawing.Point(315, 25);
+        txt_eventAddress.Name = "txt_eventAddress";
+        txt_eventAddress.Size = new System.Drawing.Size(434, 47);
+        txt_eventAddress.TabIndex = 8;
+        txt_eventAddress.TextChanged += txt_eventAddress_TextChanged;
+        // 
+        // tp_GNTG
+        // 
+        tp_GNTG.Location = new System.Drawing.Point(10, 58);
+        tp_GNTG.Name = "tp_GNTG";
+        tp_GNTG.Padding = new System.Windows.Forms.Padding(3);
+        tp_GNTG.Size = new System.Drawing.Size(2097, 1412);
+        tp_GNTG.TabIndex = 2;
+        tp_GNTG.Text = "Điểm danh & Ghi nhận tham gia";
+        tp_GNTG.UseVisualStyleBackColor = true;
+        // 
+        // tp_TH
+        // 
+        tp_TH.Location = new System.Drawing.Point(10, 58);
+        tp_TH.Name = "tp_TH";
+        tp_TH.Padding = new System.Windows.Forms.Padding(3);
+        tp_TH.Size = new System.Drawing.Size(2097, 1412);
+        tp_TH.TabIndex = 3;
+        tp_TH.Text = "Tổng hợp & Tính điểm rèn luyện";
+        tp_TH.UseVisualStyleBackColor = true;
+        // 
         // FormMain
         // 
-        AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+        AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(2116, 1421);
         Controls.Add(QLDH);
@@ -639,10 +677,19 @@ partial class FormMain
         groupBox2.PerformLayout();
         groupBox1.ResumeLayout(false);
         tp_QLSK.ResumeLayout(false);
-        tp_QLSK.PerformLayout();
+        groupBox8.ResumeLayout(false);
+        groupBox8.PerformLayout();
+        groupBox7.ResumeLayout(false);
+        groupBox7.PerformLayout();
+        groupBox6.ResumeLayout(false);
+        groupBox6.PerformLayout();
         ((System.ComponentModel.ISupportInitialize)dgv_event).EndInit();
         ResumeLayout(false);
     }
+
+    private System.Windows.Forms.GroupBox groupBox6;
+    private System.Windows.Forms.GroupBox groupBox7;
+    private System.Windows.Forms.GroupBox groupBox8;
 
     private System.Windows.Forms.DataGridViewTextBoxColumn col_eventID;
     private System.Windows.Forms.DataGridViewTextBoxColumn col_eventName;

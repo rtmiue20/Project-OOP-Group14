@@ -7,7 +7,7 @@ namespace QLDH.Service
 {
     public class EventManager : BaseManager<UnionEvent>
     {
-        private string connectionString = "Server=localhost;Port=3306;Database=QLDH_DB;User ID=root;Password=your_password;Charset=utf8mb4;";
+        private string connectionString = "Server=localhost;Port=3306;Database=QLDH;User ID=root;Password=049206;Charset=utf8mb4;";
 
         // 1. C - Create
         public override void Add(UnionEvent item)
@@ -16,7 +16,7 @@ namespace QLDH.Service
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = @"INSERT INTO SuKien (EventId, EventName, BonusScore) 
+                string query = @"INSERT INTO unionevents (EventId, EventName, BonusScore) 
                                  VALUES (@EventId, @EventName, @BonusScore)";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
@@ -27,8 +27,12 @@ namespace QLDH.Service
                 }
             }
         }
+
         // 2. R - Read
-        protected override string GetId(UnionEvent item) => item.EventId;
+        protected override string GetId(UnionEvent item)
+        {
+            return item.EventId;
+        }
 
         public override List<UnionEvent> GetAll()
         {
@@ -36,7 +40,7 @@ namespace QLDH.Service
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT EventId, EventName, BonusScore FROM SuKien";
+                string query = "SELECT EventId, EventName, BonusScore FROM unionevents";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 using (MySqlDataReader r = cmd.ExecuteReader())
                 {
@@ -61,7 +65,7 @@ namespace QLDH.Service
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = @"UPDATE SuKien SET EventName=@EventName, BonusScore=@BonusScore 
+                string query = @"UPDATE unionevents SET EventName=@EventName, BonusScore=@BonusScore 
                                  WHERE EventId=@EventId";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
@@ -80,7 +84,7 @@ namespace QLDH.Service
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "DELETE FROM SuKien WHERE EventId=@EventId";
+                string query = "DELETE FROM unionevents WHERE EventId=@EventId";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@EventId", id);
@@ -88,11 +92,11 @@ namespace QLDH.Service
                 }
             }
         }
+
         // Search function
         public override List<UnionEvent> Search(string keyword)
         {
             List<UnionEvent> result = new List<UnionEvent>();
-            // Đã thay thế 'var' thành kiểu dữ liệu tường minh 'UnionEvent' theo yêu cầu số 5
             foreach (UnionEvent ev in GetAll())
             {
                 if (ev.EventId.Contains(keyword) || ev.EventName.Contains(keyword))
@@ -100,9 +104,11 @@ namespace QLDH.Service
             }
             return result;
         }
+
         // =========================================================================
         // LOGIC PHỨC TẠP: CRUD CHO LỊCH SỬ THAM GIA & ĐỒNG BỘ TÍNH ĐIỂM RÈN LUYỆN
         // =========================================================================
+
         // Đọc lịch sử tham gia của một sự kiện cụ thể
         public List<ParticipationHistory> GetParticipantsByEvent(string eventId)
         {
@@ -110,7 +116,7 @@ namespace QLDH.Service
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT StudentId, EventId, CheckInTime, Status FROM LichSuThamGia WHERE EventId = @EventId";
+                string query = "SELECT StudentId, EventId, CheckInTime, Status FROM participationhistory WHERE EventId = @EventId";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@EventId", eventId);
@@ -132,115 +138,136 @@ namespace QLDH.Service
             return list;
         }
 
-        // Đăng ký tham gia sự kiện và cộng điểm rèn luyện dựa trên mối quan hệ Đa hình (Polymorphism)
+        // Đăng ký tham gia sự kiện và cộng điểm rèn luyện (Đa hình - Polymorphism)
         public void AddParticipation(ParticipationHistory history, double bonusScore)
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                // 1. Thêm vào bảng LichSuThamGia
-                string insertQuery = @"INSERT INTO LichSuThamGia (StudentId, EventId, CheckInTime, Status) 
-                                       VALUES (@StudentId, @EventId, @CheckInTime, @Status)";
-                using (MySqlCommand cmd = new MySqlCommand(insertQuery, conn))
+                using (MySqlTransaction tx = conn.BeginTransaction())
                 {
-                    cmd.Parameters.AddWithValue("@StudentId", history.StudentIdReference);
-                    cmd.Parameters.AddWithValue("@EventId", history.EventIdReference);
-                    cmd.Parameters.AddWithValue("@CheckInTime", history.CheckInTime);
-                    cmd.Parameters.AddWithValue("@Status", history.Status);
-                    cmd.ExecuteNonQuery();
-                }
-
-                // 2. Xác định vai trò đối tượng để cộng điểm (Đa hình)
-                string typeQuery = "SELECT LoaiNhanSu, TrainingScore FROM NhanSu WHERE Id = @Id";
-                string loaiNhanSu = "";
-                double curScore = 0;
-
-                using (MySqlCommand cmd = new MySqlCommand(typeQuery, conn))
-                {
-                    cmd.Parameters.AddWithValue("@Id", history.StudentIdReference);
-                    using (MySqlDataReader r = cmd.ExecuteReader())
+                    // 1. Thêm vào bảng participationhistory
+                    string insertQuery = @"INSERT INTO participationhistory (StudentId, EventId, CheckInTime, Status) 
+                                           VALUES (@StudentId, @EventId, @CheckInTime, @Status)";
+                    using (MySqlCommand cmd = new MySqlCommand(insertQuery, conn, tx))
                     {
-                        if (r.Read())
+                        cmd.Parameters.AddWithValue("@StudentId", history.StudentIdReference);
+                        cmd.Parameters.AddWithValue("@EventId", history.EventIdReference);
+                        cmd.Parameters.AddWithValue("@CheckInTime", history.CheckInTime);
+                        cmd.Parameters.AddWithValue("@Status", history.Status);
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    // 2. Lấy điểm hiện tại và kiểm tra có phải Cán bộ Đoàn không
+                    string typeQuery = @"SELECT s.TrainingScore, 
+                                                CASE WHEN o.StudentId IS NOT NULL THEN 'Cán bộ Đoàn' ELSE 'Sinh viên' END AS LoaiNhanSu
+                                         FROM students s
+                                         LEFT JOIN officials o ON s.StudentId = o.StudentId
+                                         WHERE s.StudentId = @Id";
+                    string loaiNhanSu = "";
+                    double curScore = 0;
+
+                    using (MySqlCommand cmd = new MySqlCommand(typeQuery, conn, tx))
+                    {
+                        cmd.Parameters.AddWithValue("@Id", history.StudentIdReference);
+                        using (MySqlDataReader r = cmd.ExecuteReader())
                         {
-                            loaiNhanSu = r["LoaiNhanSu"].ToString();
-                            curScore = Convert.ToDouble(r["TrainingScore"]);
+                            if (r.Read())
+                            {
+                                loaiNhanSu = r["LoaiNhanSu"].ToString();
+                                curScore = Convert.ToDouble(r["TrainingScore"]);
+                            }
                         }
                     }
-                }
 
-                // Triển khai logic hướng đối tượng thông qua thực thể thực tế
-                UnionEvent dummyEvent = new UnionEvent { BonusScore = bonusScore };
-                double newScore = curScore;
+                    // 3. Tính điểm mới theo Đa hình (Polymorphism)
+                    UnionEvent dummyEvent = new UnionEvent { BonusScore = bonusScore };
+                    double newScore = curScore;
 
-                if (loaiNhanSu == "Sinh viên")
-                {
-                    Student st = new Student { TrainingScore = curScore };
-                    st.CalculateScore(dummyEvent);
-                    newScore = st.TrainingScore;
-                }
-                else if (loaiNhanSu == "Cán bộ Đoàn")
-                {
-                    Official off = new Official { TrainingScore = curScore };
-                    off.CalculateScore(dummyEvent); // Được nhân hệ số 1.2 nhờ cơ chế ghi đè (Override)
-                    newScore = off.TrainingScore;
-                }
+                    if (loaiNhanSu == "Sinh viên")
+                    {
+                        Student st = new Student { TrainingScore = curScore };
+                        st.CalculateScore(dummyEvent);
+                        newScore = st.TrainingScore;
+                    }
+                    else if (loaiNhanSu == "Cán bộ Đoàn")
+                    {
+                        Official off = new Official { TrainingScore = curScore };
+                        off.CalculateScore(dummyEvent); // Nhân hệ số 1.2 nhờ Override
+                        newScore = off.TrainingScore;
+                    }
 
-                // 3. Cập nhật điểm rèn luyện mới vào cơ sở dữ liệu
-                string updateScoreQuery = "UPDATE NhanSu SET TrainingScore = @NewScore WHERE Id = @Id";
-                using (MySqlCommand cmd = new MySqlCommand(updateScoreQuery, conn))
-                {
-                    cmd.Parameters.AddWithValue("@NewScore", newScore);
-                    cmd.Parameters.AddWithValue("@Id", history.StudentIdReference);
-                    cmd.ExecuteNonQuery();
+                    // 4. Cập nhật điểm rèn luyện
+                    string updateScoreQuery = "UPDATE students SET TrainingScore = @NewScore WHERE StudentId = @Id";
+                    using (MySqlCommand cmd = new MySqlCommand(updateScoreQuery, conn, tx))
+                    {
+                        cmd.Parameters.AddWithValue("@NewScore", newScore);
+                        cmd.Parameters.AddWithValue("@Id", history.StudentIdReference);
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    tx.Commit();
                 }
             }
         }
-        // Hủy đăng ký tham gia sự kiện (Trừ lại điểm rèn luyện tương ứng)
+
+        // Hủy đăng ký tham gia sự kiện (Trừ lại điểm rèn luyện)
         public void DeleteParticipation(string studentId, string eventId, double bonusScore)
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                // 1. Xóa bản ghi lịch sử tham gia
-                string deleteQuery = "DELETE FROM LichSuThamGia WHERE StudentId=@StudentId AND EventId=@EventId";
-                using (MySqlCommand cmd = new MySqlCommand(deleteQuery, conn))
+                using (MySqlTransaction tx = conn.BeginTransaction())
                 {
-                    cmd.Parameters.AddWithValue("@StudentId", studentId);
-                    cmd.Parameters.AddWithValue("@EventId", eventId);
-                    cmd.ExecuteNonQuery();
-                }
-
-                // 2. Kiểm tra lại thông tin đối tượng
-                string typeQuery = "SELECT LoaiNhanSu, TrainingScore FROM NhanSu WHERE Id = @Id";
-                string loaiNhanSu = "";
-                double curScore = 0;
-
-                using (MySqlCommand cmd = new MySqlCommand(typeQuery, conn))
-                {
-                    cmd.Parameters.AddWithValue("@Id", studentId);
-                    using (MySqlDataReader r = cmd.ExecuteReader())
+                    // 1. Xóa bản ghi lịch sử tham gia
+                    string deleteQuery = "DELETE FROM participationhistory WHERE StudentId=@StudentId AND EventId=@EventId";
+                    using (MySqlCommand cmd = new MySqlCommand(deleteQuery, conn, tx))
                     {
-                        if (r.Read())
+                        cmd.Parameters.AddWithValue("@StudentId", studentId);
+                        cmd.Parameters.AddWithValue("@EventId", eventId);
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    // 2. Lấy thông tin điểm và loại nhân sự
+                    string typeQuery = @"SELECT s.TrainingScore,
+                                                CASE WHEN o.StudentId IS NOT NULL THEN 'Cán bộ Đoàn' ELSE 'Sinh viên' END AS LoaiNhanSu
+                                         FROM students s
+                                         LEFT JOIN officials o ON s.StudentId = o.StudentId
+                                         WHERE s.StudentId = @Id";
+                    string loaiNhanSu = "";
+                    double curScore = 0;
+
+                    using (MySqlCommand cmd = new MySqlCommand(typeQuery, conn, tx))
+                    {
+                        cmd.Parameters.AddWithValue("@Id", studentId);
+                        using (MySqlDataReader r = cmd.ExecuteReader())
                         {
-                            loaiNhanSu = r["LoaiNhanSu"].ToString();
-                            curScore = Convert.ToDouble(r["TrainingScore"]);
+                            if (r.Read())
+                            {
+                                loaiNhanSu = r["LoaiNhanSu"].ToString();
+                                curScore = Convert.ToDouble(r["TrainingScore"]);
+                            }
                         }
                     }
-                }
-                // Hoàn tác điểm dựa trên cách tính của từng nhóm thực thể
-                double standardDeduction = bonusScore;
-                if (loaiNhanSu == "Cán bộ Đoàn")
-                {
-                    standardDeduction = bonusScore * 1.2;
-                }
-                double newScore = Math.Max(0, curScore - standardDeduction);
-                // 3. Cập nhật lại điểm sau khi hoàn tác
-                string updateScoreQuery = "UPDATE NhanSu SET TrainingScore = @NewScore WHERE Id = @Id";
-                using (MySqlCommand cmd = new MySqlCommand(updateScoreQuery, conn))
-                {
-                    cmd.Parameters.AddWithValue("@NewScore", newScore);
-                    cmd.Parameters.AddWithValue("@Id", studentId);
-                    cmd.ExecuteNonQuery();
+
+                    // 3. Hoàn tác điểm theo loại nhân sự
+                    double standardDeduction = bonusScore;
+                    if (loaiNhanSu == "Cán bộ Đoàn")
+                    {
+                        standardDeduction = bonusScore * 1.2;
+                    }
+                    double newScore = Math.Max(0, curScore - standardDeduction);
+
+                    // 4. Cập nhật lại điểm
+                    string updateScoreQuery = "UPDATE students SET TrainingScore = @NewScore WHERE StudentId = @Id";
+                    using (MySqlCommand cmd = new MySqlCommand(updateScoreQuery, conn, tx))
+                    {
+                        cmd.Parameters.AddWithValue("@NewScore", newScore);
+                        cmd.Parameters.AddWithValue("@Id", studentId);
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    tx.Commit();
                 }
             }
         }
