@@ -12,7 +12,7 @@ public partial class FormMain : Form
     private readonly StudentManager _studentManager = new();
     private readonly OfficialManager _officialManager = new();
     private readonly LecturerManager _lecturerManager = new();
-
+    private EventManager _eventManager = new EventManager();
     public FormMain()
     {
         InitializeComponent();
@@ -286,5 +286,106 @@ public partial class FormMain : Form
     private void txt_recordCode_TextChanged(object sender, EventArgs e)
     {
         throw new System.NotImplementedException();
+    }
+
+    private void btn_eventAdd_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            UnionEvent newEvent = new UnionEvent
+            {
+                EventId = txt_eventID.Text,
+                EventName = txt_eventName.Text,
+                BonusScore = double.Parse(txt_bonusScore.Text),
+                Location = txt_eventAddress.Text // Giả sử class UnionEvent của bạn đã thêm thuộc tính Location
+            };
+
+            _eventManager.Add(newEvent);
+
+            MessageBox.Show("Thêm thành công!");
+            LoadEventData(); // Hàm load lại dgv_event
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show($"Lỗi: {ex.Message}");
+        }
+    }
+
+    private void LoadEventData()
+    {
+        try
+        {
+            // 1. Gỡ data cũ
+            dgv_event.DataSource = null;
+        
+            // 2. Lấy data mới từ EventManager nạp vào DataGridView
+            dgv_event.DataSource = _eventManager.GetAll(); 
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show($"Lỗi khi tải dữ liệu sự kiện: {ex.Message}");
+        }
+    }
+
+    private void btn_eventUpdate_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            UnionEvent updateEvent = new UnionEvent
+            {
+                EventId = txt_eventID.Text,
+                EventName = txt_eventName.Text,
+                BonusScore = double.Parse(txt_bonusScore.Text),
+                Location = txt_eventAddress.Text 
+            };
+
+            _eventManager.Update(updateEvent);
+
+            MessageBox.Show("Cập nhật thành công!");
+            LoadEventData();
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show($"Lỗi: {ex.Message}");
+        }
+    }
+
+    private void btn_eventDelete_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            string id = txt_eventID.Text;
+
+            if (string.IsNullOrEmpty(id))
+            {
+                MessageBox.Show("Vui lòng chọn hoặc nhập mã sự kiện để xóa!");
+                return;
+            }
+
+            _eventManager.Delete(id);
+
+            MessageBox.Show("Xóa thành công!");
+            LoadEventData();
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show($"Lỗi: {ex.Message}");
+        }
+    }
+
+    private void btn_eventSearch_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            string keyword = txt_eventSearch.Text;
+        
+            dgv_event.DataSource = _eventManager.Search(keyword);
+        
+            // FormatDataGridViewEvent(); // Gọi hàm format bảng (nếu có)
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show($"Lỗi khi tìm kiếm: {ex.Message}");
+        }
     }
 }
