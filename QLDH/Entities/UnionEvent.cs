@@ -12,13 +12,12 @@ namespace QLDH.Entities
         private string eventName;
         private double bonusScore;
         private string address;
-        private string location { get; set; }
 
         public string EventId { get { return eventId; } set { eventId = value; } }
         public string EventName { get { return eventName; } set { eventName = value; } }
         public double BonusScore { get { return bonusScore; } set { bonusScore = value; } }
         public string Address { get { return address; } set { address = value; } }
-        public string Location { get { return location; } set { location = value; } }
+        
         public UnionEvent() { }
 
         public List<ParticipationHistory> Participants { get; set; } = new List<ParticipationHistory>();
