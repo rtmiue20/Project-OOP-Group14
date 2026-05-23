@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Windows.Forms;
 using QLDH.Entities;
 using QLDH.Service;
@@ -270,5 +271,20 @@ public partial class FormMain : Form
 
     private void txt_eventAddress_TextChanged(object sender, EventArgs e)
     {
+    }
+
+    private void tp_TH_Click(object sender, EventArgs e)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    private void txt_recordCode_TextChanged(object sender, EventArgs e)
+    {
+        throw new System.NotImplementedException();
     }
 }
