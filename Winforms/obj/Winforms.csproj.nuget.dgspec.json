@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\Winforms\\Winforms.csproj": {}
+    "C:\\Users\\ADMIN\\RiderProjects\\Project-OOP-Group14\\Winforms\\Winforms.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\QLDH\\QLDH.csproj": {
+    "C:\\Users\\ADMIN\\RiderProjects\\Project-OOP-Group14\\QLDH\\QLDH.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\QLDH\\QLDH.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\RiderProjects\\Project-OOP-Group14\\QLDH\\QLDH.csproj",
         "projectName": "QLDH",
-        "projectPath": "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\QLDH\\QLDH.csproj",
-        "packagesPath": "C:\\Users\\MinhTrieu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\QLDH\\obj\\",
+        "projectPath": "C:\\Users\\ADMIN\\RiderProjects\\Project-OOP-Group14\\QLDH\\QLDH.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ADMIN\\RiderProjects\\Project-OOP-Group14\\QLDH\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "E:\\study\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MinhTrieu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -76,24 +75,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\Winforms\\Winforms.csproj": {
+    "C:\\Users\\ADMIN\\RiderProjects\\Project-OOP-Group14\\Winforms\\Winforms.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\Winforms\\Winforms.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\RiderProjects\\Project-OOP-Group14\\Winforms\\Winforms.csproj",
         "projectName": "Winforms",
-        "projectPath": "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\Winforms\\Winforms.csproj",
-        "packagesPath": "C:\\Users\\MinhTrieu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\Winforms\\obj\\",
+        "projectPath": "C:\\Users\\ADMIN\\RiderProjects\\Project-OOP-Group14\\Winforms\\Winforms.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ADMIN\\RiderProjects\\Project-OOP-Group14\\Winforms\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "E:\\study\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MinhTrieu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -102,15 +101,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0-windows7.0": {
             "targetAlias": "net9.0-windows",
             "projectReferences": {
-              "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\QLDH\\QLDH.csproj": {
-                "projectPath": "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\QLDH\\QLDH.csproj"
+              "C:\\Users\\ADMIN\\RiderProjects\\Project-OOP-Group14\\QLDH\\QLDH.csproj": {
+                "projectPath": "C:\\Users\\ADMIN\\RiderProjects\\Project-OOP-Group14\\QLDH\\QLDH.csproj"
               }
             }
           }
@@ -125,7 +123,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net9.0-windows7.0": {
@@ -149,7 +147,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
