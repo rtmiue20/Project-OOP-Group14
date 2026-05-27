@@ -14,8 +14,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Update="FormMain.Designer.cs">
-        <DependentUpon>FormMain.cs</DependentUpon>
+      <Compile Update="InterfaceDemo.cs">
+        <SubType>Form</SubType>
       </Compile>
     </ItemGroup>
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MinhTrieu\\RiderProjects\\Quản-lý-đoàn-hội\\Winforms\\Winforms.csproj": {}
+    "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\Winforms\\Winforms.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MinhTrieu\\RiderProjects\\Quản-lý-đoàn-hội\\QLDH\\QLDH.csproj": {
+    "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\QLDH\\QLDH.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MinhTrieu\\RiderProjects\\Quản-lý-đoàn-hội\\QLDH\\QLDH.csproj",
+        "projectUniqueName": "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\QLDH\\QLDH.csproj",
         "projectName": "QLDH",
-        "projectPath": "C:\\Users\\MinhTrieu\\RiderProjects\\Quản-lý-đoàn-hội\\QLDH\\QLDH.csproj",
+        "projectPath": "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\QLDH\\QLDH.csproj",
         "packagesPath": "C:\\Users\\MinhTrieu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MinhTrieu\\RiderProjects\\Quản-lý-đoàn-hội\\QLDH\\obj\\",
+        "outputPath": "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\QLDH\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -80,14 +80,14 @@
         }
       }
     },
-    "C:\\Users\\MinhTrieu\\RiderProjects\\Quản-lý-đoàn-hội\\Winforms\\Winforms.csproj": {
+    "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\Winforms\\Winforms.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MinhTrieu\\RiderProjects\\Quản-lý-đoàn-hội\\Winforms\\Winforms.csproj",
+        "projectUniqueName": "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\Winforms\\Winforms.csproj",
         "projectName": "Winforms",
-        "projectPath": "C:\\Users\\MinhTrieu\\RiderProjects\\Quản-lý-đoàn-hội\\Winforms\\Winforms.csproj",
+        "projectPath": "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\Winforms\\Winforms.csproj",
         "packagesPath": "C:\\Users\\MinhTrieu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MinhTrieu\\RiderProjects\\Quản-lý-đoàn-hội\\Winforms\\obj\\",
+        "outputPath": "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\Winforms\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -109,8 +109,8 @@
           "net9.0-windows7.0": {
             "targetAlias": "net9.0-windows",
             "projectReferences": {
-              "C:\\Users\\MinhTrieu\\RiderProjects\\Quản-lý-đoàn-hội\\QLDH\\QLDH.csproj": {
-                "projectPath": "C:\\Users\\MinhTrieu\\RiderProjects\\Quản-lý-đoàn-hội\\QLDH\\QLDH.csproj"
+              "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\QLDH\\QLDH.csproj": {
+                "projectPath": "C:\\Users\\MinhTrieu\\RiderProjects\\Project-OOP-Group14\\QLDH\\QLDH.csproj"
               }
             }
           }

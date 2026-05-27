@@ -1,5 +1,4 @@
-﻿
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace QLDH.Service
 {
@@ -8,7 +7,7 @@ namespace QLDH.Service
         void Add(T item);
         void Delete(string id);
         void Update(T item);
-        T? GetById(string id);
+        T GetById(string id);
         List<T> GetAll();
         List<T> Search(string keyword);
     }
