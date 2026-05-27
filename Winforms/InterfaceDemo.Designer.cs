@@ -31,82 +31,82 @@ partial class InterfaceDemo
     /// </summary>
     private void InitializeComponent()
     {
-        tabControl1 = new System.Windows.Forms.TabControl();
-        tabPage1 = new System.Windows.Forms.TabPage();
-        tabPage2 = new System.Windows.Forms.TabPage();
-        tabPage3 = new System.Windows.Forms.TabPage();
-        tabPage4 = new System.Windows.Forms.TabPage();
-        tabControl1.SuspendLayout();
+        tc_demo = new System.Windows.Forms.TabControl();
+        tp_QLNS = new System.Windows.Forms.TabPage();
+        tp_QLSK = new System.Windows.Forms.TabPage();
+        tp_GNTG = new System.Windows.Forms.TabPage();
+        tp_TH = new System.Windows.Forms.TabPage();
+        tc_demo.SuspendLayout();
         SuspendLayout();
         // 
-        // tabControl1
+        // tc_demo
         // 
-        tabControl1.Controls.Add(tabPage1);
-        tabControl1.Controls.Add(tabPage2);
-        tabControl1.Controls.Add(tabPage3);
-        tabControl1.Controls.Add(tabPage4);
-        tabControl1.Location = new System.Drawing.Point(1, 2);
-        tabControl1.Name = "tabControl1";
-        tabControl1.SelectedIndex = 0;
-        tabControl1.Size = new System.Drawing.Size(1908, 1141);
-        tabControl1.TabIndex = 0;
+        tc_demo.Controls.Add(tp_QLNS);
+        tc_demo.Controls.Add(tp_QLSK);
+        tc_demo.Controls.Add(tp_GNTG);
+        tc_demo.Controls.Add(tp_TH);
+        tc_demo.Location = new System.Drawing.Point(1, 2);
+        tc_demo.Name = "tc_demo";
+        tc_demo.SelectedIndex = 0;
+        tc_demo.Size = new System.Drawing.Size(1908, 1141);
+        tc_demo.TabIndex = 0;
         // 
-        // tabPage1
+        // tp_QLNS
         // 
-        tabPage1.Location = new System.Drawing.Point(10, 58);
-        tabPage1.Name = "tabPage1";
-        tabPage1.Padding = new System.Windows.Forms.Padding(3);
-        tabPage1.Size = new System.Drawing.Size(1888, 1073);
-        tabPage1.TabIndex = 0;
-        tabPage1.Text = "tabPage1";
-        tabPage1.UseVisualStyleBackColor = true;
+        tp_QLNS.Location = new System.Drawing.Point(10, 58);
+        tp_QLNS.Name = "tp_QLNS";
+        tp_QLNS.Padding = new System.Windows.Forms.Padding(3);
+        tp_QLNS.Size = new System.Drawing.Size(1888, 1073);
+        tp_QLNS.TabIndex = 0;
+        tp_QLNS.Text = "Quản lý Nhân sự";
+        tp_QLNS.UseVisualStyleBackColor = true;
         // 
-        // tabPage2
+        // tp_QLSK
         // 
-        tabPage2.Location = new System.Drawing.Point(10, 58);
-        tabPage2.Name = "tabPage2";
-        tabPage2.Padding = new System.Windows.Forms.Padding(3);
-        tabPage2.Size = new System.Drawing.Size(1888, 1073);
-        tabPage2.TabIndex = 1;
-        tabPage2.Text = "tabPage2";
-        tabPage2.UseVisualStyleBackColor = true;
+        tp_QLSK.Location = new System.Drawing.Point(10, 58);
+        tp_QLSK.Name = "tp_QLSK";
+        tp_QLSK.Padding = new System.Windows.Forms.Padding(3);
+        tp_QLSK.Size = new System.Drawing.Size(1888, 1073);
+        tp_QLSK.TabIndex = 1;
+        tp_QLSK.Text = "Quản lý Sự kiện Đoàn Hội";
+        tp_QLSK.UseVisualStyleBackColor = true;
         // 
-        // tabPage3
+        // tp_GNTG
         // 
-        tabPage3.Location = new System.Drawing.Point(10, 58);
-        tabPage3.Name = "tabPage3";
-        tabPage3.Padding = new System.Windows.Forms.Padding(3);
-        tabPage3.Size = new System.Drawing.Size(1888, 1073);
-        tabPage3.TabIndex = 2;
-        tabPage3.Text = "tabPage3";
-        tabPage3.UseVisualStyleBackColor = true;
+        tp_GNTG.Location = new System.Drawing.Point(10, 58);
+        tp_GNTG.Name = "tp_GNTG";
+        tp_GNTG.Padding = new System.Windows.Forms.Padding(3);
+        tp_GNTG.Size = new System.Drawing.Size(1888, 1073);
+        tp_GNTG.TabIndex = 2;
+        tp_GNTG.Text = "Điểm danh & Ghi nhận tham gia";
+        tp_GNTG.UseVisualStyleBackColor = true;
         // 
-        // tabPage4
+        // tp_TH
         // 
-        tabPage4.Location = new System.Drawing.Point(10, 58);
-        tabPage4.Name = "tabPage4";
-        tabPage4.Padding = new System.Windows.Forms.Padding(3);
-        tabPage4.Size = new System.Drawing.Size(1888, 1073);
-        tabPage4.TabIndex = 3;
-        tabPage4.Text = "tabPage4";
-        tabPage4.UseVisualStyleBackColor = true;
+        tp_TH.Location = new System.Drawing.Point(10, 58);
+        tp_TH.Name = "tp_TH";
+        tp_TH.Padding = new System.Windows.Forms.Padding(3);
+        tp_TH.Size = new System.Drawing.Size(1888, 1073);
+        tp_TH.TabIndex = 3;
+        tp_TH.Text = "Tổng hợp & Tính điểm rèn luyện";
+        tp_TH.UseVisualStyleBackColor = true;
         // 
         // InterfaceDemo
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(1913, 1148);
-        Controls.Add(tabControl1);
-        Text = "InterfaceDemo";
-        tabControl1.ResumeLayout(false);
+        Controls.Add(tc_demo);
+        Text = "Hệ thống Quản lý Đoàn Hội - UEH";
+        tc_demo.ResumeLayout(false);
         ResumeLayout(false);
     }
 
-    private System.Windows.Forms.TabControl tabControl1;
-    private System.Windows.Forms.TabPage tabPage1;
-    private System.Windows.Forms.TabPage tabPage2;
-    private System.Windows.Forms.TabPage tabPage3;
-    private System.Windows.Forms.TabPage tabPage4;
+    private System.Windows.Forms.TabControl tc_demo;
+    private System.Windows.Forms.TabPage tp_QLNS;
+    private System.Windows.Forms.TabPage tp_QLSK;
+    private System.Windows.Forms.TabPage tp_GNTG;
+    private System.Windows.Forms.TabPage tp_TH;
 
     #endregion
 }
