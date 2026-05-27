@@ -23,7 +23,7 @@ namespace QLDH.Service
                     cmd.Parameters.AddWithValue("@EventId", item.EventId);
                     cmd.Parameters.AddWithValue("@EventName", item.EventName);
                     cmd.Parameters.AddWithValue("@BonusScore", item.BonusScore);
-                    //cmd.Parameters.AddWithValue("@Address", item.Address);
+                    cmd.Parameters.AddWithValue("@Address", item.Address ?? "");
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -52,7 +52,7 @@ namespace QLDH.Service
                             EventId = r["EventId"].ToString(),
                             EventName = r["EventName"].ToString(),
                             BonusScore = Convert.ToDouble(r["BonusScore"]),
-                            //Address = r["Address"]?.ToString() ?? ""
+                            Address = r["Address"]?.ToString() ?? ""
                         });
                     }
                 }
@@ -74,7 +74,7 @@ namespace QLDH.Service
                     cmd.Parameters.AddWithValue("@EventId", item.EventId);
                     cmd.Parameters.AddWithValue("@EventName", item.EventName);
                     cmd.Parameters.AddWithValue("@BonusScore", item.BonusScore);
-                   
+                    cmd.Parameters.AddWithValue("@Address", item.Address ?? "");
                     cmd.ExecuteNonQuery();
                 }
             }
