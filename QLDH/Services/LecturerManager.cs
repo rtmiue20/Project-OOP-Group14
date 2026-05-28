@@ -1,39 +1,58 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using QLDH.Data;
 using QLDH.Entities;
-
 
 namespace QLDH.Service
 {
     public class LecturerManager : BaseManager<Lecturer>
     {
-        public LecturerManager() : base("lecturers.dat")
+        private const string FileName = "lecturers.json";
+
+        public LecturerManager()
         {
+            items = FileHelper.Load<Lecturer>(FileName);
         }
 
-
-        public override List<Lecturer> GetAll()
+        // 1. C - Create
+        public override void Add(Lecturer item)
         {
-            LoadFromFile();
-            return this.items;
+            base.Add(item);
+            FileHelper.Save<Lecturer>(FileName, items);
         }
 
-
+        // 2. R - Read
         protected override string GetId(Lecturer item)
         {
             return item.LecturerId;
         }
 
+        public override List<Lecturer> GetAll()
+        {
+            return items;
+        }
 
+        // 3. U - Update
+        public override void Update(Lecturer item)
+        {
+            base.Update(item);
+            FileHelper.Save<Lecturer>(FileName, items);
+        }
+
+        // 4. D - Delete
+        public override void Delete(string id)
+        {
+            base.Delete(id);
+            FileHelper.Save<Lecturer>(FileName, items);
+        }
+
+        // Search function
         public override List<Lecturer> Search(string keyword)
         {
             List<Lecturer> result = new List<Lecturer>();
-            foreach (Lecturer lec in GetAll())
+            foreach (Lecturer lec in items)
             {
                 if (lec.LecturerId.Contains(keyword) || lec.FullName.Contains(keyword) || lec.Department.Contains(keyword))
-                {
                     result.Add(lec);
-                }
             }
             return result;
         }

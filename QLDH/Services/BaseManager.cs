@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
+using System.Text.Json;
 
 namespace QLDH.Service
 {
@@ -10,47 +10,51 @@ namespace QLDH.Service
         protected List<T> items;
         protected string filePath;
 
+        protected BaseManager()
+        {
+            this.items = new List<T>();
+            this.filePath = string.Empty;
+        }
+
         public BaseManager(string filePath)
         {
             this.items = new List<T>();
             this.filePath = filePath;
-            LoadFromFile(); // Tự động load dữ liệu lên khi khởi tạo manager
+            if (!string.IsNullOrEmpty(filePath))
+            {
+                LoadFromFile();
+            }
         }
 
-        // Kỹ thuật Serialization: Ghi danh sách đối tượng ra file nhị phân (.dat)
+        // Kỹ thuật Serialization: Ghi danh sách đối tượng ra file JSON
         protected void SaveToFile()
         {
-            FileStream fs = null;
             try
             {
-                fs = new FileStream(filePath, FileMode.Create, FileAccess.Write);
-                BinaryFormatter formatter = new BinaryFormatter();
-                formatter.Serialize(fs, items);
+                var options = new JsonSerializerOptions { WriteIndented = true };
+                string jsonString = JsonSerializer.Serialize(items, options);
+                File.WriteAllText(filePath, jsonString);
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Loi luu file: " + ex.Message);
             }
-            finally
-            {
-                if (fs != null)
-                {
-                    fs.Close(); // Đóng stream để giải phóng tài nguyên hệ thống
-                }
-            }
         }
 
-        // Kỹ thuật Deserialization: Đọc ngược file nhị phân thành danh sách đối tượng C#
+        // Kỹ thuật Deserialization: Đọc ngược file JSON thành danh sách đối tượng C#
         protected void LoadFromFile()
         {
             if (File.Exists(filePath))
             {
-                FileStream fs = null;
                 try
                 {
-                    fs = new FileStream(filePath, FileMode.Open, FileAccess.Read);
-                    BinaryFormatter formatter = new BinaryFormatter();
-                    List<T> deserialized = (List<T>)formatter.Deserialize(fs);
+                    string jsonString = File.ReadAllText(filePath);
+                    if (string.IsNullOrWhiteSpace(jsonString))
+                    {
+                        items = new List<T>();
+                        return;
+                    }
+                    List<T> deserialized = JsonSerializer.Deserialize<List<T>>(jsonString);
                     if (deserialized != null)
                     {
                         items = deserialized;
@@ -59,13 +63,6 @@ namespace QLDH.Service
                 catch (Exception ex)
                 {
                     this.items = new List<T>(); // Nếu file lỗi hoặc trống, tạo mới danh sách rỗng
-                }
-                finally
-                {
-                    if (fs != null)
-                    {
-                        fs.Close(); // Đóng luồng đọc file
-                    }
                 }
             }
             else

@@ -1,0 +1,60 @@
+using System.Collections.Generic;
+using QLDH.Data;
+using QLDH.Entities;
+
+namespace QLDH.Service
+{
+    public class FacultyManager : BaseManager<Faculty>
+    {
+        private const string FileName = "faculties.json";
+
+        public FacultyManager()
+        {
+            items = FileHelper.Load<Faculty>(FileName);
+        }
+
+        // 1. C - Create
+        public override void Add(Faculty item)
+        {
+            base.Add(item);
+            FileHelper.Save<Faculty>(FileName, items);
+        }
+
+        // 2. R - Read
+        protected override string GetId(Faculty item)
+        {
+            return item.FacultyId;
+        }
+
+        public override List<Faculty> GetAll()
+        {
+            return items;
+        }
+
+        // 3. U - Update
+        public override void Update(Faculty item)
+        {
+            base.Update(item);
+            FileHelper.Save<Faculty>(FileName, items);
+        }
+
+        // 4. D - Delete
+        public override void Delete(string id)
+        {
+            base.Delete(id);
+            FileHelper.Save<Faculty>(FileName, items);
+        }
+
+        // Search function
+        public override List<Faculty> Search(string keyword)
+        {
+            List<Faculty> result = new List<Faculty>();
+            foreach (Faculty fac in items)
+            {
+                if (fac.FacultyId.Contains(keyword) || fac.FacultyName.Contains(keyword) || fac.DeanName.Contains(keyword))
+                    result.Add(fac);
+            }
+            return result;
+        }
+    }
+}
