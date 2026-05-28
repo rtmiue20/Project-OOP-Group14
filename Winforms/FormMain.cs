@@ -7,6 +7,7 @@ public partial class FormMain : Form
 {
     private StudentManager studentManager = new StudentManager();
     private OfficialManager officialManager = new OfficialManager();
+    private RewardManager rewardManager = new RewardManager();
 
     public FormMain()
     {
@@ -21,12 +22,19 @@ public partial class FormMain : Form
         this.dgv_event.CellClick += new DataGridViewCellEventHandler(this.dgv_events_CellClick);
         this.btn_eventSearch.Click += new EventHandler(this.btn_eventSearch_Click);
         LoadClubData();
+        this.dgv_reward.CellClick += dgv_reward_CellClick;
+        this.btn_rewardAdd.Click += btn_rewardAdd_Click;
+        this.btn_rewardUpdate.Click += btn_rewardUpdate_Click;
+        this.btn_rewardDelete.Click += btn_rewardDelete_Click;
+        this.btn_rewardSearch.Click += btn_rewardSearch_Click;
     }
 
     private void Form1_Load(object sender, EventArgs e)
     {
         LoadStudentData(); // Tab 1 
         LoadEventData(); // Tab 2 
+        LoadStudentAndOfficialToComboBox(); // tab 4 
+        LoadRewardData(); // tab 4 
     }
 
     /* ========= TAB 1: Sinh viên & Đoàn viên ========*/
@@ -593,5 +601,211 @@ public partial class FormMain : Form
         txt_clubName.Text = "";
         dtp_foundedDate.Value = DateTime.Now;
         num_memberCount.Value = 0;
+    }
+    // tab 4 
+    // Class phụ trợ để chứa dữ liệu an toàn cho ComboBox
+    public class StudentComboItem
+    {
+        public string Id { get; set; }
+        public string DisplayText { get; set; }
+    }
+
+    // 1. Hàm gộp dữ liệu Sinh viên & Cán bộ vào ComboBox
+    private void LoadStudentAndOfficialToComboBox()
+    {
+        List<StudentComboItem> listNguoiNhan = new List<StudentComboItem>();
+
+        foreach (var sv in studentManager.GetAll())
+        {
+            listNguoiNhan.Add(new StudentComboItem
+            {
+                Id = sv.StudentId,
+                DisplayText = sv.StudentId + " - " + sv.FullName + " (SV)"
+            });
+        }
+
+        foreach (var cb in officialManager.GetAll())
+        {
+            listNguoiNhan.Add(new StudentComboItem
+            {
+                Id = cb.StudentId,
+                DisplayText = cb.StudentId + " - " + cb.FullName + " (CB)"
+            });
+        }
+
+        cbo_studentid.DataSource = listNguoiNhan;
+        cbo_studentid.DisplayMember = "DisplayText";
+        cbo_studentid.ValueMember = "Id";
+    }
+
+    // 2. LoadRewardData function
+    private void LoadRewardData()
+    {
+        List<Reward> danhSach = rewardManager.GetAll();
+
+        dgv_reward.DataSource = null;
+        dgv_reward.DataSource = danhSach;
+
+        if (dgv_reward.Columns["RewardId"] != null)
+            dgv_reward.Columns["RewardId"].HeaderText = "Mã KT";
+
+        if (dgv_reward.Columns["RewardName"] != null)
+            dgv_reward.Columns["RewardName"].HeaderText = "Tên Khen thưởng";
+
+        if (dgv_reward.Columns["IssueDate"] != null)
+            dgv_reward.Columns["IssueDate"].HeaderText = "Ngày QĐ";
+
+        if (dgv_reward.Columns["StudentId"] != null)
+            dgv_reward.Columns["StudentId"].HeaderText = "Mã SV/CB";
+    }
+
+    // 3. AddReward function
+    private void btn_rewardAdd_Click(object sender, EventArgs e)
+    {
+        string maKT = txt_rewardid.Text.Trim();
+        string tenKT = txt_rewardname.Text.Trim();
+
+        if (cbo_studentid.SelectedValue == null)
+        {
+            MessageBox.Show("Vui lòng chọn Sinh viên/Cán bộ nhận thưởng.", "Thông báo");
+            return;
+        }
+        string maSV = cbo_studentid.SelectedValue.ToString();
+
+        if (maKT == "" || tenKT == "")
+        {
+            MessageBox.Show("Vui lòng nhập đầy đủ Mã và Tên khen thưởng.", "Thông báo");
+            return;
+        }
+
+        if (rewardManager.GetById(maKT) != null)
+        {
+            MessageBox.Show("Mã Khen thưởng đã tồn tại.", "Lỗi");
+            return;
+        }
+
+        Reward newReward = new Reward
+        {
+            RewardId = maKT,
+            RewardName = tenKT,
+            IssueDate = dtp_issuedate.Value,
+            StudentId = maSV
+        };
+
+        rewardManager.Add(newReward);
+
+        MessageBox.Show("Thêm Khen thưởng thành công!", "Thành công");
+        ClearRewardForm();
+        LoadRewardData();
+    }
+
+    // 4. UpdateReward function
+    private void btn_rewardUpdate_Click(object sender, EventArgs e)
+    {
+        string maKT = txt_rewardid.Text.Trim();
+
+        if (maKT == "")
+        {
+            MessageBox.Show("Vui lòng chọn Khen thưởng để cập nhật.", "Thông báo");
+            return;
+        }
+
+        Reward r = rewardManager.GetById(maKT);
+
+        if (r == null)
+        {
+            MessageBox.Show("Không tìm thấy mã Khen thưởng này trong hệ thống.", "Lỗi");
+            return;
+        }
+
+        r.RewardName = txt_rewardname.Text.Trim();
+        r.IssueDate = dtp_issuedate.Value;
+        if (cbo_studentid.SelectedValue != null)
+        {
+            r.StudentId = cbo_studentid.SelectedValue.ToString();
+        }
+
+        rewardManager.Update(r);
+
+        MessageBox.Show("Cập nhật thành công!", "Thành công");
+        ClearRewardForm();
+        LoadRewardData();
+    }
+
+    // 5. DeleteReward function
+    private void btn_rewardDelete_Click(object sender, EventArgs e)
+    {
+        string maKT = txt_rewardid.Text.Trim();
+
+        if (maKT == "")
+        {
+            MessageBox.Show("Vui lòng chọn Khen thưởng để xóa.", "Thông báo");
+            return;
+        }
+
+        DialogResult confirm = MessageBox.Show(
+            "Bạn có chắc muốn xóa quyết định khen thưởng này?",
+            "Xác nhận",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Warning
+        );
+
+        if (confirm == DialogResult.Yes)
+        {
+            rewardManager.Delete(maKT);
+            MessageBox.Show("Xóa thành công!", "Thành công");
+            ClearRewardForm();
+            LoadRewardData();
+        }
+    }
+
+    // 6. SearchReward function
+    private void btn_rewardSearch_Click(object sender, EventArgs e)
+    {
+        string keyword = txt_rewardSearch.Text.Trim();
+        List<Reward> ketQua;
+
+        if (keyword == "")
+            ketQua = rewardManager.GetAll();
+        else
+            ketQua = rewardManager.Search(keyword);
+
+        dgv_reward.DataSource = null;
+        dgv_reward.DataSource = ketQua;
+
+        if (dgv_reward.Columns["RewardId"] != null) dgv_reward.Columns["RewardId"].HeaderText = "Mã KT";
+        if (dgv_reward.Columns["RewardName"] != null) dgv_reward.Columns["RewardName"].HeaderText = "Tên Khen thưởng";
+        if (dgv_reward.Columns["IssueDate"] != null) dgv_reward.Columns["IssueDate"].HeaderText = "Ngày QĐ";
+        if (dgv_reward.Columns["StudentId"] != null) dgv_reward.Columns["StudentId"].HeaderText = "Mã SV/CB";
+
+        if (keyword != "" && ketQua.Count == 0)
+            MessageBox.Show("Không tìm thấy kết quả phù hợp.", "Thông báo");
+    }
+
+    // 7. dgvReward CellClick (Đẩy dữ liệu từ Grid lên Form)
+    private void dgv_reward_CellClick(object sender, DataGridViewCellEventArgs e)
+    {
+        if (e.RowIndex < 0) return; 
+
+        DataGridViewRow row = dgv_reward.Rows[e.RowIndex];
+
+        txt_rewardid.Text = row.Cells["RewardId"].Value?.ToString();
+        txt_rewardname.Text = row.Cells["RewardName"].Value?.ToString();
+
+        if (row.Cells["IssueDate"].Value != null)
+            dtp_issuedate.Value = Convert.ToDateTime(row.Cells["IssueDate"].Value);
+
+        if (row.Cells["StudentId"].Value != null)
+            cbo_studentid.SelectedValue = row.Cells["StudentId"].Value.ToString();
+    }
+
+    // 8. Hàm làm sạch Form
+    private void ClearRewardForm()
+    {
+        txt_rewardid.Text = "";
+        txt_rewardname.Text = "";
+        dtp_issuedate.Value = DateTime.Now;
+        if (cbo_studentid.Items.Count > 0)
+            cbo_studentid.SelectedIndex = 0;
     }
 }
