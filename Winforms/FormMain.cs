@@ -13,6 +13,13 @@ public partial class FormMain : Form
         InitializeComponent();
         dgv_student.CellClick += dgv_student_CellClick;
         btn_studentUpdate.Click += btnStudentUpdate_Click;
+        this.dgv_event.CellClick += new DataGridViewCellEventHandler(this.dgv_events_CellClick);
+        this.btn_eventSearch.Click += new EventHandler(this.btn_eventSearch_Click);
+    }
+    private void Form1_Load(object sender, EventArgs e)
+    {
+        LoadStudentData();  // Tab 1 
+        LoadEventData();    // Tab 2 
     }
     
     /* ========= TAB 1: Sinh viên & Đoàn viên ========*/
@@ -198,4 +205,191 @@ public partial class FormMain : Form
         lbl_role.Visible = isOfficial;
         lbl_term.Visible = isOfficial;
     }
+    /* ========= TAB 2: Sự kiện ========*/
+    
+    // Khai báo tường minh Manager xử lý sự kiện
+    private EventManager eventManager = new EventManager();
+
+    // 1. Hàm tải dữ liệu lên DataGridView
+    private void LoadEventData()
+    {
+        List<UnionEvent> danhSach = eventManager.GetAll();
+
+        dgv_event.DataSource = null;
+        dgv_event.DataSource = danhSach;
+
+        // Ẩn các cột hệ thống không cần hiển thị
+        if (dgv_event.Columns["Address"] != null)
+            dgv_event.Columns["Address"].Visible = false;
+        if (dgv_event.Columns["Participants"] != null)
+            dgv_event.Columns["Participants"].Visible = false;
+
+        // Đổi tên tiêu đề cột cho thân thiện
+        if (dgv_event.Columns["EventId"] != null)
+            dgv_event.Columns["EventId"].HeaderText = "Mã Sự Kiện";
+        if (dgv_event.Columns["EventName"] != null)
+            dgv_event.Columns["EventName"].HeaderText = "Tên Sự Kiện";
+        if (dgv_event.Columns["BonusScore"] != null)
+            dgv_event.Columns["BonusScore"].HeaderText = "Điểm Cộng";
+        
+        
+    }
+    //addEvent Function
+    private void btn_eventAdd_Click(object sender, EventArgs e)
+    {
+        string maSK = txt_eventId.Text.Trim();
+        string tenSK = txt_eventName.Text.Trim();
+
+        // Kiểm tra ô nhập liệu không được để trống
+        if (maSK == "" || tenSK == "")
+        {
+            MessageBox.Show("Vui lòng nhập đầy đủ Mã sự kiện và Tên sự kiện.", "Lỗi nhập liệu");
+            return;
+        }
+
+        // Kiểm tra trùng mã sự kiện bằng vòng lặp
+        List<UnionEvent> danhSachHienTai = eventManager.GetAll();
+        bool baTrung = false;
+        for (int i = 0; i < danhSachHienTai.Count; i++)
+        {
+            if (danhSachHienTai[i].EventId == maSK)
+            {
+                baTrung = true;
+                break;
+            }
+        }
+
+        if (baTrung)
+        {
+            MessageBox.Show("Mã sự kiện đã tồn tại. Vui lòng nhập mã khác.", "Lỗi trùng lặp");
+            return;
+        }
+
+        UnionEvent suKienMoi = new UnionEvent
+        {
+            EventId    = maSK,
+            EventName  = tenSK,
+            BonusScore = (double)num_bonusScore.Value
+        };
+
+        eventManager.Add(suKienMoi);
+        MessageBox.Show("Thêm sự kiện thành công!", "Thành công");
+        ClearEventForm();
+        LoadEventData();
+    }
+    //UpdateEvent Function
+    private void btn_eventUpdate_Click(object sender, EventArgs e)
+    {
+        string maSK = txt_eventId.Text.Trim();
+        string tenSK = txt_eventName.Text.Trim();
+
+        if (maSK == "" || tenSK == "")
+        {
+            MessageBox.Show("Vui lòng nhập đầy đủ Mã sự kiện và Tên sự kiện.", "Lỗi nhập liệu");
+            return;
+        }
+
+        // Kiểm tra mã sự kiện có tồn tại không trước khi cập nhật
+        UnionEvent suKienCu = eventManager.GetById(maSK);
+        if (suKienCu == null)
+        {
+            MessageBox.Show("Không tìm thấy sự kiện với mã này để cập nhật.", "Lỗi");
+            return;
+        }
+
+        // Giữ lại danh sách Participants gốc, chỉ cập nhật thông tin cơ bản
+        UnionEvent suKienCapNhat = new UnionEvent
+        {
+            EventId      = maSK,
+            EventName    = tenSK,
+            BonusScore   = (double)num_bonusScore.Value,
+            Address      = suKienCu.Address,
+            Participants = suKienCu.Participants
+        };
+
+        eventManager.Update(suKienCapNhat);
+        MessageBox.Show("Cập nhật sự kiện thành công!", "Thành công");
+        ClearEventForm();
+        LoadEventData();
+    }
+    private void dgv_events_CellClick(object sender, DataGridViewCellEventArgs e)
+    {
+        if (e.RowIndex < 0)
+            return;
+
+        DataGridViewRow dongDuocChon = dgv_event.Rows[e.RowIndex];
+
+        txt_eventId.Text         = dongDuocChon.Cells["EventId"].Value.ToString();
+        txt_eventName.Text       = dongDuocChon.Cells["EventName"].Value.ToString();
+        num_bonusScore.Value     = Convert.ToDecimal(dongDuocChon.Cells["BonusScore"].Value);
+    }
+    //DeleteEvent Function
+    private void btn_eventDelete_Click(object sender, EventArgs e)
+    {
+        string maSK = txt_eventId.Text.Trim();
+
+        if (maSK == "")
+        {
+            MessageBox.Show("Vui lòng chọn một sự kiện từ danh sách để xóa.", "Lỗi");
+            return;
+        }
+
+        DialogResult xacNhan = MessageBox.Show(
+            "Bạn có chắc chắn muốn xóa sự kiện có mã '" + maSK + "' không?",
+            "Xác nhận xóa",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Warning
+        );
+
+        if (xacNhan == DialogResult.Yes)
+        {
+            eventManager.Delete(maSK);
+            MessageBox.Show("Xóa sự kiện thành công!", "Thành công");
+            ClearEventForm();
+            LoadEventData();
+        }throw new System.NotImplementedException();
+    }
+    //SearchEvent Funtion
+    private void btn_eventSearch_Click(object sender, EventArgs e)
+    {
+        string tuKhoa = txt_eventSearch.Text.Trim();
+
+        List<UnionEvent> ketQua = new List<UnionEvent>();
+
+        if (tuKhoa == "")
+        {
+            ketQua = eventManager.GetAll();
+        }
+        else
+        {
+            ketQua = eventManager.Search(tuKhoa);
+        }
+
+        dgv_event.DataSource = null;
+        dgv_event.DataSource = ketQua;
+
+        if (dgv_event.Columns["Address"] != null)
+            dgv_event.Columns["Address"].Visible = false;
+        if (dgv_event.Columns["Participants"] != null)
+            dgv_event.Columns["Participants"].Visible = false;
+        if (dgv_event.Columns["EventId"] != null)
+            dgv_event.Columns["EventId"].HeaderText = "Mã Sự Kiện";
+        if (dgv_event.Columns["EventName"] != null)
+            dgv_event.Columns["EventName"].HeaderText = "Tên Sự Kiện";
+        if (dgv_event.Columns["BonusScore"] != null)
+            dgv_event.Columns["BonusScore"].HeaderText = "Điểm Cộng";
+
+        if (tuKhoa != "" && ketQua.Count == 0)
+            MessageBox.Show("Không tìm thấy sự kiện nào phù hợp.", "Thông báo");
+    }
+    
+// Hàm tiện ích: Xóa trắng toàn bộ ô nhập liệu trên Tab Sự kiện
+    private void ClearEventForm()
+    {
+        txt_eventId.Text     = "";
+        txt_eventName.Text   = "";
+        num_bonusScore.Value = 0;
+    }
+
+    
 }

@@ -1,0 +1,16 @@
+{
+  "$id": "1",
+  "$values": [
+    {
+      "$id": "2",
+      "Role": "\u00E2dfsdf",
+      "Term": "2004",
+      "StudentId": "1231231",
+      "ClassName": "se",
+      "TrainingScore": 0,
+      "FullName": "\u1EA5edaeq",
+      "BirthYear": 100,
+      "ResidentAddress": null
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$id": "1",
+  "$values": [
+    {
+      "$id": "2",
+      "EventId": "2",
+      "EventName": "m\u00F9a h\u00E8 xanh",
+      "BonusScore": 0,
+      "Address": null,
+      "Participants": {
+        "$id": "3",
+        "$values": []
+      }
+    }
+  ]
+}
