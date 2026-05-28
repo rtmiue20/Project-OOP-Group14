@@ -1,0 +1,12 @@
+{
+  "$id": "1",
+  "$values": [
+    {
+      "$id": "2",
+      "ClubId": "312124",
+      "ClubName": "KHSANG",
+      "FoundedDate": "2026-04-11T17:37:40.239",
+      "MemberCount": 23
+    }
+  ]
+}
