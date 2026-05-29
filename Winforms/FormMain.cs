@@ -1377,7 +1377,7 @@ public partial class FormMain : Form
     {
     }
 
-    /* ========= TAB KHOA ========*/
+    /* ========= TAB 5: KHOA ========*/
     private void btn_facultyAdd_Click(object sender, EventArgs e)
     {
         Faculty fac = new Faculty
@@ -1440,12 +1440,14 @@ public partial class FormMain : Form
         txt_deanName.Clear();
     }
 
+    /* =====   TAB 6: LECTURER ====*/
     // 2. AddLecturer function
     private void btn_lecturerAdd_Click(object sender, EventArgs e)
     {
         string id = txt_lecturerId.Text.Trim();
         string name = txt_lecturerName.Text.Trim();
-        if (id == "" || name == "")
+        string address = txt_lecturerAddress.Text.Trim();
+        if (id == "" || name == "" || address == "")
         {
             MessageBox.Show("Vui lòng nhập đầy đủ Mã và Tên giảng viên!");
             return;
@@ -1456,7 +1458,7 @@ public partial class FormMain : Form
             LecturerId = id,
             FullName = name,
             BirthYear = (int)nud_lecturerBirthYear.Value,
-            Department = "" // Cần thêm TextBox cho Department vào Designer nếu muốn nhập
+            Department = address
         };
         lecturerManager.Add(l);
         ClearLecturerForm();
@@ -1478,7 +1480,7 @@ public partial class FormMain : Form
         {
             l.FullName = txt_lecturerName.Text;
             l.BirthYear = (int)nud_lecturerBirthYear.Value;
-            // l.Department = ... (tương tự)
+            l.Department = txt_lecturerAddress.Text;
             lecturerManager.Update(l);
             MessageBox.Show("Cập nhật giảng viên thành công!");
         }
@@ -1513,6 +1515,7 @@ public partial class FormMain : Form
             DataGridViewRow row = dgv_lecturer.Rows[e.RowIndex];
             txt_lecturerId.Text = row.Cells["LecturerId"].Value?.ToString();
             txt_lecturerName.Text = row.Cells["FullName"].Value?.ToString();
+            txt_lecturerAddress.Text = row.Cells["Department"].Value?.ToString();
             if (row.Cells["BirthYear"].Value != null)
                 nud_lecturerBirthYear.Value = Convert.ToInt32(row.Cells["BirthYear"].Value);
         }
@@ -1524,6 +1527,7 @@ public partial class FormMain : Form
         txt_lecturerId.Clear();
         txt_lecturerName.Clear();
         nud_lecturerBirthYear.Value = 1980;
+        txt_lecturerAddress.Clear();
     }
 
     /* ========= TAB ĐIỂM DANH (Participation) ========*/

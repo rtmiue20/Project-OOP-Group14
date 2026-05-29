@@ -163,6 +163,8 @@ partial class FormMain
         dgv_attendance = new System.Windows.Forms.DataGridView();
         contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(components);
         bindingSource1 = new System.Windows.Forms.BindingSource(components);
+        label34 = new System.Windows.Forms.Label();
+        txt_lecturerAddress = new System.Windows.Forms.TextBox();
         tc_demo.SuspendLayout();
         tp_SVDV.SuspendLayout();
         groupBox3.SuspendLayout();
@@ -999,7 +1001,7 @@ partial class FormMain
         groupBox11.Controls.Add(btn_lecturerAdd);
         groupBox11.Controls.Add(txt_lecturerSearch);
         groupBox11.Controls.Add(label26);
-        groupBox11.Location = new System.Drawing.Point(6, 224);
+        groupBox11.Location = new System.Drawing.Point(6, 279);
         groupBox11.Name = "groupBox11";
         groupBox11.Size = new System.Drawing.Size(617, 352);
         groupBox11.TabIndex = 6;
@@ -1060,6 +1062,8 @@ partial class FormMain
         // 
         // groupBox10
         // 
+        groupBox10.Controls.Add(txt_lecturerAddress);
+        groupBox10.Controls.Add(label34);
         groupBox10.Controls.Add(nud_lecturerBirthYear);
         groupBox10.Controls.Add(label21);
         groupBox10.Controls.Add(txt_lecturerName);
@@ -1068,7 +1072,7 @@ partial class FormMain
         groupBox10.Controls.Add(txt_lecturerId);
         groupBox10.Location = new System.Drawing.Point(6, 3);
         groupBox10.Name = "groupBox10";
-        groupBox10.Size = new System.Drawing.Size(617, 215);
+        groupBox10.Size = new System.Drawing.Size(617, 270);
         groupBox10.TabIndex = 4;
         groupBox10.TabStop = false;
         // 
@@ -1471,6 +1475,23 @@ partial class FormMain
         contextMenuStrip1.Name = "contextMenuStrip1";
         contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
         // 
+        // label34
+        // 
+        label34.BackColor = System.Drawing.Color.DarkGray;
+        label34.ForeColor = System.Drawing.SystemColors.ControlText;
+        label34.Location = new System.Drawing.Point(6, 209);
+        label34.Name = "label34";
+        label34.Size = new System.Drawing.Size(226, 47);
+        label34.TabIndex = 20;
+        label34.Text = "Địa chỉ: ";
+        // 
+        // txt_lecturerAddress
+        // 
+        txt_lecturerAddress.Location = new System.Drawing.Point(238, 209);
+        txt_lecturerAddress.Name = "txt_lecturerAddress";
+        txt_lecturerAddress.Size = new System.Drawing.Size(373, 47);
+        txt_lecturerAddress.TabIndex = 21;
+        // 
         // FormMain
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
@@ -1531,6 +1552,9 @@ partial class FormMain
         ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
         ResumeLayout(false);
     }
+
+    private System.Windows.Forms.Label label34;
+    private System.Windows.Forms.TextBox txt_lecturerAddress;
 
     private System.Windows.Forms.GroupBox groupBox15;
     private System.Windows.Forms.Button button1;

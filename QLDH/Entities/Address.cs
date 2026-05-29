@@ -20,5 +20,9 @@ namespace QLDH.Entities
             this.street = street;
             this.district = district;
         }
+        public override string ToString()
+        {
+            return $"{HouseNumber} {Street}, {District}";
+        }
     }
 }
