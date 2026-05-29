@@ -4,7 +4,7 @@
 namespace QLDH.Entities
 {
     [Serializable]
-    public class Student : Human // Kế thừa Nguoi [cite: 34, 57]
+    public class Student : Human 
     {
         private string studentId;
         private string className;

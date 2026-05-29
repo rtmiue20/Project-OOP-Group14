@@ -6,18 +6,14 @@ namespace QLDH.Service
 {
     public class RewardManager : BaseManager<Reward>
     {
-        private const string FileName = "rewards.json";
-
-        public RewardManager()
+        public RewardManager() : base("rewards.json")
         {
-            items = FileHelper.Load<Reward>(FileName);
         }
 
         // 1. C - Create
         public override void Add(Reward item)
         {
             base.Add(item);
-            FileHelper.Save<Reward>(FileName, items);
         }
 
         // 2. R - Read
@@ -35,14 +31,12 @@ namespace QLDH.Service
         public override void Update(Reward item)
         {
             base.Update(item);
-            FileHelper.Save<Reward>(FileName, items);
         }
 
         // 4. D - Delete
         public override void Delete(string id)
         {
             base.Delete(id);
-            FileHelper.Save<Reward>(FileName, items);
         }
 
         // Search function

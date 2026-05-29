@@ -10,20 +10,16 @@ namespace QLDH.Service
         protected List<T> items;
         protected string filePath;
 
-        protected BaseManager()
+        protected BaseManager(string fileName)
         {
             this.items = new List<T>();
-            this.filePath = string.Empty;
-        }
-
-        public BaseManager(string filePath)
-        {
-            this.items = new List<T>();
-            this.filePath = filePath;
-            if (!string.IsNullOrEmpty(filePath))
+            string dataFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data");
+            if (!Directory.Exists(dataFolder))
             {
-                LoadFromFile();
+                Directory.CreateDirectory(dataFolder);
             }
+            this.filePath = Path.Combine(dataFolder, fileName);
+            LoadFromFile();
         }
 
         // Kỹ thuật Serialization: Ghi danh sách đối tượng ra file JSON
@@ -31,7 +27,11 @@ namespace QLDH.Service
         {
             try
             {
-                var options = new JsonSerializerOptions { WriteIndented = true };
+                JsonSerializerOptions options = new JsonSerializerOptions 
+                { 
+                    WriteIndented = true,
+                    PropertyNameCaseInsensitive = true
+                };
                 string jsonString = JsonSerializer.Serialize(items, options);
                 File.WriteAllText(filePath, jsonString);
             }
@@ -54,7 +54,13 @@ namespace QLDH.Service
                         items = new List<T>();
                         return;
                     }
-                    List<T> deserialized = JsonSerializer.Deserialize<List<T>>(jsonString);
+                    
+                    var options = new JsonSerializerOptions 
+                    { 
+                        PropertyNameCaseInsensitive = true
+                    };
+
+                    List<T> deserialized = JsonSerializer.Deserialize<List<T>>(jsonString, options);
                     if (deserialized != null)
                     {
                         items = deserialized;
@@ -62,6 +68,7 @@ namespace QLDH.Service
                 }
                 catch (Exception ex)
                 {
+                    Console.WriteLine($"Loi load file {filePath}: {ex.Message}");
                     this.items = new List<T>(); // Nếu file lỗi hoặc trống, tạo mới danh sách rỗng
                 }
             }

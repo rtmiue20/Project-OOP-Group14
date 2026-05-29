@@ -6,17 +6,13 @@ namespace QLDH.Service
 {
     public class AccountManager : BaseManager<Account>
     {
-        private const string FileName = "accounts.json";
-
-        public AccountManager()
+        public AccountManager() : base("accounts.json")
         {
-            items = FileHelper.Load<Account>(FileName);
-
             // Tạo tài khoản admin mặc định nếu chưa có
             if (items.Count == 0)
             {
                 items.Add(new Account("admin", "admin123", "Admin"));
-                FileHelper.Save<Account>(FileName, items);
+                SaveToFile();
             }
         }
 
@@ -24,7 +20,6 @@ namespace QLDH.Service
         public override void Add(Account item)
         {
             base.Add(item);
-            FileHelper.Save<Account>(FileName, items);
         }
 
         // 2. R - Read
@@ -42,14 +37,12 @@ namespace QLDH.Service
         public override void Update(Account item)
         {
             base.Update(item);
-            FileHelper.Save<Account>(FileName, items);
         }
 
         // 4. D - Delete
         public override void Delete(string id)
         {
             base.Delete(id);
-            FileHelper.Save<Account>(FileName, items);
         }
 
         // Search function

@@ -1,4 +1,3002 @@
-{
-  "$id": "1",
-  "$values": []
-}
+[
+  {
+    "StudentId": "31211021818",
+    "ClassName": "IS04",
+    "TrainingScore": 91.6,
+    "FullName": "Đặng Thị Mai",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "85",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211024038",
+    "ClassName": "LU02",
+    "TrainingScore": 90.2,
+    "FullName": "Đặng Văn Nam",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "219B",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211025163",
+    "ClassName": "MK01",
+    "TrainingScore": 68.3,
+    "FullName": "Trần Ngọc Tùng",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "129B",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211026795",
+    "ClassName": "IS06",
+    "TrainingScore": 62.9,
+    "FullName": "Nguyễn Hải Phong",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "216B",
+      "Street": "Pasteur",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211022295",
+    "ClassName": "LU01",
+    "TrainingScore": 61.8,
+    "FullName": "Đỗ Thu Quân",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "31",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211021422",
+    "ClassName": "NH03",
+    "TrainingScore": 68.0,
+    "FullName": "Hoàng Thảo Vy",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "84B",
+      "Street": "Lê Lợi",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211026827",
+    "ClassName": "IS01",
+    "TrainingScore": 71.8,
+    "FullName": "Hoàng Thanh Hải",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "428A",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211026399",
+    "ClassName": "LU08",
+    "TrainingScore": 73.8,
+    "FullName": "Đỗ Thảo Nam",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "476A",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211026791",
+    "ClassName": "KT08",
+    "TrainingScore": 57.9,
+    "FullName": "Võ Hữu Linh",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "435",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211024571",
+    "ClassName": "IS00",
+    "TrainingScore": 88.7,
+    "FullName": "Hoàng Đức Hùng",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "180B",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211028614",
+    "ClassName": "IS05",
+    "TrainingScore": 56.5,
+    "FullName": "Hoàng Đức Dung",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "152B",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211028820",
+    "ClassName": "KT03",
+    "TrainingScore": 83.1,
+    "FullName": "Đỗ Thị Bình",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "497A",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211025601",
+    "ClassName": "IS00",
+    "TrainingScore": 82.5,
+    "FullName": "Phan Hữu Bình",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "369",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211028978",
+    "ClassName": "LU09",
+    "TrainingScore": 80.8,
+    "FullName": "Nguyễn Gia Khánh",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "173",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211026159",
+    "ClassName": "NH00",
+    "TrainingScore": 91.1,
+    "FullName": "Huỳnh Thu Hương",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "23B",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211024787",
+    "ClassName": "KT01",
+    "TrainingScore": 57.6,
+    "FullName": "Bùi Thảo Hương",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "6B",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211023166",
+    "ClassName": "LU06",
+    "TrainingScore": 59.7,
+    "FullName": "Nguyễn Quỳnh Trang",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "37",
+      "Street": "Pasteur",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211026624",
+    "ClassName": "NH08",
+    "TrainingScore": 92.6,
+    "FullName": "Võ Thanh Dung",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "57",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211028832",
+    "ClassName": "KT08",
+    "TrainingScore": 59.6,
+    "FullName": "Võ Hoàng Hương",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "134B",
+      "Street": "Pasteur",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211025395",
+    "ClassName": "NH02",
+    "TrainingScore": 76.0,
+    "FullName": "Đỗ Quỳnh An",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "52B",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211027959",
+    "ClassName": "MK06",
+    "TrainingScore": 58.8,
+    "FullName": "Vũ Thị Đạt",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "229B",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211029807",
+    "ClassName": "IS01",
+    "TrainingScore": 72.0,
+    "FullName": "Bùi Quỳnh Nam",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "252A",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211025993",
+    "ClassName": "KT00",
+    "TrainingScore": 94.7,
+    "FullName": "Lý Thảo Dương",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "442A",
+      "Street": "Pasteur",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211026929",
+    "ClassName": "MK03",
+    "TrainingScore": 78.3,
+    "FullName": "Dương Bảo Mai",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "276",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211029383",
+    "ClassName": "NH08",
+    "TrainingScore": 73.1,
+    "FullName": "Dương Văn Hương",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "226B",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211026807",
+    "ClassName": "MK03",
+    "TrainingScore": 87.3,
+    "FullName": "Dương Thu Dung",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "486B",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211023431",
+    "ClassName": "MK06",
+    "TrainingScore": 69.4,
+    "FullName": "Trần Văn Cường",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "104",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211022126",
+    "ClassName": "IS07",
+    "TrainingScore": 74.0,
+    "FullName": "Võ Thảo Dương",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "308",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211029903",
+    "ClassName": "LU02",
+    "TrainingScore": 94.2,
+    "FullName": "Hoàng Thị Hương",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "306",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211028235",
+    "ClassName": "NH03",
+    "TrainingScore": 59.5,
+    "FullName": "Nguyễn Bảo Dung",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "53",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211029770",
+    "ClassName": "NH02",
+    "TrainingScore": 83.1,
+    "FullName": "Huỳnh Minh Hương",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "53",
+      "Street": "Lê Lợi",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211029483",
+    "ClassName": "MK09",
+    "TrainingScore": 78.7,
+    "FullName": "Ngô Thanh Hùng",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "192",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211025831",
+    "ClassName": "KT00",
+    "TrainingScore": 88.0,
+    "FullName": "Dương Thảo Cường",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "367A",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211021397",
+    "ClassName": "LU05",
+    "TrainingScore": 91.8,
+    "FullName": "Đặng Minh Linh",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "411",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211028456",
+    "ClassName": "KT06",
+    "TrainingScore": 81.5,
+    "FullName": "Đặng Đức Nam",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "493A",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211027684",
+    "ClassName": "NH09",
+    "TrainingScore": 71.7,
+    "FullName": "Trần Hữu Dương",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "358",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211021660",
+    "ClassName": "MK05",
+    "TrainingScore": 61.5,
+    "FullName": "Bùi Quỳnh Tuấn",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "170",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211024242",
+    "ClassName": "MK09",
+    "TrainingScore": 56.7,
+    "FullName": "Hoàng Đức Tùng",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "422",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211023480",
+    "ClassName": "IS07",
+    "TrainingScore": 81.9,
+    "FullName": "Lý Đức Đạt",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "387",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211027894",
+    "ClassName": "LU01",
+    "TrainingScore": 65.2,
+    "FullName": "Hoàng Văn Tùng",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "310A",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211026194",
+    "ClassName": "IS06",
+    "TrainingScore": 62.5,
+    "FullName": "Bùi Minh Hùng",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "141A",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211027848",
+    "ClassName": "IS02",
+    "TrainingScore": 66.8,
+    "FullName": "Đỗ Thu Tùng",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "246A",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211021803",
+    "ClassName": "IS00",
+    "TrainingScore": 55.3,
+    "FullName": "Hồ Thị Linh",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "485A",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211021630",
+    "ClassName": "MK05",
+    "TrainingScore": 65.1,
+    "FullName": "Phạm Tuấn Tùng",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "7A",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211022969",
+    "ClassName": "NH04",
+    "TrainingScore": 85.9,
+    "FullName": "Phạm Ngọc An",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "359B",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211029012",
+    "ClassName": "NH09",
+    "TrainingScore": 75.9,
+    "FullName": "Lê Minh Bình",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "41A",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211021407",
+    "ClassName": "LU02",
+    "TrainingScore": 93.0,
+    "FullName": "Bùi Gia Hải",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "56",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211028354",
+    "ClassName": "IS06",
+    "TrainingScore": 85.1,
+    "FullName": "Đặng Thị Hương",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "462",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211022534",
+    "ClassName": "LU03",
+    "TrainingScore": 67.5,
+    "FullName": "Lê Thị Hải",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "103",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211027632",
+    "ClassName": "KT05",
+    "TrainingScore": 78.7,
+    "FullName": "Đỗ Thị Nga",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "27",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211027086",
+    "ClassName": "LU08",
+    "TrainingScore": 82.5,
+    "FullName": "Đỗ Thanh Cường",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "312A",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211023805",
+    "ClassName": "KT02",
+    "TrainingScore": 66.6,
+    "FullName": "Trần Thảo Đạt",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "376A",
+      "Street": "Pasteur",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211028688",
+    "ClassName": "IS01",
+    "TrainingScore": 87.3,
+    "FullName": "Lý Tuấn Linh",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "169B",
+      "Street": "Pasteur",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211021888",
+    "ClassName": "NH07",
+    "TrainingScore": 88.4,
+    "FullName": "Võ Ngọc Nam",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "100",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211024964",
+    "ClassName": "KT02",
+    "TrainingScore": 86.3,
+    "FullName": "Đặng Thị Hương",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "192A",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211024766",
+    "ClassName": "LU09",
+    "TrainingScore": 75.0,
+    "FullName": "Vũ Thị Linh",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "219A",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211027745",
+    "ClassName": "KT04",
+    "TrainingScore": 61.1,
+    "FullName": "Hồ Bảo Dương",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "191",
+      "Street": "Lê Lợi",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211022311",
+    "ClassName": "NH05",
+    "TrainingScore": 86.8,
+    "FullName": "Hoàng Hữu Nga",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "469A",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211028262",
+    "ClassName": "LU04",
+    "TrainingScore": 79.3,
+    "FullName": "Bùi Thanh Cường",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "496",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211028630",
+    "ClassName": "KT03",
+    "TrainingScore": 70.8,
+    "FullName": "Phan Văn Dương",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "11A",
+      "Street": "Lê Lợi",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211028321",
+    "ClassName": "KT04",
+    "TrainingScore": 87.0,
+    "FullName": "Huỳnh Hoàng Đạt",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "156B",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211024696",
+    "ClassName": "KT09",
+    "TrainingScore": 92.0,
+    "FullName": "Đỗ Hải Cường",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "92B",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211024514",
+    "ClassName": "KT04",
+    "TrainingScore": 79.1,
+    "FullName": "Ngô Ngọc Vy",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "355A",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211022268",
+    "ClassName": "IS02",
+    "TrainingScore": 93.5,
+    "FullName": "Hồ Minh Vy",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "179A",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211023704",
+    "ClassName": "NH07",
+    "TrainingScore": 70.7,
+    "FullName": "Hồ Gia Bình",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "336",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211023489",
+    "ClassName": "LU04",
+    "TrainingScore": 61.4,
+    "FullName": "Hồ Thảo Tuấn",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "418B",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211027095",
+    "ClassName": "MK09",
+    "TrainingScore": 81.7,
+    "FullName": "Võ Tuấn Dung",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "356A",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211026384",
+    "ClassName": "IS00",
+    "TrainingScore": 55.2,
+    "FullName": "Nguyễn Thanh Nga",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "7",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211024593",
+    "ClassName": "NH05",
+    "TrainingScore": 91.6,
+    "FullName": "Hồ Gia Trang",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "407",
+      "Street": "Pasteur",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211029563",
+    "ClassName": "KT08",
+    "TrainingScore": 66.6,
+    "FullName": "Phan Bảo Hùng",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "319",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211029660",
+    "ClassName": "KT02",
+    "TrainingScore": 92.3,
+    "FullName": "Phạm Bảo Mai",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "202A",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211025573",
+    "ClassName": "MK05",
+    "TrainingScore": 70.3,
+    "FullName": "Phan Ngọc Vy",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "471A",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211023622",
+    "ClassName": "IS02",
+    "TrainingScore": 61.4,
+    "FullName": "Trần Minh Khánh",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "43B",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211028584",
+    "ClassName": "KT08",
+    "TrainingScore": 78.6,
+    "FullName": "Ngô Gia Hùng",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "456",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211021347",
+    "ClassName": "LU00",
+    "TrainingScore": 85.4,
+    "FullName": "Trần Hữu Linh",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "82A",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211021531",
+    "ClassName": "NH08",
+    "TrainingScore": 71.9,
+    "FullName": "Hồ Thanh Nam",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "368",
+      "Street": "Lê Lợi",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211029177",
+    "ClassName": "MK06",
+    "TrainingScore": 86.7,
+    "FullName": "Phạm Thị Tuấn",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "498B",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211025677",
+    "ClassName": "NH09",
+    "TrainingScore": 94.1,
+    "FullName": "Hồ Hải Hùng",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "187",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211023916",
+    "ClassName": "NH05",
+    "TrainingScore": 71.2,
+    "FullName": "Nguyễn Đức Mai",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "216",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211027776",
+    "ClassName": "LU08",
+    "TrainingScore": 67.0,
+    "FullName": "Đặng Hoàng Tùng",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "21",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211027467",
+    "ClassName": "LU00",
+    "TrainingScore": 69.6,
+    "FullName": "Hoàng Hoàng Bình",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "172B",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211023639",
+    "ClassName": "NH02",
+    "TrainingScore": 57.4,
+    "FullName": "Nguyễn Văn Phong",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "221B",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211025705",
+    "ClassName": "NH09",
+    "TrainingScore": 77.6,
+    "FullName": "Võ Đức An",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "246",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211022265",
+    "ClassName": "MK03",
+    "TrainingScore": 56.1,
+    "FullName": "Nguyễn Hữu Khánh",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "406B",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211024363",
+    "ClassName": "MK01",
+    "TrainingScore": 71.6,
+    "FullName": "Đỗ Hữu Quân",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "128",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211028789",
+    "ClassName": "KT09",
+    "TrainingScore": 83.7,
+    "FullName": "Ngô Đức Nam",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "327B",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211024093",
+    "ClassName": "IS04",
+    "TrainingScore": 89.3,
+    "FullName": "Huỳnh Hữu Mai",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "290",
+      "Street": "Lê Lợi",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211022524",
+    "ClassName": "MK00",
+    "TrainingScore": 78.0,
+    "FullName": "Bùi Tuấn Tùng",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "282A",
+      "Street": "Pasteur",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211028136",
+    "ClassName": "KT00",
+    "TrainingScore": 94.1,
+    "FullName": "Vũ Đức Nam",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "225B",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211029173",
+    "ClassName": "LU07",
+    "TrainingScore": 89.3,
+    "FullName": "Đỗ Thị Khánh",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "442",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211021452",
+    "ClassName": "NH01",
+    "TrainingScore": 56.4,
+    "FullName": "Vũ Thảo Mai",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "472B",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211022491",
+    "ClassName": "KT06",
+    "TrainingScore": 93.3,
+    "FullName": "Trần Thu An",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "203B",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211021717",
+    "ClassName": "LU08",
+    "TrainingScore": 75.4,
+    "FullName": "Bùi Văn Khánh",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "358",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211021222",
+    "ClassName": "MK03",
+    "TrainingScore": 83.8,
+    "FullName": "Huỳnh Hoàng Cường",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "23B",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211029326",
+    "ClassName": "IS06",
+    "TrainingScore": 67.7,
+    "FullName": "Đỗ Minh Quân",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "188",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211021409",
+    "ClassName": "IS02",
+    "TrainingScore": 93.7,
+    "FullName": "Lý Bảo Bình",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "220",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211026374",
+    "ClassName": "KT05",
+    "TrainingScore": 90.7,
+    "FullName": "Vũ Thị Phong",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "152A",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211026631",
+    "ClassName": "LU05",
+    "TrainingScore": 74.7,
+    "FullName": "Lê Thu Hùng",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "147A",
+      "Street": "Pasteur",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211027420",
+    "ClassName": "LU03",
+    "TrainingScore": 79.8,
+    "FullName": "Ngô Văn Đạt",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "152B",
+      "Street": "Lê Lợi",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211029766",
+    "ClassName": "NH05",
+    "TrainingScore": 80.7,
+    "FullName": "Hoàng Thị Mai",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "256B",
+      "Street": "Lê Lợi",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211028562",
+    "ClassName": "MK02",
+    "TrainingScore": 85.4,
+    "FullName": "Vũ Hải Khánh",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "341B",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211024751",
+    "ClassName": "NH04",
+    "TrainingScore": 57.4,
+    "FullName": "Huỳnh Đức Vy",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "341B",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211021799",
+    "ClassName": "MK01",
+    "TrainingScore": 59.6,
+    "FullName": "Dương Minh Bình",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "393B",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211028241",
+    "ClassName": "NH02",
+    "TrainingScore": 84.6,
+    "FullName": "Huỳnh Minh Mai",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "180",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211024246",
+    "ClassName": "MK00",
+    "TrainingScore": 81.3,
+    "FullName": "Lý Hải Vy",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "239",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211024896",
+    "ClassName": "KT01",
+    "TrainingScore": 81.8,
+    "FullName": "Đặng Minh Trang",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "369",
+      "Street": "Pasteur",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211024909",
+    "ClassName": "IS08",
+    "TrainingScore": 84.8,
+    "FullName": "Trần Văn An",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "235",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211029850",
+    "ClassName": "NH02",
+    "TrainingScore": 88.1,
+    "FullName": "Đặng Ngọc Bình",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "384B",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211029742",
+    "ClassName": "IS03",
+    "TrainingScore": 76.0,
+    "FullName": "Nguyễn Ngọc Đạt",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "52A",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211028827",
+    "ClassName": "MK05",
+    "TrainingScore": 64.0,
+    "FullName": "Phan Tuấn Hùng",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "258B",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211024758",
+    "ClassName": "IS01",
+    "TrainingScore": 76.5,
+    "FullName": "Ngô Hoàng Quân",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "440B",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211026080",
+    "ClassName": "LU01",
+    "TrainingScore": 90.7,
+    "FullName": "Dương Thanh Phong",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "385",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211029257",
+    "ClassName": "LU00",
+    "TrainingScore": 95.0,
+    "FullName": "Đặng Thảo Nam",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "350",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211027680",
+    "ClassName": "NH02",
+    "TrainingScore": 77.5,
+    "FullName": "Nguyễn Quỳnh Tùng",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "269B",
+      "Street": "Lê Lợi",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211028502",
+    "ClassName": "IS02",
+    "TrainingScore": 89.5,
+    "FullName": "Ngô Thảo Dung",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "19A",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211022385",
+    "ClassName": "KT09",
+    "TrainingScore": 84.9,
+    "FullName": "Phan Thu Nga",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "486",
+      "Street": "Pasteur",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211026086",
+    "ClassName": "LU00",
+    "TrainingScore": 56.1,
+    "FullName": "Hoàng Thu Dung",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "95",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211026930",
+    "ClassName": "IS02",
+    "TrainingScore": 69.4,
+    "FullName": "Bùi Quỳnh Hùng",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "457",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211027864",
+    "ClassName": "NH00",
+    "TrainingScore": 83.2,
+    "FullName": "Phạm Thảo Cường",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "20",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211024904",
+    "ClassName": "LU01",
+    "TrainingScore": 83.9,
+    "FullName": "Lý Quỳnh Bình",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "467B",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211028854",
+    "ClassName": "KT02",
+    "TrainingScore": 91.5,
+    "FullName": "Đặng Bảo Tùng",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "191A",
+      "Street": "Lê Lợi",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211027175",
+    "ClassName": "KT08",
+    "TrainingScore": 55.0,
+    "FullName": "Hồ Ngọc Vy",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "280A",
+      "Street": "Pasteur",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211028918",
+    "ClassName": "KT01",
+    "TrainingScore": 60.3,
+    "FullName": "Vũ Thanh Vy",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "381A",
+      "Street": "Lê Lợi",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211025907",
+    "ClassName": "IS03",
+    "TrainingScore": 80.3,
+    "FullName": "Lý Thảo Phong",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "198B",
+      "Street": "Lê Lợi",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211025559",
+    "ClassName": "NH05",
+    "TrainingScore": 67.8,
+    "FullName": "Trần Tuấn Hương",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "167B",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211027522",
+    "ClassName": "MK04",
+    "TrainingScore": 56.0,
+    "FullName": "Ngô Gia Quân",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "255A",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211026142",
+    "ClassName": "NH03",
+    "TrainingScore": 58.8,
+    "FullName": "Nguyễn Tuấn Đạt",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "83A",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211025016",
+    "ClassName": "LU04",
+    "TrainingScore": 66.5,
+    "FullName": "Phạm Gia Vy",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "24A",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211021865",
+    "ClassName": "NH09",
+    "TrainingScore": 87.2,
+    "FullName": "Đỗ Hoàng Vy",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "59B",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211025271",
+    "ClassName": "NH03",
+    "TrainingScore": 65.9,
+    "FullName": "Đỗ Đức Quân",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "153A",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211029497",
+    "ClassName": "LU01",
+    "TrainingScore": 78.3,
+    "FullName": "Võ Gia Quân",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "116A",
+      "Street": "Pasteur",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211022686",
+    "ClassName": "LU08",
+    "TrainingScore": 63.4,
+    "FullName": "Phan Thị Trang",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "402A",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211024395",
+    "ClassName": "MK02",
+    "TrainingScore": 56.7,
+    "FullName": "Bùi Tuấn Quân",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "57B",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211026154",
+    "ClassName": "MK04",
+    "TrainingScore": 61.2,
+    "FullName": "Hoàng Hữu Hương",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "173A",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211027000",
+    "ClassName": "MK09",
+    "TrainingScore": 84.1,
+    "FullName": "Đỗ Bảo Hùng",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "355B",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211027281",
+    "ClassName": "MK09",
+    "TrainingScore": 56.2,
+    "FullName": "Lý Minh Hùng",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "16B",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211023145",
+    "ClassName": "LU00",
+    "TrainingScore": 82.7,
+    "FullName": "Hồ Gia Hương",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "50B",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211025330",
+    "ClassName": "IS00",
+    "TrainingScore": 76.2,
+    "FullName": "Đặng Thu Linh",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "470",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211023619",
+    "ClassName": "LU01",
+    "TrainingScore": 90.5,
+    "FullName": "Phan Hoàng Hải",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "52B",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211025428",
+    "ClassName": "LU03",
+    "TrainingScore": 67.8,
+    "FullName": "Huỳnh Gia Vy",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "225A",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211025316",
+    "ClassName": "KT00",
+    "TrainingScore": 74.7,
+    "FullName": "Hồ Văn Hải",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "16B",
+      "Street": "Lê Lợi",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211029170",
+    "ClassName": "KT06",
+    "TrainingScore": 93.6,
+    "FullName": "Đỗ Bảo Khánh",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "494",
+      "Street": "Lê Lợi",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211022588",
+    "ClassName": "IS03",
+    "TrainingScore": 70.3,
+    "FullName": "Dương Gia Dung",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "277A",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211022492",
+    "ClassName": "MK04",
+    "TrainingScore": 74.1,
+    "FullName": "Bùi Hoàng Khánh",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "114A",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211023379",
+    "ClassName": "LU04",
+    "TrainingScore": 72.5,
+    "FullName": "Võ Thảo Mai",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "7B",
+      "Street": "Lê Lợi",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211021280",
+    "ClassName": "LU06",
+    "TrainingScore": 56.1,
+    "FullName": "Đỗ Ngọc Hương",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "130",
+      "Street": "Pasteur",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211025143",
+    "ClassName": "IS07",
+    "TrainingScore": 62.9,
+    "FullName": "Trần Tuấn Đạt",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "397A",
+      "Street": "Pasteur",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211028064",
+    "ClassName": "KT05",
+    "TrainingScore": 76.4,
+    "FullName": "Huỳnh Tuấn Mai",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "404A",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211024401",
+    "ClassName": "MK02",
+    "TrainingScore": 87.3,
+    "FullName": "Trần Hải Hương",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "339B",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211022683",
+    "ClassName": "NH03",
+    "TrainingScore": 70.7,
+    "FullName": "Huỳnh Tuấn Vy",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "239A",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211024154",
+    "ClassName": "LU03",
+    "TrainingScore": 93.2,
+    "FullName": "Ngô Bảo Cường",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "49",
+      "Street": "Pasteur",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211024275",
+    "ClassName": "KT07",
+    "TrainingScore": 66.7,
+    "FullName": "Võ Quỳnh Tùng",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "400A",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211029641",
+    "ClassName": "LU00",
+    "TrainingScore": 60.9,
+    "FullName": "Dương Thị Nga",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "208A",
+      "Street": "Pasteur",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211025704",
+    "ClassName": "KT03",
+    "TrainingScore": 57.3,
+    "FullName": "Trần Thảo Hải",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "319B",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211027481",
+    "ClassName": "KT05",
+    "TrainingScore": 66.6,
+    "FullName": "Vũ Hữu Quân",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "382",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211023536",
+    "ClassName": "KT08",
+    "TrainingScore": 88.5,
+    "FullName": "Hoàng Thị Khánh",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "428B",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211029503",
+    "ClassName": "NH09",
+    "TrainingScore": 90.0,
+    "FullName": "Vũ Thảo Nga",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "411B",
+      "Street": "Pasteur",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211021007",
+    "ClassName": "LU09",
+    "TrainingScore": 61.4,
+    "FullName": "Hồ Tuấn Trang",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "247A",
+      "Street": "Lê Lợi",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211026060",
+    "ClassName": "LU03",
+    "TrainingScore": 93.9,
+    "FullName": "Võ Hoàng Khánh",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "482B",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211022898",
+    "ClassName": "NH07",
+    "TrainingScore": 66.9,
+    "FullName": "Vũ Tuấn Khánh",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "322A",
+      "Street": "Pasteur",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211025367",
+    "ClassName": "IS04",
+    "TrainingScore": 84.8,
+    "FullName": "Lê Ngọc Tuấn",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "22",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211022233",
+    "ClassName": "KT09",
+    "TrainingScore": 69.2,
+    "FullName": "Hồ Minh Phong",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "91",
+      "Street": "Pasteur",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211021241",
+    "ClassName": "KT06",
+    "TrainingScore": 73.0,
+    "FullName": "Bùi Minh Cường",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "236B",
+      "Street": "Lê Lợi",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211026311",
+    "ClassName": "IS05",
+    "TrainingScore": 67.4,
+    "FullName": "Đặng Hoàng Hải",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "102B",
+      "Street": "Pasteur",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211029870",
+    "ClassName": "IS08",
+    "TrainingScore": 76.7,
+    "FullName": "Bùi Hữu Phong",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "34B",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211026208",
+    "ClassName": "NH04",
+    "TrainingScore": 61.8,
+    "FullName": "Lê Thu Dương",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "83A",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211022241",
+    "ClassName": "IS02",
+    "TrainingScore": 82.7,
+    "FullName": "Đỗ Gia Mai",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "340",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211024552",
+    "ClassName": "IS07",
+    "TrainingScore": 69.1,
+    "FullName": "Phan Đức Dung",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "254B",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211028943",
+    "ClassName": "NH08",
+    "TrainingScore": 83.9,
+    "FullName": "Phan Đức An",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "441B",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211027097",
+    "ClassName": "LU02",
+    "TrainingScore": 73.5,
+    "FullName": "Vũ Thảo Đạt",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "487",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211024750",
+    "ClassName": "LU06",
+    "TrainingScore": 79.2,
+    "FullName": "Phan Quỳnh Linh",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "388B",
+      "Street": "Pasteur",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211023359",
+    "ClassName": "NH07",
+    "TrainingScore": 94.3,
+    "FullName": "Hồ Thảo Bình",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "311B",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211022518",
+    "ClassName": "MK08",
+    "TrainingScore": 90.5,
+    "FullName": "Dương Minh Đạt",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "47A",
+      "Street": "Pasteur",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211024691",
+    "ClassName": "IS02",
+    "TrainingScore": 62.1,
+    "FullName": "Hoàng Quỳnh Linh",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "3A",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211028540",
+    "ClassName": "NH01",
+    "TrainingScore": 74.1,
+    "FullName": "Đặng Hoàng Nam",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "386A",
+      "Street": "Lê Lợi",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211024416",
+    "ClassName": "IS05",
+    "TrainingScore": 78.8,
+    "FullName": "Hoàng Quỳnh Linh",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "51B",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211029498",
+    "ClassName": "LU01",
+    "TrainingScore": 65.4,
+    "FullName": "Phan Minh Nga",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "469",
+      "Street": "Lê Lợi",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211024442",
+    "ClassName": "MK05",
+    "TrainingScore": 93.1,
+    "FullName": "Võ Thu Trang",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "18A",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211021396",
+    "ClassName": "IS01",
+    "TrainingScore": 60.4,
+    "FullName": "Hồ Thanh An",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "174A",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211023281",
+    "ClassName": "NH05",
+    "TrainingScore": 66.5,
+    "FullName": "Vũ Thanh Dung",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "123A",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211027335",
+    "ClassName": "LU01",
+    "TrainingScore": 76.0,
+    "FullName": "Đặng Gia Tùng",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "100B",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211026619",
+    "ClassName": "KT06",
+    "TrainingScore": 92.2,
+    "FullName": "Hoàng Đức Dương",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "386A",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211021871",
+    "ClassName": "IS06",
+    "TrainingScore": 75.7,
+    "FullName": "Trần Thị Hải",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "310A",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211023490",
+    "ClassName": "MK03",
+    "TrainingScore": 86.6,
+    "FullName": "Phan Minh Khánh",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "295B",
+      "Street": "Lê Lợi",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211027047",
+    "ClassName": "IS01",
+    "TrainingScore": 77.9,
+    "FullName": "Hoàng Gia Vy",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "153B",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211022032",
+    "ClassName": "MK05",
+    "TrainingScore": 66.9,
+    "FullName": "Vũ Quỳnh Bình",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "363",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211026782",
+    "ClassName": "NH06",
+    "TrainingScore": 64.5,
+    "FullName": "Võ Hữu Dương",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "304",
+      "Street": "Lê Lợi",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211022223",
+    "ClassName": "IS09",
+    "TrainingScore": 84.0,
+    "FullName": "Ngô Đức Nga",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "471A",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211028953",
+    "ClassName": "KT08",
+    "TrainingScore": 86.6,
+    "FullName": "Nguyễn Thu Tuấn",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "350A",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211023204",
+    "ClassName": "MK02",
+    "TrainingScore": 91.6,
+    "FullName": "Phan Bảo Linh",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "65",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211026893",
+    "ClassName": "MK08",
+    "TrainingScore": 62.1,
+    "FullName": "Đặng Ngọc Phong",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "267B",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211029959",
+    "ClassName": "MK07",
+    "TrainingScore": 59.1,
+    "FullName": "Phạm Gia Nga",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "467A",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211029090",
+    "ClassName": "KT00",
+    "TrainingScore": 56.9,
+    "FullName": "Nguyễn Bảo Bình",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "20A",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211023926",
+    "ClassName": "NH00",
+    "TrainingScore": 83.9,
+    "FullName": "Hồ Văn Mai",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "442",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211028191",
+    "ClassName": "IS09",
+    "TrainingScore": 86.6,
+    "FullName": "Đỗ Thảo Khánh",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "341A",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211024046",
+    "ClassName": "LU02",
+    "TrainingScore": 72.6,
+    "FullName": "Vũ Ngọc Tùng",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "5A",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211027543",
+    "ClassName": "MK00",
+    "TrainingScore": 69.8,
+    "FullName": "Vũ Hữu Khánh",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "334",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211028551",
+    "ClassName": "KT09",
+    "TrainingScore": 77.9,
+    "FullName": "Lý Hải Cường",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "228B",
+      "Street": "Lê Lợi",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211024494",
+    "ClassName": "MK06",
+    "TrainingScore": 87.9,
+    "FullName": "Trần Bảo Quân",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "406",
+      "Street": "Lê Lợi",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211023913",
+    "ClassName": "LU08",
+    "TrainingScore": 71.5,
+    "FullName": "Phan Minh Nga",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "116B",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211022915",
+    "ClassName": "LU03",
+    "TrainingScore": 86.7,
+    "FullName": "Trần Minh Tuấn",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "255B",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211027634",
+    "ClassName": "LU02",
+    "TrainingScore": 87.4,
+    "FullName": "Đặng Hải Dung",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "301",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211028882",
+    "ClassName": "NH04",
+    "TrainingScore": 83.4,
+    "FullName": "Lê Tuấn Hương",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "263A",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211023273",
+    "ClassName": "IS05",
+    "TrainingScore": 67.7,
+    "FullName": "Hồ Thị Tuấn",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "234",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211025037",
+    "ClassName": "NH05",
+    "TrainingScore": 76.8,
+    "FullName": "Hoàng Hải Tuấn",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "263A",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211027790",
+    "ClassName": "LU02",
+    "TrainingScore": 75.7,
+    "FullName": "Hoàng Hữu Hải",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "129",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211024318",
+    "ClassName": "NH06",
+    "TrainingScore": 75.0,
+    "FullName": "Lê Hải Vy",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "497A",
+      "Street": "Pasteur",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211021497",
+    "ClassName": "MK07",
+    "TrainingScore": 71.7,
+    "FullName": "Hoàng Quỳnh An",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "34A",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211029055",
+    "ClassName": "NH00",
+    "TrainingScore": 68.6,
+    "FullName": "Hoàng Thanh Vy",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "364B",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211024602",
+    "ClassName": "MK04",
+    "TrainingScore": 82.2,
+    "FullName": "Huỳnh Thanh Hương",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "78",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211027213",
+    "ClassName": "LU05",
+    "TrainingScore": 65.1,
+    "FullName": "Ngô Quỳnh Mai",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "228",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211028156",
+    "ClassName": "NH03",
+    "TrainingScore": 84.7,
+    "FullName": "Hồ Thanh Nga",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "455",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211023981",
+    "ClassName": "LU03",
+    "TrainingScore": 74.7,
+    "FullName": "Đặng Hữu Trang",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "196B",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211029599",
+    "ClassName": "IS04",
+    "TrainingScore": 82.8,
+    "FullName": "Hồ Hoàng Đạt",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "151",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211022823",
+    "ClassName": "KT06",
+    "TrainingScore": 71.1,
+    "FullName": "Lý Gia Quân",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "238A",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211029662",
+    "ClassName": "LU02",
+    "TrainingScore": 88.1,
+    "FullName": "Đỗ Hải Tùng",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "61B",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211028696",
+    "ClassName": "MK09",
+    "TrainingScore": 78.1,
+    "FullName": "Phạm Gia Linh",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "344",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211022761",
+    "ClassName": "KT02",
+    "TrainingScore": 59.9,
+    "FullName": "Ngô Thanh Đạt",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "381B",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211024404",
+    "ClassName": "NH09",
+    "TrainingScore": 88.9,
+    "FullName": "Hồ Minh Nam",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "418A",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211024804",
+    "ClassName": "MK03",
+    "TrainingScore": 60.0,
+    "FullName": "Huỳnh Quỳnh Tùng",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "329A",
+      "Street": "Lê Lợi",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211027528",
+    "ClassName": "NH07",
+    "TrainingScore": 67.1,
+    "FullName": "Dương Hoàng Quân",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "401",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211028353",
+    "ClassName": "NH03",
+    "TrainingScore": 83.0,
+    "FullName": "Ngô Hải Linh",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "183",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211028548",
+    "ClassName": "IS04",
+    "TrainingScore": 60.1,
+    "FullName": "Hồ Minh Trang",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "127B",
+      "Street": "Lê Lợi",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211027072",
+    "ClassName": "KT08",
+    "TrainingScore": 65.5,
+    "FullName": "Nguyễn Minh Khánh",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "323",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211029094",
+    "ClassName": "LU06",
+    "TrainingScore": 84.6,
+    "FullName": "Dương Gia Trang",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "422B",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "StudentId": "31211027706",
+    "ClassName": "KT00",
+    "TrainingScore": 75.0,
+    "FullName": "Lê Thảo Mai",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "222A",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211027659",
+    "ClassName": "LU03",
+    "TrainingScore": 64.8,
+    "FullName": "Đỗ Gia An",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "121B",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211023684",
+    "ClassName": "KT06",
+    "TrainingScore": 67.3,
+    "FullName": "Võ Tuấn Dung",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "130A",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211029489",
+    "ClassName": "IS01",
+    "TrainingScore": 67.8,
+    "FullName": "Huỳnh Gia Vy",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "474",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211028605",
+    "ClassName": "LU05",
+    "TrainingScore": 90.2,
+    "FullName": "Lê Tuấn An",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "85B",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211021489",
+    "ClassName": "NH03",
+    "TrainingScore": 75.3,
+    "FullName": "Phan Văn Phong",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "103A",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211021151",
+    "ClassName": "LU04",
+    "TrainingScore": 91.8,
+    "FullName": "Vũ Tuấn Hương",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "110A",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211024226",
+    "ClassName": "IS07",
+    "TrainingScore": 77.1,
+    "FullName": "Huỳnh Minh Đạt",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "131A",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211022913",
+    "ClassName": "KT07",
+    "TrainingScore": 85.6,
+    "FullName": "Đỗ Bảo An",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "7A",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211024675",
+    "ClassName": "KT08",
+    "TrainingScore": 84.6,
+    "FullName": "Lê Bảo Tuấn",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "329B",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211027269",
+    "ClassName": "LU00",
+    "TrainingScore": 90.1,
+    "FullName": "Nguyễn Thanh Đạt",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "346",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211028238",
+    "ClassName": "LU04",
+    "TrainingScore": 86.0,
+    "FullName": "Lê Văn Đạt",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "227",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211029492",
+    "ClassName": "MK00",
+    "TrainingScore": 76.6,
+    "FullName": "Huỳnh Quỳnh Hương",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "382A",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "StudentId": "31211026976",
+    "ClassName": "NH05",
+    "TrainingScore": 64.4,
+    "FullName": "Dương Thảo Mai",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "186B",
+      "Street": "Lê Lợi",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "StudentId": "31211025296",
+    "ClassName": "IS02",
+    "TrainingScore": 63.0,
+    "FullName": "Trần Đức Dung",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "124",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211023943",
+    "ClassName": "IS07",
+    "TrainingScore": 64.9,
+    "FullName": "Hồ Thu Bình",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "166B",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211023008",
+    "ClassName": "LU04",
+    "TrainingScore": 73.5,
+    "FullName": "Vũ Thu Nga",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "180",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211027687",
+    "ClassName": "KT00",
+    "TrainingScore": 56.6,
+    "FullName": "Đặng Đức Hùng",
+    "BirthYear": 2005,
+    "ResidentAddress": {
+      "HouseNumber": "108A",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "StudentId": "31211026299",
+    "ClassName": "IS04",
+    "TrainingScore": 75.0,
+    "FullName": "Phạm Hoàng Linh",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "196B",
+      "Street": "Lê Lợi",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "StudentId": "31211021852",
+    "ClassName": "MK00",
+    "TrainingScore": 67.9,
+    "FullName": "Lý Bảo Vy",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "308B",
+      "Street": "Lê Lợi",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211029569",
+    "ClassName": "KT09",
+    "TrainingScore": 61.2,
+    "FullName": "Đặng Thảo Tuấn",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "492",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211028081",
+    "ClassName": "LU02",
+    "TrainingScore": 86.0,
+    "FullName": "Đỗ Hữu Dương",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "132B",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "StudentId": "31211023338",
+    "ClassName": "NH07",
+    "TrainingScore": 58.9,
+    "FullName": "Trần Hữu Tùng",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "458",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "StudentId": "31211022322",
+    "ClassName": "KT04",
+    "TrainingScore": 77.7,
+    "FullName": "Dương Hoàng Hùng",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "460B",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "StudentId": "31211024882",
+    "ClassName": "MK08",
+    "TrainingScore": 58.0,
+    "FullName": "Ngô Hải Hùng",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "84",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận Phú Nhuận"
+    }
+  }
+]

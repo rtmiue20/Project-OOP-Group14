@@ -1,16 +1,702 @@
-{
-  "$id": "1",
-  "$values": [
-    {
-      "$id": "2",
-      "Role": "\u00E2dfsdf",
-      "Term": "2004",
-      "StudentId": "1231231",
-      "ClassName": "se",
-      "TrainingScore": 0,
-      "FullName": "\u1EA5edaeq",
-      "BirthYear": 100,
-      "ResidentAddress": null
+[
+  {
+    "Role": "Trưởng ban Phong trào",
+    "Term": "2023-2025",
+    "StudentId": "31201028099",
+    "ClassName": "IS07",
+    "TrainingScore": 93.1,
+    "FullName": "Đặng Minh Đạt",
+    "BirthYear": 2001,
+    "ResidentAddress": {
+      "HouseNumber": "215A",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận 10"
     }
-  ]
-}
+  },
+  {
+    "Role": "Ủy viên Thường vụ",
+    "Term": "2023-2025",
+    "StudentId": "31201021325",
+    "ClassName": "IS07",
+    "TrainingScore": 98.9,
+    "FullName": "Vũ Minh Hương",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "358",
+      "Street": "Lê Lợi",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "Role": "Ủy viên Thường vụ",
+    "Term": "2023-2025",
+    "StudentId": "31201021993",
+    "ClassName": "LU02",
+    "TrainingScore": 98.0,
+    "FullName": "Hồ Đức Linh",
+    "BirthYear": 2001,
+    "ResidentAddress": {
+      "HouseNumber": "413B",
+      "Street": "Pasteur",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "Role": "Trưởng ban Phong trào",
+    "Term": "2023-2025",
+    "StudentId": "31201029414",
+    "ClassName": "NH00",
+    "TrainingScore": 95.5,
+    "FullName": "Lý Bảo Khánh",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "11B",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "Role": "Phó Bí thư Đoàn trường",
+    "Term": "2023-2025",
+    "StudentId": "31201028938",
+    "ClassName": "IS05",
+    "TrainingScore": 86.8,
+    "FullName": "Võ Văn Mai",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "193A",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "Role": "Phó Bí thư Đoàn trường",
+    "Term": "2023-2025",
+    "StudentId": "31201022086",
+    "ClassName": "KT05",
+    "TrainingScore": 90.1,
+    "FullName": "Hồ Thanh An",
+    "BirthYear": 2001,
+    "ResidentAddress": {
+      "HouseNumber": "500",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "Role": "Ủy viên BCH",
+    "Term": "2023-2025",
+    "StudentId": "31201029644",
+    "ClassName": "IS07",
+    "TrainingScore": 93.3,
+    "FullName": "Ngô Gia Dương",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "134B",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "Role": "Ủy viên BCH",
+    "Term": "2023-2025",
+    "StudentId": "31201022024",
+    "ClassName": "KT02",
+    "TrainingScore": 89.8,
+    "FullName": "Hồ Hải Khánh",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "293B",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "Role": "Bí thư Đoàn khoa",
+    "Term": "2023-2025",
+    "StudentId": "31201027784",
+    "ClassName": "KT09",
+    "TrainingScore": 92.7,
+    "FullName": "Lý Hữu Bình",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "99B",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "Role": "Trưởng ban Truyền thông",
+    "Term": "2023-2025",
+    "StudentId": "31201023254",
+    "ClassName": "KT09",
+    "TrainingScore": 100.0,
+    "FullName": "Võ Thảo Dung",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "244",
+      "Street": "Lê Lợi",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "Role": "Trưởng ban Truyền thông",
+    "Term": "2023-2025",
+    "StudentId": "31201025715",
+    "ClassName": "KT07",
+    "TrainingScore": 90.2,
+    "FullName": "Hồ Thu Cường",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "112A",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "Role": "Phó Bí thư Đoàn trường",
+    "Term": "2023-2025",
+    "StudentId": "31201027991",
+    "ClassName": "NH09",
+    "TrainingScore": 91.0,
+    "FullName": "Nguyễn Đức Dương",
+    "BirthYear": 2001,
+    "ResidentAddress": {
+      "HouseNumber": "498",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "Role": "Ủy viên BCH",
+    "Term": "2023-2025",
+    "StudentId": "31201028330",
+    "ClassName": "KT05",
+    "TrainingScore": 87.4,
+    "FullName": "Dương Hoàng Vy",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "113B",
+      "Street": "Lê Lợi",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "Role": "Trưởng ban Truyền thông",
+    "Term": "2023-2025",
+    "StudentId": "31201024732",
+    "ClassName": "MK05",
+    "TrainingScore": 91.2,
+    "FullName": "Vũ Văn Hương",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "447A",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "Role": "Ủy viên BCH",
+    "Term": "2023-2025",
+    "StudentId": "31201024791",
+    "ClassName": "LU03",
+    "TrainingScore": 95.6,
+    "FullName": "Dương Đức Tùng",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "170",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "Role": "Phó Bí thư Đoàn trường",
+    "Term": "2023-2025",
+    "StudentId": "31201021607",
+    "ClassName": "LU05",
+    "TrainingScore": 99.3,
+    "FullName": "Lý Minh Dung",
+    "BirthYear": 2001,
+    "ResidentAddress": {
+      "HouseNumber": "246A",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "Role": "Ủy viên BCH",
+    "Term": "2023-2025",
+    "StudentId": "31201024514",
+    "ClassName": "IS03",
+    "TrainingScore": 92.4,
+    "FullName": "Võ Văn Nam",
+    "BirthYear": 2001,
+    "ResidentAddress": {
+      "HouseNumber": "321B",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "Role": "Trưởng ban Truyền thông",
+    "Term": "2023-2025",
+    "StudentId": "31201027117",
+    "ClassName": "LU00",
+    "TrainingScore": 93.1,
+    "FullName": "Nguyễn Thu Dương",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "395",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "Role": "Trưởng ban Phong trào",
+    "Term": "2023-2025",
+    "StudentId": "31201024388",
+    "ClassName": "LU03",
+    "TrainingScore": 90.3,
+    "FullName": "Huỳnh Quỳnh Tùng",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "73B",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "Role": "Trưởng ban Truyền thông",
+    "Term": "2023-2025",
+    "StudentId": "31201028909",
+    "ClassName": "IS07",
+    "TrainingScore": 98.9,
+    "FullName": "Nguyễn Ngọc Trang",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "348B",
+      "Street": "Lê Lợi",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "Role": "Bí thư Đoàn khoa",
+    "Term": "2023-2025",
+    "StudentId": "31201024025",
+    "ClassName": "MK05",
+    "TrainingScore": 92.8,
+    "FullName": "Hoàng Thảo Linh",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "268",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "Role": "Trưởng ban Phong trào",
+    "Term": "2023-2025",
+    "StudentId": "31201021802",
+    "ClassName": "NH02",
+    "TrainingScore": 94.7,
+    "FullName": "Lê Hữu Hương",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "400",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "Role": "Ủy viên BCH",
+    "Term": "2023-2025",
+    "StudentId": "31201025173",
+    "ClassName": "IS01",
+    "TrainingScore": 88.6,
+    "FullName": "Vũ Minh Trang",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "118B",
+      "Street": "Lê Lợi",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "Role": "Bí thư Đoàn khoa",
+    "Term": "2023-2025",
+    "StudentId": "31201021761",
+    "ClassName": "NH06",
+    "TrainingScore": 85.2,
+    "FullName": "Lê Thị Cường",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "158A",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "Role": "Trưởng ban Phong trào",
+    "Term": "2023-2025",
+    "StudentId": "31201025067",
+    "ClassName": "NH02",
+    "TrainingScore": 88.8,
+    "FullName": "Nguyễn Quỳnh Bình",
+    "BirthYear": 2001,
+    "ResidentAddress": {
+      "HouseNumber": "332A",
+      "Street": "Pasteur",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "Role": "Ủy viên Thường vụ",
+    "Term": "2023-2025",
+    "StudentId": "31201025272",
+    "ClassName": "IS02",
+    "TrainingScore": 87.3,
+    "FullName": "Bùi Tuấn Nam",
+    "BirthYear": 2001,
+    "ResidentAddress": {
+      "HouseNumber": "236",
+      "Street": "Lê Lợi",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "Role": "Phó Bí thư Đoàn trường",
+    "Term": "2023-2025",
+    "StudentId": "31201026485",
+    "ClassName": "NH05",
+    "TrainingScore": 92.4,
+    "FullName": "Nguyễn Hải Linh",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "38",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "Role": "Phó Bí thư Đoàn trường",
+    "Term": "2023-2025",
+    "StudentId": "31201028095",
+    "ClassName": "NH07",
+    "TrainingScore": 91.1,
+    "FullName": "Hoàng Ngọc Trang",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "301",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "Role": "Phó Bí thư Đoàn trường",
+    "Term": "2023-2025",
+    "StudentId": "31201027537",
+    "ClassName": "IS06",
+    "TrainingScore": 89.8,
+    "FullName": "Trần Hải Hải",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "117A",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "Role": "Ủy viên BCH",
+    "Term": "2023-2025",
+    "StudentId": "31201022852",
+    "ClassName": "IS00",
+    "TrainingScore": 88.4,
+    "FullName": "Vũ Ngọc An",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "17A",
+      "Street": "Lê Lợi",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "Role": "Phó Bí thư Đoàn trường",
+    "Term": "2023-2025",
+    "StudentId": "31201029050",
+    "ClassName": "IS01",
+    "TrainingScore": 95.1,
+    "FullName": "Ngô Đức Vy",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "462A",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "Role": "Trưởng ban Phong trào",
+    "Term": "2023-2025",
+    "StudentId": "31201029926",
+    "ClassName": "LU01",
+    "TrainingScore": 89.9,
+    "FullName": "Lý Quỳnh Vy",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "169B",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "Role": "Trưởng ban Truyền thông",
+    "Term": "2023-2025",
+    "StudentId": "31201027993",
+    "ClassName": "LU03",
+    "TrainingScore": 86.4,
+    "FullName": "Đặng Hải Dung",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "161A",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "Role": "Phó Bí thư Đoàn trường",
+    "Term": "2023-2025",
+    "StudentId": "31201025353",
+    "ClassName": "NH05",
+    "TrainingScore": 95.7,
+    "FullName": "Đỗ Hữu Khánh",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "203B",
+      "Street": "Pasteur",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "Role": "Phó Bí thư Đoàn trường",
+    "Term": "2023-2025",
+    "StudentId": "31201026162",
+    "ClassName": "LU07",
+    "TrainingScore": 94.6,
+    "FullName": "Dương Thanh Khánh",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "479A",
+      "Street": "Pasteur",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "Role": "Bí thư Đoàn khoa",
+    "Term": "2023-2025",
+    "StudentId": "31201024854",
+    "ClassName": "LU04",
+    "TrainingScore": 99.9,
+    "FullName": "Lý Thanh An",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "452B",
+      "Street": "Lê Lợi",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "Role": "Phó Bí thư Đoàn trường",
+    "Term": "2023-2025",
+    "StudentId": "31201023508",
+    "ClassName": "NH05",
+    "TrainingScore": 96.0,
+    "FullName": "Ngô Ngọc Trang",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "274B",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "Role": "Trưởng ban Phong trào",
+    "Term": "2023-2025",
+    "StudentId": "31201023087",
+    "ClassName": "IS01",
+    "TrainingScore": 88.7,
+    "FullName": "Lê Hữu Hương",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "115A",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "Role": "Phó Bí thư Đoàn trường",
+    "Term": "2023-2025",
+    "StudentId": "31201025451",
+    "ClassName": "IS00",
+    "TrainingScore": 94.4,
+    "FullName": "Lê Tuấn Vy",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "87A",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "Role": "Ủy viên Thường vụ",
+    "Term": "2023-2025",
+    "StudentId": "31201021377",
+    "ClassName": "MK09",
+    "TrainingScore": 99.9,
+    "FullName": "Phan Văn Linh",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "493B",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "Role": "Bí thư Đoàn khoa",
+    "Term": "2023-2025",
+    "StudentId": "31201023597",
+    "ClassName": "LU04",
+    "TrainingScore": 91.3,
+    "FullName": "Hồ Hoàng Mai",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "48B",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "Role": "Ủy viên Thường vụ",
+    "Term": "2023-2025",
+    "StudentId": "31201026217",
+    "ClassName": "IS04",
+    "TrainingScore": 96.8,
+    "FullName": "Hồ Thanh Dung",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "334B",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "Role": "Trưởng ban Truyền thông",
+    "Term": "2023-2025",
+    "StudentId": "31201029555",
+    "ClassName": "KT02",
+    "TrainingScore": 96.6,
+    "FullName": "Hoàng Quỳnh Nga",
+    "BirthYear": 2002,
+    "ResidentAddress": {
+      "HouseNumber": "248",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "Role": "Phó Bí thư Đoàn trường",
+    "Term": "2023-2025",
+    "StudentId": "31201025885",
+    "ClassName": "LU02",
+    "TrainingScore": 85.3,
+    "FullName": "Vũ Hữu Đạt",
+    "BirthYear": 2001,
+    "ResidentAddress": {
+      "HouseNumber": "410B",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "Role": "Ủy viên Thường vụ",
+    "Term": "2023-2025",
+    "StudentId": "31201024498",
+    "ClassName": "NH04",
+    "TrainingScore": 97.9,
+    "FullName": "Vũ Thu Hùng",
+    "BirthYear": 2001,
+    "ResidentAddress": {
+      "HouseNumber": "130A",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "Role": "Ủy viên BCH",
+    "Term": "2023-2025",
+    "StudentId": "31201024930",
+    "ClassName": "MK05",
+    "TrainingScore": 99.4,
+    "FullName": "Ngô Thảo Trang",
+    "BirthYear": 2001,
+    "ResidentAddress": {
+      "HouseNumber": "20B",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "Role": "Bí thư Đoàn khoa",
+    "Term": "2023-2025",
+    "StudentId": "31201028823",
+    "ClassName": "IS06",
+    "TrainingScore": 93.4,
+    "FullName": "Phạm Tuấn Cường",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "90A",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "Role": "Ủy viên BCH",
+    "Term": "2023-2025",
+    "StudentId": "31201024603",
+    "ClassName": "LU09",
+    "TrainingScore": 92.6,
+    "FullName": "Bùi Quỳnh Nga",
+    "BirthYear": 2003,
+    "ResidentAddress": {
+      "HouseNumber": "473A",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "Role": "Ủy viên Thường vụ",
+    "Term": "2023-2025",
+    "StudentId": "31201025614",
+    "ClassName": "LU08",
+    "TrainingScore": 96.5,
+    "FullName": "Nguyễn Bảo Mai",
+    "BirthYear": 2001,
+    "ResidentAddress": {
+      "HouseNumber": "179A",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "Role": "Trưởng ban Phong trào",
+    "Term": "2023-2025",
+    "StudentId": "31201022031",
+    "ClassName": "LU06",
+    "TrainingScore": 93.3,
+    "FullName": "Phạm Thị Linh",
+    "BirthYear": 2004,
+    "ResidentAddress": {
+      "HouseNumber": "268A",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Gò Vấp"
+    }
+  }
+]

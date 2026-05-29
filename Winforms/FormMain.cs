@@ -1,3 +1,4 @@
+using QLDH.Data;
 using QLDH.Entities;
 using QLDH.Service;
 
@@ -8,51 +9,452 @@ public partial class FormMain : Form
     private StudentManager studentManager = new StudentManager();
     private OfficialManager officialManager = new OfficialManager();
     private RewardManager rewardManager = new RewardManager();
+    private FacultyManager facultyManager = new FacultyManager();
+    private LecturerManager lecturerManager = new LecturerManager();
+    private EventManager eventManager = new EventManager();
+    private ClubManager clubManager = new ClubManager();
+
+    private Panel pnl_sidebar;
+    private Panel pnl_top;
+    private Label lbl_title;
+    private Button btn_navStudent;
+    private Button btn_navEvent;
+    private Button btn_navClub;
+    private Button btn_navReward;
+    private Button btn_navLecturer;
+    private Button btn_navFaculty;
+    private Button btn_navAttendance;
+    private Button activeBtn;
 
     public FormMain()
     {
         InitializeComponent();
+        SetupModernUI();
+
+        // TabControl Event
+        tc_demo.SelectedIndexChanged += tc_demo_SelectedIndexChanged;
+
+        // Tab 1: Sinh viên
+        btn_studentAdd.Click += btnStudentAdd_Click;
+        btn_studentUpdate.Click += btnStudentUpdate_Click;
+        btn_studentDelete.Click += btnStudentDelete_Click;
+        btn_studentSearch.Click += btn_studentSearch_Click;
+        dgv_student.CellClick += dgv_student_CellClick;
+        cb_isOfficial.CheckedChanged += chkIsOfficial_CheckedChanged;
+
+        // Tab 2: Sự kiện
+        this.dgv_event.CellClick += new DataGridViewCellEventHandler(this.dgv_events_CellClick);
+        this.btn_eventAdd.Click += btn_eventAdd_Click;
+        this.btn_eventUpdate.Click += btn_eventUpdate_Click;
+        this.btn_eventDelete.Click += btn_eventDelete_Click;
+        this.btn_eventSearch.Click += new EventHandler(this.btn_eventSearch_Click);
+
+        // Tab 3: Câu lạc bộ
         this.dgv_club.CellClick += dgv_club_CellClick;
         this.btn_clubAdd.Click += btn_clubAdd_Click;
         this.btn_clubUpdate.Click += btn_clubUpdate_Click;
         this.btn_clubDelete.Click += btn_clubDelete_Click;
         this.btn_clubSearch.Click += btn_clubSearch_Click;
-        dgv_student.CellClick += dgv_student_CellClick;
-        btn_studentUpdate.Click += btnStudentUpdate_Click;
-        this.dgv_event.CellClick += new DataGridViewCellEventHandler(this.dgv_events_CellClick);
-        this.btn_eventSearch.Click += new EventHandler(this.btn_eventSearch_Click);
-        LoadClubData();
+
+        // Tab 4: Khen thưởng
         this.dgv_reward.CellClick += dgv_reward_CellClick;
         this.btn_rewardAdd.Click += btn_rewardAdd_Click;
         this.btn_rewardUpdate.Click += btn_rewardUpdate_Click;
         this.btn_rewardDelete.Click += btn_rewardDelete_Click;
         this.btn_rewardSearch.Click += btn_rewardSearch_Click;
+
+        // Tab Khoa
+        this.dgv_faculty.CellClick += dgv_faculty_CellClick;
+        this.btn_facultyAdd.Click += btn_facultyAdd_Click;
+        this.btn_facultyUpdate.Click += btn_facultyUpdate_Click;
+        this.btn_facultyDelete.Click += btn_facultyDelete_Click;
+        this.btn_facultySearch.Click += btn_facultySearch_Click;
+
+        // Tab Giảng viên
+        this.dgv_lecturer.CellClick += dgv_lecturer_CellClick;
+        this.btn_lecturerAdd.Click += btn_lecturerAdd_Click;
+        this.btn_lecturerUpdate.Click += btn_lecturerUpdate_Click;
+        this.btn_lecturerDelete.Click += btn_lecturerDelete_Click;
+        this.btn_lecturerSearch.Click += btn_lecturerSearch_Click;
+
+        // Tab Điểm danh
+        this.dgv_attendance.CellClick += dgv_attendance_CellClick;
+        this.btn_ddAdd.Click += btn_ddAdd_Click;
+        this.btn_ddSearch.Click += btn_ddSearch_Click;
+        this.button1.Click += btn_ddUpdate_Click;
+        this.button2.Click += btn_ddDelete_Click;
+
+        LoadClubData();
+        
+        // Mặc định chọn tab đầu tiên
+        if (btn_navStudent != null) btn_navStudent.PerformClick();
+        
+        // Cấu hình form toàn màn hình và lấp đầy
+        this.WindowState = FormWindowState.Maximized;
     }
 
-    private void Form1_Load(object sender, EventArgs e)
+    private void StyleButton(Button btn, Color backColor)
     {
-        LoadStudentData(); // Tab 1 
-        LoadEventData(); // Tab 2 
-        LoadStudentAndOfficialToComboBox(); // tab 4 
-        LoadRewardData(); // tab 4 
+        if (btn == null) return;
+        btn.FlatStyle = FlatStyle.Flat;
+        btn.FlatAppearance.BorderSize = 0;
+        btn.BackColor = backColor;
+        btn.ForeColor = Color.White;
+        btn.Font = new Font("Segoe UI", 9, FontStyle.Bold);
+        btn.Cursor = Cursors.Hand;
+        
+        // Thêm hiệu ứng hover nhẹ
+        btn.MouseEnter += (s, e) => btn.BackColor = ControlPaint.Light(backColor);
+        btn.MouseLeave += (s, e) => btn.BackColor = backColor;
+    }
+
+    private void SetupModernUI()
+    {
+        // Palette màu hiện đại mới (Deep Blue & Soft White)
+        Color primaryDark = Color.FromArgb(28, 35, 49);     // Sidebar background
+        Color secondaryDark = Color.FromArgb(35, 45, 63);   // Top Panel
+        Color accentColor = Color.FromArgb(0, 150, 255);    // Azure Blue accent
+        Color activeMenuColor = Color.FromArgb(43, 54, 76); // Active menu background
+        Color textColor = Color.FromArgb(240, 240, 240);
+
+        // Ẩn tab headers
+        tc_demo.Appearance = TabAppearance.FlatButtons;
+        tc_demo.ItemSize = new Size(0, 1);
+        tc_demo.SizeMode = TabSizeMode.Fixed;
+        tc_demo.Dock = DockStyle.Fill;
+
+        // Sidebar Panel
+        pnl_sidebar = new Panel();
+        pnl_sidebar.Dock = DockStyle.Left;
+        pnl_sidebar.Width = 400;
+        pnl_sidebar.BackColor = primaryDark;
+        this.Controls.Add(pnl_sidebar);
+
+        // Sidebar Logo/Header area (Hidden or removed as requested)
+        Panel pnl_logo = new Panel();
+        pnl_logo.Dock = DockStyle.Top;
+        pnl_logo.Height = 0; // Set height to 0 to "remove" it while keeping layout structure if needed, or just don't add label
+        pnl_logo.BackColor = Color.FromArgb(23, 29, 41);
+        pnl_sidebar.Controls.Add(pnl_logo);
+
+        // Top Panel
+        pnl_top = new Panel();
+        pnl_top.Dock = DockStyle.Top;
+        pnl_top.Height = 60;
+        pnl_top.BackColor = Color.White;
+        this.Controls.Add(pnl_top);
+        
+        lbl_title = new Label();
+        lbl_title.Text = "BẢNG ĐIỀU KHIỂN";
+        lbl_title.ForeColor = Color.FromArgb(45, 52, 54);
+        lbl_title.Font = new Font("Segoe UI", 14, FontStyle.Bold);
+        lbl_title.TextAlign = ContentAlignment.MiddleLeft;
+        lbl_title.Padding = new Padding(20, 0, 0, 0);
+        lbl_title.Dock = DockStyle.Fill;
+        pnl_top.Controls.Add(lbl_title);
+
+        // Border line for top panel
+        Panel pnl_top_border = new Panel();
+        pnl_top_border.Dock = DockStyle.Bottom;
+        pnl_top_border.Height = 1;
+        pnl_top_border.BackColor = Color.FromArgb(220, 220, 220);
+        pnl_top.Controls.Add(pnl_top_border);
+
+        // Bring to front to ensure panels are above TabControl
+        pnl_sidebar.BringToFront();
+        pnl_top.BringToFront();
+        tc_demo.BringToFront();
+
+        // Menu Buttons (Thứ tự từ dưới lên vì Dock.Top)
+        btn_navAttendance = CreateMenuBtn("📋 Điểm danh", 6);
+        btn_navFaculty = CreateMenuBtn("🏫 Khoa", 5);
+        btn_navLecturer = CreateMenuBtn("👨‍🏫 Giảng viên", 4);
+        btn_navReward = CreateMenuBtn("🏆 Khen thưởng", 3);
+        btn_navClub = CreateMenuBtn("🤝 Câu lạc bộ", 2);
+        btn_navEvent = CreateMenuBtn("📅 Sự kiện", 1);
+        btn_navStudent = CreateMenuBtn("👥 Sinh viên", 0);
+
+        // Styling CRUD Buttons
+        Color addColor = Color.FromArgb(46, 204, 113);    // Emerald Green
+        Color updateColor = Color.FromArgb(52, 152, 219); // Peter River Blue
+        Color deleteColor = Color.FromArgb(231, 76, 60);  // Alizarin Red
+        Color searchColor = Color.FromArgb(149, 165, 166); // Asbestos Gray
+
+        // Áp dụng Style cho tất cả các nút CRUD
+        StyleAllButtons(addColor, updateColor, deleteColor, searchColor);
+
+        // Styling DataGridViews
+        StyleDGV(dgv_student, accentColor);
+        StyleDGV(dgv_event, accentColor);
+        StyleDGV(dgv_club, accentColor);
+        StyleDGV(dgv_reward, accentColor);
+        StyleDGV(dgv_lecturer, accentColor);
+        StyleDGV(dgv_faculty, accentColor);
+        StyleDGV(dgv_attendance, accentColor);
+        
+        // Font update for all controls
+        UpdateFont(this);
+    }
+
+    private void StyleAllButtons(Color addColor, Color updateColor, Color deleteColor, Color searchColor)
+    {
+        StyleButton(btn_studentAdd, addColor);
+        StyleButton(btn_studentUpdate, updateColor);
+        StyleButton(btn_studentDelete, deleteColor);
+        StyleButton(btn_studentSearch, searchColor);
+
+        StyleButton(btn_eventAdd, addColor);
+        StyleButton(btn_eventUpdate, updateColor);
+        StyleButton(btn_eventDelete, deleteColor);
+        StyleButton(btn_eventSearch, searchColor);
+
+        StyleButton(btn_clubAdd, addColor);
+        StyleButton(btn_clubUpdate, updateColor);
+        StyleButton(btn_clubDelete, deleteColor);
+        StyleButton(btn_clubSearch, searchColor);
+
+        StyleButton(btn_rewardAdd, addColor);
+        StyleButton(btn_rewardUpdate, updateColor);
+        StyleButton(btn_rewardDelete, deleteColor);
+        StyleButton(btn_rewardSearch, searchColor);
+
+        StyleButton(btn_lecturerAdd, addColor);
+        StyleButton(btn_lecturerUpdate, updateColor);
+        StyleButton(btn_lecturerDelete, deleteColor);
+        StyleButton(btn_lecturerSearch, searchColor);
+
+        StyleButton(btn_facultyAdd, addColor);
+        StyleButton(btn_facultyUpdate, updateColor);
+        StyleButton(btn_facultyDelete, deleteColor);
+        StyleButton(btn_facultySearch, searchColor);
+
+        StyleButton(btn_ddAdd, addColor);
+        StyleButton(button1, updateColor);
+        StyleButton(button2, deleteColor);
+        StyleButton(btn_ddSearch, searchColor);
+    }
+
+    private Button CreateMenuBtn(string text, int tabIndex)
+    {
+        Button btn = new Button();
+        btn.Text = "    " + text;
+        btn.Dock = DockStyle.Top;
+        btn.Height = 50;
+        btn.FlatStyle = FlatStyle.Flat;
+        btn.FlatAppearance.BorderSize = 0;
+        btn.FlatAppearance.MouseDownBackColor = Color.FromArgb(43, 54, 76);
+        btn.FlatAppearance.MouseOverBackColor = Color.FromArgb(43, 54, 76);
+        btn.ForeColor = Color.FromArgb(176, 186, 201);
+        btn.TextAlign = ContentAlignment.MiddleLeft;
+        btn.Font = new Font("Segoe UI", 10, FontStyle.Regular);
+        btn.Tag = tabIndex;
+        btn.Cursor = Cursors.Hand;
+        btn.Click += NavBtn_Click;
+        pnl_sidebar.Controls.Add(btn);
+        
+        // Hiệu ứng hover menu
+        btn.MouseEnter += (s, e) => { 
+            if (activeBtn != btn) {
+                btn.BackColor = Color.FromArgb(43, 54, 76);
+                btn.ForeColor = Color.White;
+            }
+        };
+        btn.MouseLeave += (s, e) => { 
+            if (activeBtn != btn) {
+                btn.BackColor = Color.Transparent;
+                btn.ForeColor = Color.FromArgb(176, 186, 201);
+            }
+        };
+        
+        return btn;
+    }
+
+    private void NavBtn_Click(object sender, EventArgs e)
+    {
+        Button btn = (Button)sender;
+        int index = (int)btn.Tag;
+        tc_demo.SelectedIndex = index;
+        
+        // Highlight active button
+        if (activeBtn != null)
+        {
+            activeBtn.BackColor = Color.Transparent;
+            activeBtn.ForeColor = Color.FromArgb(176, 186, 201);
+            activeBtn.Font = new Font("Segoe UI", 10, FontStyle.Regular);
+        }
+        activeBtn = btn;
+        activeBtn.BackColor = Color.FromArgb(0, 150, 255); // Azure Blue
+        activeBtn.ForeColor = Color.White;
+        activeBtn.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+        lbl_title.Text = btn.Text.Trim().ToUpper();
+
+        UpdateFont(tc_demo.SelectedTab);
+    }
+
+    private void StyleDGV(DataGridView dgv, Color accentColor)
+    {
+        if (dgv == null) return;
+        dgv.BackgroundColor = Color.White;
+        dgv.BorderStyle = BorderStyle.None;
+        dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+        dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(242, 245, 250);
+        dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.FromArgb(71, 82, 94);
+        dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+        dgv.ColumnHeadersHeight = 45;
+        dgv.EnableHeadersVisualStyles = false;
+        dgv.DefaultCellStyle.SelectionBackColor = Color.FromArgb(231, 245, 255);
+        dgv.DefaultCellStyle.SelectionForeColor = Color.FromArgb(0, 120, 215);
+        dgv.DefaultCellStyle.Font = new Font("Segoe UI", 9);
+        dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(250, 251, 252);
+        dgv.RowHeadersVisible = false;
+        dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+        dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        dgv.RowTemplate.Height = 35;
+        dgv.GridColor = Color.FromArgb(239, 243, 247);
+        dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+    }
+
+    private void UpdateFont(Control parent)
+    {
+        if (parent == null) return;
+        foreach (Control c in parent.Controls)
+        {
+            if (c is Label || c is Button || c is TextBox || c is GroupBox || c is ComboBox || c is CheckBox)
+            {
+                if (c.Font.Name != "Segoe UI")
+                    c.Font = new Font("Segoe UI", 9, c.Font.Style);
+            }
+
+            if (c is GroupBox gb)
+            {
+                gb.FlatStyle = FlatStyle.Flat;
+                gb.ForeColor = Color.FromArgb(42, 54, 63);
+            }
+            
+            if (c.HasChildren) UpdateFont(c);
+        }
+    }
+
+    private void FormMain_Load(object sender, EventArgs e)
+    {
+    }
+
+    private void tc_demo_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        switch (tc_demo.SelectedIndex)
+        {
+            case 0: // Sinh viên & Đoàn viên
+                LoadStudentData();
+                break;
+            case 1: // Sự kiện
+                LoadEventData();
+                break;
+            case 2: // Câu lạc bộ
+                LoadClubData();
+                break;
+            case 3: // Khen thưởng
+                LoadStudentAndOfficialToComboBox();
+                LoadRewardData();
+                break;
+            case 4: // Giảng viên
+                LoadLecturerData();
+                break;
+            case 5: // Khoa
+                LoadFacultyData();
+                break;
+            case 6: // Điểm danh
+                LoadAttendanceData();
+                LoadStudentAndEventToComboDD();
+                break;
+        }
+    }
+
+    private void LoadLecturerData()
+    {
+        var lecturers = lecturerManager.GetAll();
+        dgv_lecturer.DataSource = null;
+        dgv_lecturer.DataSource = lecturers;
+
+        if (dgv_lecturer.Columns.Count > 0)
+        {
+            if (dgv_lecturer.Columns["LecturerId"] != null) dgv_lecturer.Columns["LecturerId"].HeaderText = "Mã GV";
+            if (dgv_lecturer.Columns["FullName"] != null) dgv_lecturer.Columns["FullName"].HeaderText = "Họ Tên";
+            if (dgv_lecturer.Columns["Department"] != null) dgv_lecturer.Columns["Department"].HeaderText = "Phòng ban/Bộ môn";
+            if (dgv_lecturer.Columns["BirthYear"] != null) dgv_lecturer.Columns["BirthYear"].HeaderText = "Năm sinh";
+        }
+    }
+
+    private void LoadFacultyData()
+    {
+        var faculties = facultyManager.GetAll();
+        
+        // Load to ComboBox (for Student tab)
+        if (cbb_faculty != null)
+        {
+            cbb_faculty.DataSource = null;
+            cbb_faculty.DataSource = faculties;
+            cbb_faculty.DisplayMember = "FacultyName";
+            cbb_faculty.ValueMember = "FacultyId";
+        }
+
+        // Load to DataGridView (for Faculty tab)
+        dgv_faculty.DataSource = null;
+        dgv_faculty.DataSource = faculties;
+        if (dgv_faculty.Columns.Count > 0)
+        {
+            dgv_faculty.Columns["FacultyId"].HeaderText = "Mã Khoa";
+            dgv_faculty.Columns["FacultyName"].HeaderText = "Tên Khoa";
+            dgv_faculty.Columns["DeanName"].HeaderText = "Trưởng Khoa";
+        }
     }
 
     /* ========= TAB 1: Sinh viên & Đoàn viên ========*/
     // 1. LoadData function
     private void LoadStudentData()
     {
-        var allStudents = new List<Student>();
-        allStudents.AddRange(studentManager.GetAll());
-        allStudents.AddRange(officialManager.GetAll());
+        List<object> displayList = new List<object>();
+        
+        // Thêm Student
+        foreach (var st in studentManager.GetAll())
+        {
+            displayList.Add(new {
+                st.StudentId,
+                st.FullName,
+                st.ClassName,
+                st.BirthYear,
+                st.TrainingScore,
+                Role = "Sinh viên",
+                Term = "-"
+            });
+        }
+        
+        // Thêm Official
+        foreach (var off in officialManager.GetAll())
+        {
+            displayList.Add(new {
+                off.StudentId,
+                off.FullName,
+                off.ClassName,
+                off.BirthYear,
+                off.TrainingScore,
+                off.Role,
+                off.Term
+            });
+        }
 
         dgv_student.DataSource = null;
-        dgv_student.DataSource = allStudents;
-
-        // Tùy chỉnh cột hiển thị cho đẹp
-        dgv_student.Columns["StudentId"].HeaderText = "Mã SV";
-        dgv_student.Columns["FullName"].HeaderText = "Họ Tên";
-        dgv_student.Columns["ClassName"].HeaderText = "Lớp";
-        dgv_student.Columns["TrainingScore"].HeaderText = "Điểm RL";
+        dgv_student.DataSource = displayList;
+        
+        if (dgv_student.Columns.Count > 0)
+        {
+            dgv_student.Columns["StudentId"].HeaderText = "MSSV";
+            dgv_student.Columns["FullName"].HeaderText = "Họ Tên";
+            dgv_student.Columns["ClassName"].HeaderText = "Lớp";
+            dgv_student.Columns["BirthYear"].HeaderText = "Năm sinh";
+            dgv_student.Columns["TrainingScore"].HeaderText = "ĐRL";
+            dgv_student.Columns["Role"].HeaderText = "Chức vụ";
+            dgv_student.Columns["Term"].HeaderText = "Nhiệm kỳ";
+        }
     }
 
     // 2. StudentAdd function
@@ -68,7 +470,7 @@ public partial class FormMain : Form
                 BirthYear = (int)nud_birthYear.Value,
                 Role = txt_role.Text,
                 Term = txt_term.Text,
-                TrainingScore = 0 // Mặc định mới
+                TrainingScore = 0 
             };
             officialManager.Add(off);
         }
@@ -86,6 +488,7 @@ public partial class FormMain : Form
         }
 
         MessageBox.Show("Thêm thành công!");
+        ClearStudentForm();
         LoadStudentData();
     }
 
@@ -101,7 +504,7 @@ public partial class FormMain : Form
 
         if (cb_isOfficial.Checked)
         {
-            var off = officialManager.GetById(id);
+            Official off = officialManager.GetById(id);
             if (off != null)
             {
                 off.FullName = txt_fullName.Text;
@@ -132,7 +535,7 @@ public partial class FormMain : Form
         }
         else
         {
-            var st = studentManager.GetById(id);
+            Student st = studentManager.GetById(id);
             if (st != null)
             {
                 st.FullName = txt_fullName.Text;
@@ -144,7 +547,7 @@ public partial class FormMain : Form
             else
             {
                 // Ngược lại, nếu là Official hạ cấp xuống Student
-                var off = officialManager.GetById(id);
+                Official off = officialManager.GetById(id);
                 if (off != null)
                 {
                     officialManager.Delete(id);
@@ -167,6 +570,7 @@ public partial class FormMain : Form
         }
 
         LoadStudentData();
+        ClearStudentForm();
     }
 
     private void dgv_student_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -181,8 +585,8 @@ public partial class FormMain : Form
                 nud_birthYear.Value = Convert.ToInt32(row.Cells["BirthYear"].Value);
 
             // Kiểm tra xem đối tượng là Official hay Student
-            var studentId = txt_studentId.Text;
-            var off = officialManager.GetById(studentId);
+            string studentId = txt_studentId.Text;
+            Official off = officialManager.GetById(studentId);
             if (off != null)
             {
                 cb_isOfficial.Checked = true;
@@ -203,129 +607,213 @@ public partial class FormMain : Form
     {
         string id = txt_studentId.Text;
 
-        // Thử xóa ở cả 2 manager (hàm Delete đã có kiểm tra tồn tại)
-        studentManager.Delete(id);
-        officialManager.Delete(id);
+        if (string.IsNullOrEmpty(id))
+        {
+            MessageBox.Show("Vui lòng chọn sinh viên cần xóa!");
+            return;
+        }
 
-        LoadStudentData();
-        MessageBox.Show("Đã xóa sinh viên!");
+        DialogResult confirm = MessageBox.Show(
+            "Bạn có chắc chắn muốn xóa sinh viên này?",
+            "Xác nhận xóa",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Warning
+        );
+
+        if (confirm == DialogResult.Yes)
+        {
+            studentManager.Delete(id);
+            officialManager.Delete(id);
+            MessageBox.Show("Đã xóa sinh viên!");
+            ClearStudentForm();
+            LoadStudentData();
+        }
     }
 
-    // 5. SolveEvent function (Hide)
+    // 5. SearchStudent function
+    private void btn_studentSearch_Click(object sender, EventArgs e)
+    {
+        string keyword = txt_studentSearch.Text.Trim();
+        if (string.IsNullOrEmpty(keyword))
+        {
+            LoadStudentData();
+            return;
+        }
+
+        List<Student> stResults = studentManager.Search(keyword);
+        List<Official> offResults = officialManager.Search(keyword);
+
+        var displayList = new List<object>();
+        foreach (var st in stResults)
+        {
+            displayList.Add(new {
+                st.StudentId,
+                st.FullName,
+                st.ClassName,
+                st.BirthYear,
+                st.TrainingScore,
+                Role = "Sinh viên",
+                Term = "-"
+            });
+        }
+        foreach (var off in offResults)
+        {
+            displayList.Add(new {
+                off.StudentId,
+                off.FullName,
+                off.ClassName,
+                off.BirthYear,
+                off.TrainingScore,
+                off.Role,
+                off.Term
+            });
+        }
+
+        dgv_student.DataSource = null;
+        dgv_student.DataSource = displayList;
+
+        if (displayList.Count == 0)
+        {
+            MessageBox.Show("Không tìm thấy sinh viên phù hợp!");
+        }
+        else if (dgv_student.Columns.Count > 0)
+        {
+            dgv_student.Columns["StudentId"].HeaderText = "MSSV";
+            dgv_student.Columns["FullName"].HeaderText = "Họ Tên";
+            dgv_student.Columns["ClassName"].HeaderText = "Lớp";
+            dgv_student.Columns["BirthYear"].HeaderText = "Năm sinh";
+            dgv_student.Columns["TrainingScore"].HeaderText = "ĐRL";
+            dgv_student.Columns["Role"].HeaderText = "Chức vụ";
+            dgv_student.Columns["Term"].HeaderText = "Nhiệm kỳ";
+        }
+    }
+
+    // 6. ClearStudentForm function
+    private void ClearStudentForm()
+    {
+        txt_studentId.Clear();
+        txt_fullName.Clear();
+        txt_class.Clear();
+        nud_birthYear.Value = 2006;
+        cb_isOfficial.Checked = false;
+        txt_role.Clear();
+        txt_term.Clear();
+    }
+
+    // 7. SolveEvent function (Hide)
     private void chkIsOfficial_CheckedChanged(object sender, EventArgs e)
     {
         bool isOfficial = cb_isOfficial.Checked;
         txt_role.Visible = isOfficial;
         txt_term.Visible = isOfficial;
-        // Bạn có thể ẩn luôn cả Label tương ứng
         lbl_role.Visible = isOfficial;
         lbl_term.Visible = isOfficial;
     }
+    
     /* ========= TAB 2: Sự kiện ========*/
 
-    // Khai báo tường minh Manager xử lý sự kiện
-    private EventManager eventManager = new EventManager();
 
-    // 1. Hàm tải dữ liệu lên DataGridView
+    // 1. LoadDataEvent function
     private void LoadEventData()
     {
-        List<UnionEvent> danhSach = eventManager.GetAll();
+        List<UnionEvent> list = eventManager.GetAll();
 
         dgv_event.DataSource = null;
-        dgv_event.DataSource = danhSach;
+        dgv_event.DataSource = list;
 
-        // Ẩn các cột hệ thống không cần hiển thị
-        if (dgv_event.Columns["Address"] != null)
-            dgv_event.Columns["Address"].Visible = false;
-        if (dgv_event.Columns["Participants"] != null)
-            dgv_event.Columns["Participants"].Visible = false;
+        if (dgv_event.Columns.Count > 0)
+        {
+            // Ẩn các cột hệ thống không cần hiển thị
+            if (dgv_event.Columns["Address"] != null)
+                dgv_event.Columns["Address"].Visible = false;
+            if (dgv_event.Columns["Participants"] != null)
+                dgv_event.Columns["Participants"].Visible = false;
 
-        // Đổi tên tiêu đề cột cho thân thiện
-        if (dgv_event.Columns["EventId"] != null)
-            dgv_event.Columns["EventId"].HeaderText = "Mã Sự Kiện";
-        if (dgv_event.Columns["EventName"] != null)
-            dgv_event.Columns["EventName"].HeaderText = "Tên Sự Kiện";
-        if (dgv_event.Columns["BonusScore"] != null)
-            dgv_event.Columns["BonusScore"].HeaderText = "Điểm Cộng";
-
-
+            // Đổi tên tiêu đề cột cho thân thiện
+            if (dgv_event.Columns["EventId"] != null)
+                dgv_event.Columns["EventId"].HeaderText = "Mã Sự Kiện";
+            if (dgv_event.Columns["EventName"] != null)
+                dgv_event.Columns["EventName"].HeaderText = "Tên Sự Kiện";
+            if (dgv_event.Columns["BonusScore"] != null)
+                dgv_event.Columns["BonusScore"].HeaderText = "Điểm Cộng";
+        }
     }
 
-    //addEvent Function
+    // 2. AddEvent function
     private void btn_eventAdd_Click(object sender, EventArgs e)
     {
-        string maSK = txt_eventId.Text.Trim();
-        string tenSK = txt_eventName.Text.Trim();
+        string eventId = txt_eventId.Text.Trim();
+        string eventName = txt_eventName.Text.Trim();
 
         // Kiểm tra ô nhập liệu không được để trống
-        if (maSK == "" || tenSK == "")
+        if (eventId == "" || eventName == "")
         {
             MessageBox.Show("Vui lòng nhập đầy đủ Mã sự kiện và Tên sự kiện.", "Lỗi nhập liệu");
             return;
         }
 
         // Kiểm tra trùng mã sự kiện bằng vòng lặp
-        List<UnionEvent> danhSachHienTai = eventManager.GetAll();
-        bool baTrung = false;
-        for (int i = 0; i < danhSachHienTai.Count; i++)
+        List<UnionEvent> curList = eventManager.GetAll();
+        bool dupli = false;
+        for (int i = 0; i < curList.Count; i++)
         {
-            if (danhSachHienTai[i].EventId == maSK)
+            if (curList[i].EventId == eventId)
             {
-                baTrung = true;
+                dupli = true;
                 break;
             }
         }
 
-        if (baTrung)
+        if (dupli)
         {
             MessageBox.Show("Mã sự kiện đã tồn tại. Vui lòng nhập mã khác.", "Lỗi trùng lặp");
             return;
         }
 
-        UnionEvent suKienMoi = new UnionEvent
+        UnionEvent newEvent = new UnionEvent
         {
-            EventId = maSK,
-            EventName = tenSK,
+            EventId = eventId,
+            EventName = eventName,
             BonusScore = (double)num_bonusScore.Value
         };
 
-        eventManager.Add(suKienMoi);
+        eventManager.Add(newEvent);
         MessageBox.Show("Thêm sự kiện thành công!", "Thành công");
         ClearEventForm();
         LoadEventData();
     }
 
-    //UpdateEvent Function
+    // 3. UpdateEvent function
     private void btn_eventUpdate_Click(object sender, EventArgs e)
     {
-        string maSK = txt_eventId.Text.Trim();
-        string tenSK = txt_eventName.Text.Trim();
+        string eventId = txt_eventId.Text.Trim();
+        string eventName = txt_eventName.Text.Trim();
 
-        if (maSK == "" || tenSK == "")
+        if (eventId == "" || eventName == "")
         {
             MessageBox.Show("Vui lòng nhập đầy đủ Mã sự kiện và Tên sự kiện.", "Lỗi nhập liệu");
             return;
         }
 
         // Kiểm tra mã sự kiện có tồn tại không trước khi cập nhật
-        UnionEvent suKienCu = eventManager.GetById(maSK);
-        if (suKienCu == null)
+        UnionEvent oldEvent = eventManager.GetById(eventId);
+        if (oldEvent == null)
         {
             MessageBox.Show("Không tìm thấy sự kiện với mã này để cập nhật.", "Lỗi");
             return;
         }
 
         // Giữ lại danh sách Participants gốc, chỉ cập nhật thông tin cơ bản
-        UnionEvent suKienCapNhat = new UnionEvent
+        UnionEvent eventUpd = new UnionEvent
         {
-            EventId = maSK,
-            EventName = tenSK,
+            EventId = eventId,
+            EventName = eventName,
             BonusScore = (double)num_bonusScore.Value,
-            Address = suKienCu.Address,
-            Participants = suKienCu.Participants
+            Address = oldEvent.Address,
+            Participants = oldEvent.Participants
         };
 
-        eventManager.Update(suKienCapNhat);
+        eventManager.Update(eventUpd);
         MessageBox.Show("Cập nhật sự kiện thành công!", "Thành công");
         ClearEventForm();
         LoadEventData();
@@ -336,60 +824,58 @@ public partial class FormMain : Form
         if (e.RowIndex < 0)
             return;
 
-        DataGridViewRow dongDuocChon = dgv_event.Rows[e.RowIndex];
+        DataGridViewRow lineSel = dgv_event.Rows[e.RowIndex];
 
-        txt_eventId.Text = dongDuocChon.Cells["EventId"].Value.ToString();
-        txt_eventName.Text = dongDuocChon.Cells["EventName"].Value.ToString();
-        num_bonusScore.Value = Convert.ToDecimal(dongDuocChon.Cells["BonusScore"].Value);
+        txt_eventId.Text = lineSel.Cells["EventId"].Value.ToString();
+        txt_eventName.Text = lineSel.Cells["EventName"].Value.ToString();
+        num_bonusScore.Value = Convert.ToDecimal(lineSel.Cells["BonusScore"].Value);
     }
 
-    //DeleteEvent Function
+    // 4. DeleteEvent function
     private void btn_eventDelete_Click(object sender, EventArgs e)
     {
-        string maSK = txt_eventId.Text.Trim();
+        string eventId = txt_eventId.Text.Trim();
 
-        if (maSK == "")
+        if (eventId == "")
         {
             MessageBox.Show("Vui lòng chọn một sự kiện từ danh sách để xóa.", "Lỗi");
             return;
         }
 
-        DialogResult xacNhan = MessageBox.Show(
-            "Bạn có chắc chắn muốn xóa sự kiện có mã '" + maSK + "' không?",
+        DialogResult acp = MessageBox.Show(
+            "Bạn có chắc chắn muốn xóa sự kiện có mã '" + eventId + "' không?",
             "Xác nhận xóa",
             MessageBoxButtons.YesNo,
             MessageBoxIcon.Warning
         );
 
-        if (xacNhan == DialogResult.Yes)
+        if (acp == DialogResult.Yes)
         {
-            eventManager.Delete(maSK);
+            eventManager.Delete(eventId);
             MessageBox.Show("Xóa sự kiện thành công!", "Thành công");
             ClearEventForm();
             LoadEventData();
         }
-
-        throw new System.NotImplementedException();
     }
 
-    //SearchEvent Funtion
+    // 5. SearchEvent function
     private void btn_eventSearch_Click(object sender, EventArgs e)
     {
-        string tuKhoa = txt_eventSearch.Text.Trim();
+        string kw = txt_eventSearch.Text.Trim();
 
-        List<UnionEvent> ketQua = new List<UnionEvent>();
+        List<UnionEvent> result = new List<UnionEvent>();
 
-        if (tuKhoa == "")
+        if (kw == "")
         {
-            ketQua = eventManager.GetAll();
+            result = eventManager.GetAll();
         }
         else
         {
-            ketQua = eventManager.Search(tuKhoa);
+            result = eventManager.Search(kw);
         }
 
         dgv_event.DataSource = null;
-        dgv_event.DataSource = ketQua;
+        dgv_event.DataSource = result;
 
         if (dgv_event.Columns["Address"] != null)
             dgv_event.Columns["Address"].Visible = false;
@@ -402,11 +888,11 @@ public partial class FormMain : Form
         if (dgv_event.Columns["BonusScore"] != null)
             dgv_event.Columns["BonusScore"].HeaderText = "Điểm Cộng";
 
-        if (tuKhoa != "" && ketQua.Count == 0)
+        if (kw != "" && result.Count == 0)
             MessageBox.Show("Không tìm thấy sự kiện nào phù hợp.", "Thông báo");
     }
 
-// Hàm tiện ích: Xóa trắng toàn bộ ô nhập liệu trên Tab Sự kiện
+    // 6. ClearEventForm function
     private void ClearEventForm()
     {
         txt_eventId.Text = "";
@@ -417,71 +903,66 @@ public partial class FormMain : Form
 
     private void txt_eventId_TextChanged(object sender, EventArgs e)
     {
-        throw new System.NotImplementedException();
     }
 
     private void label9_Click(object sender, EventArgs e)
     {
-        throw new System.NotImplementedException();
     }
 
     private void label12_Click(object sender, EventArgs e)
     {
-        throw new System.NotImplementedException();
     }
 
     private void label13_Click(object sender, EventArgs e)
     {
-        throw new System.NotImplementedException();
     }
 
     private void label9_Click_1(object sender, EventArgs e)
     {
-        throw new System.NotImplementedException();
     }
 
-// Manager for Club
-    private ClubManager clubManager = new ClubManager();
-/* ========= TAB 3: Club Management ========*/
-
-// 1. LoadClubData function
+    // 1. LoadClubData function
     private void LoadClubData()
     {
-        List<Club> danhSach = clubManager.GetAll();
+        List<Club> list = clubManager.GetAll();
 
         dgv_club.DataSource = null;
-        dgv_club.DataSource = danhSach;
+        dgv_club.DataSource = list;
 
         // Customize column header
-        if (dgv_club.Columns["ClubId"] != null)
-            dgv_club.Columns["ClubId"].HeaderText = "Mã CLB";
+        if (dgv_club.Columns.Count > 0)
+        {
+            if (dgv_club.Columns["ClubId"] != null)
+                dgv_club.Columns["ClubId"].HeaderText = "Mã CLB";
 
-        if (dgv_club.Columns["ClubName"] != null)
-            dgv_club.Columns["ClubName"].HeaderText = "Tên CLB";
+            if (dgv_club.Columns["ClubName"] != null)
+                dgv_club.Columns["ClubName"].HeaderText = "Tên CLB";
 
-        if (dgv_club.Columns["FoundedDate"] != null)
-            dgv_club.Columns["FoundedDate"].HeaderText = "Ngày thành lập";
+            if (dgv_club.Columns["FoundedDate"] != null)
+                dgv_club.Columns["FoundedDate"].HeaderText = "Ngày thành lập";
 
-        if (dgv_club.Columns["MemberCount"] != null)
-            dgv_club.Columns["MemberCount"].HeaderText = "Số thành viên";
+            if (dgv_club.Columns["MemberCount"] != null)
+                dgv_club.Columns["MemberCount"].HeaderText = "Số thành viên";
+        }
     }
+    
     // 2. AddClub function
     private void btn_clubAdd_Click(object sender, EventArgs e)
     {
-        string maCLB = txt_clubId.Text.Trim();
-        string tenCLB = txt_clubName.Text.Trim();
+        string clubId = txt_clubId.Text.Trim();
+        string clubName = txt_clubName.Text.Trim();
 
-        if (maCLB == "" || tenCLB == "")
+        if (clubId == "" || clubName == "")
         {
             MessageBox.Show("Vui lòng nhập đầy đủ thông tin CLB.");
             return;
         }
 
         // Check duplicate
-        List<Club> danhSach = clubManager.GetAll();
-        foreach (Club clb in danhSach)
+        List<Club> list = clubManager.GetAll();
+        foreach (Club clb in list)
         {
-            if (clb.ClubId == maCLB)
+            if (clb.ClubId == clubId)
             {
                 MessageBox.Show("Mã CLB đã tồn tại.");
                 return;
@@ -490,8 +971,8 @@ public partial class FormMain : Form
 
         Club club = new Club
         {
-            ClubId = maCLB,
-            ClubName = tenCLB,
+            ClubId = clubId,
+            ClubName = clubName,
             FoundedDate = dtp_foundedDate.Value,
             MemberCount = (int)num_memberCount.Value
         };
@@ -503,18 +984,19 @@ public partial class FormMain : Form
         ClearClubForm();
         LoadClubData();
     }
-// 3. UpdateClub function
+    
+    // 3. UpdateClub function
     private void btn_clubUpdate_Click(object sender, EventArgs e)
     {
-        string maCLB = txt_clubId.Text.Trim();
+        string clubId = txt_clubId.Text.Trim();
 
-        if (maCLB == "")
+        if (clubId == "")
         {
             MessageBox.Show("Vui lòng chọn CLB để cập nhật.");
             return;
         }
 
-        Club club = clubManager.GetById(maCLB);
+        Club club = clubManager.GetById(clubId);
 
         if (club == null)
         {
@@ -533,12 +1015,13 @@ public partial class FormMain : Form
         ClearClubForm();
         LoadClubData();
     }
-// 4. DeleteClub function
+    
+    // 4. DeleteClub function
     private void btn_clubDelete_Click(object sender, EventArgs e)
     {
-        string maCLB = txt_clubId.Text.Trim();
+        string clubId = txt_clubId.Text.Trim();
 
-        if (maCLB == "")
+        if (clubId == "")
         {
             MessageBox.Show("Vui lòng chọn CLB để xóa.");
             return;
@@ -552,7 +1035,7 @@ public partial class FormMain : Form
 
         if (confirm == DialogResult.Yes)
         {
-            clubManager.Delete(maCLB);
+            clubManager.Delete(clubId);
 
             MessageBox.Show("Xóa thành công!");
 
@@ -560,22 +1043,23 @@ public partial class FormMain : Form
             LoadClubData();
         }
     }
+    
     // 5. SearchClub function
     private void btn_clubSearch_Click(object sender, EventArgs e)
     {
         string keyword = txt_clubSearch.Text.Trim();
 
-        List<Club> ketQua;
+        List<Club> result;
 
         if (keyword == "")
-            ketQua = clubManager.GetAll();
+            result = clubManager.GetAll();
         else
-            ketQua = clubManager.Search(keyword);
+            result = clubManager.Search(keyword);
 
         dgv_club.DataSource = null;
-        dgv_club.DataSource = ketQua;
+        dgv_club.DataSource = result;
 
-        if (keyword != "" && ketQua.Count == 0)
+        if (keyword != "" && result.Count == 0)
             MessageBox.Show("Không tìm thấy CLB.");
     }
     // 6. dgvClub CellClick
@@ -602,7 +1086,8 @@ public partial class FormMain : Form
         dtp_foundedDate.Value = DateTime.Now;
         num_memberCount.Value = 0;
     }
-    // tab 4 
+    
+    /* ========= TAB 4: Reward Management ========*/
     // Class phụ trợ để chứa dữ liệu an toàn cho ComboBox
     public class StudentComboItem
     {
@@ -613,72 +1098,85 @@ public partial class FormMain : Form
     // 1. Hàm gộp dữ liệu Sinh viên & Cán bộ vào ComboBox
     private void LoadStudentAndOfficialToComboBox()
     {
-        List<StudentComboItem> listNguoiNhan = new List<StudentComboItem>();
+        List<StudentComboItem> getterList = new List<StudentComboItem>();
 
-        foreach (var sv in studentManager.GetAll())
+        foreach (Student st in studentManager.GetAll())
         {
-            listNguoiNhan.Add(new StudentComboItem
+            getterList.Add(new StudentComboItem
             {
-                Id = sv.StudentId,
-                DisplayText = sv.StudentId + " - " + sv.FullName + " (SV)"
+                Id = st.StudentId,
+                DisplayText = st.StudentId + " - " + st.FullName + " (st)"
             });
         }
 
-        foreach (var cb in officialManager.GetAll())
+        foreach (Official off in officialManager.GetAll())
         {
-            listNguoiNhan.Add(new StudentComboItem
+            getterList.Add(new StudentComboItem
             {
-                Id = cb.StudentId,
-                DisplayText = cb.StudentId + " - " + cb.FullName + " (CB)"
+                Id = off.StudentId,
+                DisplayText = off.StudentId + " - " + off.FullName + " (CB)"
             });
         }
 
-        cbo_studentid.DataSource = listNguoiNhan;
-        cbo_studentid.DisplayMember = "DisplayText";
-        cbo_studentid.ValueMember = "Id";
+        cbo_studentId.DataSource = getterList;
+        cbo_studentId.DisplayMember = "DisplayText";
+        cbo_studentId.ValueMember = "Id";
     }
 
     // 2. LoadRewardData function
     private void LoadRewardData()
     {
-        List<Reward> danhSach = rewardManager.GetAll();
+        var displayList = rewardManager.GetAll().Select(r => {
+            string studentName = "Không xác định";
+            var st = studentManager.GetById(r.StudentId);
+            if (st != null) studentName = st.FullName;
+            else {
+                var off = officialManager.GetById(r.StudentId);
+                if (off != null) studentName = off.FullName;
+            }
+
+            return new {
+                r.RewardId,
+                r.RewardName,
+                r.IssueDate,
+                r.StudentId,
+                StudentName = studentName
+            };
+        }).ToList();
 
         dgv_reward.DataSource = null;
-        dgv_reward.DataSource = danhSach;
+        dgv_reward.DataSource = displayList;
 
-        if (dgv_reward.Columns["RewardId"] != null)
+        if (dgv_reward.Columns.Count > 0)
+        {
             dgv_reward.Columns["RewardId"].HeaderText = "Mã KT";
-
-        if (dgv_reward.Columns["RewardName"] != null)
             dgv_reward.Columns["RewardName"].HeaderText = "Tên Khen thưởng";
-
-        if (dgv_reward.Columns["IssueDate"] != null)
             dgv_reward.Columns["IssueDate"].HeaderText = "Ngày QĐ";
-
-        if (dgv_reward.Columns["StudentId"] != null)
             dgv_reward.Columns["StudentId"].HeaderText = "Mã SV/CB";
+            dgv_reward.Columns["StudentName"].HeaderText = "Họ Tên Người nhận";
+        }
     }
 
     // 3. AddReward function
     private void btn_rewardAdd_Click(object sender, EventArgs e)
     {
-        string maKT = txt_rewardid.Text.Trim();
-        string tenKT = txt_rewardname.Text.Trim();
+        string rewId = txt_rewardId.Text.Trim();
+        string rewName = txt_rewardName.Text.Trim();
 
-        if (cbo_studentid.SelectedValue == null)
+        if (cbo_studentId.SelectedValue == null)
         {
             MessageBox.Show("Vui lòng chọn Sinh viên/Cán bộ nhận thưởng.", "Thông báo");
             return;
         }
-        string maSV = cbo_studentid.SelectedValue.ToString();
+        string studentId = cbo_studentId.SelectedValue.ToString();
 
-        if (maKT == "" || tenKT == "")
+        if (rewId == "" || rewName == "")
         {
             MessageBox.Show("Vui lòng nhập đầy đủ Mã và Tên khen thưởng.", "Thông báo");
             return;
         }
 
-        if (rewardManager.GetById(maKT) != null)
+        if (rewardManager.GetById(rewId) != null)
         {
             MessageBox.Show("Mã Khen thưởng đã tồn tại.", "Lỗi");
             return;
@@ -686,10 +1184,10 @@ public partial class FormMain : Form
 
         Reward newReward = new Reward
         {
-            RewardId = maKT,
-            RewardName = tenKT,
+            RewardId = rewId,
+            RewardName = rewName,
             IssueDate = dtp_issuedate.Value,
-            StudentId = maSV
+            StudentId = studentId
         };
 
         rewardManager.Add(newReward);
@@ -702,30 +1200,30 @@ public partial class FormMain : Form
     // 4. UpdateReward function
     private void btn_rewardUpdate_Click(object sender, EventArgs e)
     {
-        string maKT = txt_rewardid.Text.Trim();
+        string rewId = txt_rewardId.Text.Trim();
 
-        if (maKT == "")
+        if (rewId == "")
         {
             MessageBox.Show("Vui lòng chọn Khen thưởng để cập nhật.", "Thông báo");
             return;
         }
 
-        Reward r = rewardManager.GetById(maKT);
+        Reward rew = rewardManager.GetById(rewId);
 
-        if (r == null)
+        if (rew == null)
         {
             MessageBox.Show("Không tìm thấy mã Khen thưởng này trong hệ thống.", "Lỗi");
             return;
         }
 
-        r.RewardName = txt_rewardname.Text.Trim();
-        r.IssueDate = dtp_issuedate.Value;
-        if (cbo_studentid.SelectedValue != null)
+        rew.RewardName = txt_rewardName.Text.Trim();
+        rew.IssueDate = dtp_issuedate.Value;
+        if (cbo_studentId.SelectedValue != null)
         {
-            r.StudentId = cbo_studentid.SelectedValue.ToString();
+            rew.StudentId = cbo_studentId.SelectedValue.ToString();
         }
 
-        rewardManager.Update(r);
+        rewardManager.Update(rew);
 
         MessageBox.Show("Cập nhật thành công!", "Thành công");
         ClearRewardForm();
@@ -735,9 +1233,9 @@ public partial class FormMain : Form
     // 5. DeleteReward function
     private void btn_rewardDelete_Click(object sender, EventArgs e)
     {
-        string maKT = txt_rewardid.Text.Trim();
+        string rewId = txt_rewardId.Text.Trim();
 
-        if (maKT == "")
+        if (rewId == "")
         {
             MessageBox.Show("Vui lòng chọn Khen thưởng để xóa.", "Thông báo");
             return;
@@ -752,7 +1250,7 @@ public partial class FormMain : Form
 
         if (confirm == DialogResult.Yes)
         {
-            rewardManager.Delete(maKT);
+            rewardManager.Delete(rewId);
             MessageBox.Show("Xóa thành công!", "Thành công");
             ClearRewardForm();
             LoadRewardData();
@@ -763,22 +1261,44 @@ public partial class FormMain : Form
     private void btn_rewardSearch_Click(object sender, EventArgs e)
     {
         string keyword = txt_rewardSearch.Text.Trim();
-        List<Reward> ketQua;
+        List<Reward> result;
 
         if (keyword == "")
-            ketQua = rewardManager.GetAll();
+            result = rewardManager.GetAll();
         else
-            ketQua = rewardManager.Search(keyword);
+            result = rewardManager.Search(keyword);
+
+        var displayList = result.Select(r => {
+            string studentName = "Không xác định";
+            var st = studentManager.GetById(r.StudentId);
+            if (st != null) studentName = st.FullName;
+            else {
+                var off = officialManager.GetById(r.StudentId);
+                if (off != null) studentName = off.FullName;
+            }
+
+            return new {
+                r.RewardId,
+                r.RewardName,
+                r.IssueDate,
+                r.StudentId,
+                StudentName = studentName
+            };
+        }).ToList();
 
         dgv_reward.DataSource = null;
-        dgv_reward.DataSource = ketQua;
+        dgv_reward.DataSource = displayList;
 
-        if (dgv_reward.Columns["RewardId"] != null) dgv_reward.Columns["RewardId"].HeaderText = "Mã KT";
-        if (dgv_reward.Columns["RewardName"] != null) dgv_reward.Columns["RewardName"].HeaderText = "Tên Khen thưởng";
-        if (dgv_reward.Columns["IssueDate"] != null) dgv_reward.Columns["IssueDate"].HeaderText = "Ngày QĐ";
-        if (dgv_reward.Columns["StudentId"] != null) dgv_reward.Columns["StudentId"].HeaderText = "Mã SV/CB";
+        if (dgv_reward.Columns.Count > 0)
+        {
+            dgv_reward.Columns["RewardId"].HeaderText = "Mã KT";
+            dgv_reward.Columns["RewardName"].HeaderText = "Tên Khen thưởng";
+            dgv_reward.Columns["IssueDate"].HeaderText = "Ngày QĐ";
+            dgv_reward.Columns["StudentId"].HeaderText = "Mã SV/CB";
+            dgv_reward.Columns["StudentName"].HeaderText = "Họ Tên Người nhận";
+        }
 
-        if (keyword != "" && ketQua.Count == 0)
+        if (keyword != "" && displayList.Count == 0)
             MessageBox.Show("Không tìm thấy kết quả phù hợp.", "Thông báo");
     }
 
@@ -789,23 +1309,314 @@ public partial class FormMain : Form
 
         DataGridViewRow row = dgv_reward.Rows[e.RowIndex];
 
-        txt_rewardid.Text = row.Cells["RewardId"].Value?.ToString();
-        txt_rewardname.Text = row.Cells["RewardName"].Value?.ToString();
+        txt_rewardId.Text = row.Cells["RewardId"].Value?.ToString();
+        txt_rewardName.Text = row.Cells["RewardName"].Value?.ToString();
 
         if (row.Cells["IssueDate"].Value != null)
             dtp_issuedate.Value = Convert.ToDateTime(row.Cells["IssueDate"].Value);
 
         if (row.Cells["StudentId"].Value != null)
-            cbo_studentid.SelectedValue = row.Cells["StudentId"].Value.ToString();
+            cbo_studentId.SelectedValue = row.Cells["StudentId"].Value.ToString();
     }
 
     // 8. Hàm làm sạch Form
     private void ClearRewardForm()
     {
-        txt_rewardid.Text = "";
-        txt_rewardname.Text = "";
+        txt_rewardId.Text = "";
+        txt_rewardName.Text = "";
         dtp_issuedate.Value = DateTime.Now;
-        if (cbo_studentid.Items.Count > 0)
-            cbo_studentid.SelectedIndex = 0;
+        if (cbo_studentId.Items.Count > 0)
+            cbo_studentId.SelectedIndex = 0;
+    }
+
+    private void btn_rewardUpdate_Click_1(object sender, EventArgs e)
+    {
+    }
+
+    /* ========= TAB KHOA ========*/
+    private void btn_facultyAdd_Click(object sender, EventArgs e)
+    {
+        Faculty fac = new Faculty
+        {
+            FacultyId = txt_facultyId.Text,
+            FacultyName = txt_facultyName.Text,
+            DeanName = txt_deanName.Text
+        };
+        facultyManager.Add(fac);
+        LoadFacultyData();
+        ClearFacultyForm();
+        MessageBox.Show("Thêm khoa thành công!");
+    }
+
+    private void btn_facultyUpdate_Click(object sender, EventArgs e)
+    {
+        Faculty fac = new Faculty
+        {
+            FacultyId = txt_facultyId.Text,
+            FacultyName = txt_facultyName.Text,
+            DeanName = txt_deanName.Text
+        };
+        facultyManager.Update(fac);
+        LoadFacultyData();
+        MessageBox.Show("Cập nhật khoa thành công!");
+    }
+
+    private void btn_facultyDelete_Click(object sender, EventArgs e)
+    {
+        string id = txt_facultyId.Text;
+        if (!string.IsNullOrEmpty(id))
+        {
+            facultyManager.Delete(id);
+            LoadFacultyData();
+            ClearFacultyForm();
+            MessageBox.Show("Xóa khoa thành công!");
+        }
+    }
+
+    private void btn_facultySearch_Click(object sender, EventArgs e)
+    {
+        string keyword = txt_facultySearch.Text;
+        var result = facultyManager.Search(keyword);
+        dgv_faculty.DataSource = null;
+        dgv_faculty.DataSource = result;
+    }
+
+    private void dgv_faculty_CellClick(object sender, DataGridViewCellEventArgs e)
+    {
+        if (e.RowIndex >= 0)
+        {
+            DataGridViewRow row = dgv_faculty.Rows[e.RowIndex];
+            txt_facultyId.Text = row.Cells["FacultyId"].Value?.ToString();
+            txt_facultyName.Text = row.Cells["FacultyName"].Value?.ToString();
+            txt_deanName.Text = row.Cells["DeanName"].Value?.ToString();
+        }
+    }
+
+    private void ClearFacultyForm()
+    {
+        txt_facultyId.Clear();
+        txt_facultyName.Clear();
+        txt_deanName.Clear();
+    }
+
+    // 2. AddLecturer function
+    private void btn_lecturerAdd_Click(object sender, EventArgs e)
+    {
+        string id = txt_lecturerId.Text.Trim();
+        string name = txt_lecturerName.Text.Trim();
+        if (id == "" || name == "")
+        {
+            MessageBox.Show("Vui lòng nhập đầy đủ Mã và Tên giảng viên!");
+            return;
+        }
+
+        Lecturer l = new Lecturer
+        {
+            LecturerId = id,
+            FullName = name,
+            BirthYear = (int)nud_lecturerBirthYear.Value,
+            Department = "" // Cần thêm TextBox cho Department vào Designer nếu muốn nhập
+        };
+        lecturerManager.Add(l);
+        LoadLecturerData();
+        ClearLecturerForm();
+        MessageBox.Show("Thêm giảng viên thành công!");
+    }
+
+    // 3. UpdateLecturer function
+    private void btn_lecturerUpdate_Click(object sender, EventArgs e)
+    {
+        string id = txt_lecturerId.Text.Trim();
+        if (id == "")
+        {
+            MessageBox.Show("Vui lòng chọn giảng viên cần cập nhật!");
+            return;
+        }
+
+        Lecturer l = lecturerManager.GetById(id);
+        if (l != null)
+        {
+            l.FullName = txt_lecturerName.Text;
+            l.BirthYear = (int)nud_lecturerBirthYear.Value;
+            // l.Department = ... (tương tự)
+            lecturerManager.Update(l);
+            LoadLecturerData();
+            MessageBox.Show("Cập nhật giảng viên thành công!");
+        }
+    }
+
+    // 4. DeleteLecturer function
+    private void btn_lecturerDelete_Click(object sender, EventArgs e)
+    {
+        string id = txt_lecturerId.Text.Trim();
+        if (id != "")
+        {
+            lecturerManager.Delete(id);
+            LoadLecturerData();
+            ClearLecturerForm();
+            MessageBox.Show("Xóa giảng viên thành công!");
+        }
+    }
+
+    // 5. SearchLecturer function
+    private void btn_lecturerSearch_Click(object sender, EventArgs e)
+    {
+        string keyword = txt_lecturerSearch.Text;
+        var result = lecturerManager.Search(keyword);
+        dgv_lecturer.DataSource = null;
+        dgv_lecturer.DataSource = result;
+    }
+
+    // 6. dgvLecturer CellClick
+    private void dgv_lecturer_CellClick(object sender, DataGridViewCellEventArgs e)
+    {
+        if (e.RowIndex >= 0)
+        {
+            DataGridViewRow row = dgv_lecturer.Rows[e.RowIndex];
+            txt_lecturerId.Text = row.Cells["LecturerId"].Value?.ToString();
+            txt_lecturerName.Text = row.Cells["FullName"].Value?.ToString();
+            if (row.Cells["BirthYear"].Value != null)
+                nud_lecturerBirthYear.Value = Convert.ToInt32(row.Cells["BirthYear"].Value);
+        }
+    }
+
+    // 7. ClearLecturerForm function
+    private void ClearLecturerForm()
+    {
+        txt_lecturerId.Clear();
+        txt_lecturerName.Clear();
+        nud_lecturerBirthYear.Value = 1980;
+    }
+
+    /* ========= TAB ĐIỂM DANH (Participation) ========*/
+    // 1. LoadDataAttendance function
+    private void LoadAttendanceData()
+    {
+        List<ParticipationHistory> list = FileHelper.Load<ParticipationHistory>("participation.json");
+        dgv_attendance.DataSource = null;
+        dgv_attendance.DataSource = list;
+
+        if (dgv_attendance.Columns.Count > 0)
+        {
+            if (dgv_attendance.Columns["StudentIdReference"] != null) dgv_attendance.Columns["StudentIdReference"].HeaderText = "Mã SV";
+            if (dgv_attendance.Columns["EventIdReference"] != null) dgv_attendance.Columns["EventIdReference"].HeaderText = "Mã SK";
+            if (dgv_attendance.Columns["CheckInTime"] != null) dgv_attendance.Columns["CheckInTime"].HeaderText = "Thời gian";
+            if (dgv_attendance.Columns["Status"] != null) dgv_attendance.Columns["Status"].HeaderText = "Trạng thái";
+        }
+    }
+
+    // 2. Load combo dữ liệu cho tab điểm danh
+    private void LoadStudentAndEventToComboDD()
+    {
+        // Load Students & Officials
+        List<StudentComboItem> stList = new List<StudentComboItem>();
+        foreach (var s in studentManager.GetAll()) stList.Add(new StudentComboItem { Id = s.StudentId, DisplayText = s.StudentId + " - " + s.FullName });
+        foreach (var o in officialManager.GetAll()) stList.Add(new StudentComboItem { Id = o.StudentId, DisplayText = o.StudentId + " - " + o.FullName });
+        cbb_studentSelect.DataSource = stList;
+        cbb_studentSelect.DisplayMember = "DisplayText";
+        cbb_studentSelect.ValueMember = "Id";
+
+        // Load Events
+        cbb_eventSelect.DataSource = eventManager.GetAll();
+        cbb_eventSelect.DisplayMember = "EventName";
+        cbb_eventSelect.ValueMember = "EventId";
+
+        // Status combo
+        cbb_status.Items.Clear();
+        cbb_status.Items.Add("Có mặt");
+        cbb_status.Items.Add("Vắng");
+        if (cbb_status.Items.Count > 0) cbb_status.SelectedIndex = 0;
+    }
+
+    // 3. AddAttendance function
+    private void btn_ddAdd_Click(object sender, EventArgs e)
+    {
+        if (cbb_studentSelect.SelectedValue == null || cbb_eventSelect.SelectedValue == null)
+        {
+            MessageBox.Show("Vui lòng chọn đầy đủ Sinh viên và Sự kiện!");
+            return;
+        }
+
+        string stId = cbb_studentSelect.SelectedValue.ToString();
+        string evId = cbb_eventSelect.SelectedValue.ToString();
+
+        // Kiểm tra xem đã điểm danh chưa
+        List<ParticipationHistory> list = FileHelper.Load<ParticipationHistory>("participation.json");
+        if (list.Exists(x => x.StudentIdReference == stId && x.EventIdReference == evId))
+        {
+            MessageBox.Show("Sinh viên này đã được điểm danh trong sự kiện này!");
+            return;
+        }
+
+        ParticipationHistory ph = new ParticipationHistory
+        {
+            StudentIdReference = stId,
+            EventIdReference = evId,
+            CheckInTime = dtp_checkIn.Value,
+            Status = cbb_status.SelectedItem?.ToString() ?? "Có mặt"
+        };
+
+        // Dùng EventManager để cộng điểm rèn luyện
+        Student st = (Student)studentManager.GetById(stId) ?? officialManager.GetById(stId);
+        if (st != null)
+        {
+            eventManager.AddParticipation(ph, st);
+            LoadAttendanceData();
+            MessageBox.Show("Điểm danh và cộng điểm rèn luyện thành công!");
+        }
+        else
+        {
+            MessageBox.Show("Không tìm thấy thông tin sinh viên!");
+        }
+    }
+
+    // 4. UpdateAttendance function (button1)
+    private void btn_ddUpdate_Click(object sender, EventArgs e)
+    {
+        // Logic cập nhật điểm danh nếu cần (thường chỉ sửa Status)
+        MessageBox.Show("Chức năng đang được cập nhật!");
+    }
+
+    // 5. DeleteAttendance function (button2)
+    private void btn_ddDelete_Click(object sender, EventArgs e)
+    {
+        if (dgv_attendance.CurrentRow == null) return;
+        
+        string stId = dgv_attendance.CurrentRow.Cells["StudentIdReference"].Value?.ToString();
+        string evId = dgv_attendance.CurrentRow.Cells["EventIdReference"].Value?.ToString();
+
+        if (stId != null && evId != null)
+        {
+            Student st = (Student)studentManager.GetById(stId) ?? officialManager.GetById(stId);
+            if (st != null)
+            {
+                eventManager.DeleteParticipation(stId, evId, st);
+                LoadAttendanceData();
+                MessageBox.Show("Đã xóa điểm danh và trừ điểm rèn luyện!");
+            }
+        }
+    }
+
+    // 6. SearchAttendance function
+    private void btn_ddSearch_Click(object sender, EventArgs e)
+    {
+        string kw = txt_ddSearch.Text.Trim().ToLower();
+        List<ParticipationHistory> list = FileHelper.Load<ParticipationHistory>("participation.json");
+        var result = list.FindAll(x => x.StudentIdReference.ToLower().Contains(kw) || x.EventIdReference.ToLower().Contains(kw));
+        dgv_attendance.DataSource = null;
+        dgv_attendance.DataSource = result;
+    }
+
+    // 7. dgvAttendance CellClick
+    private void dgv_attendance_CellClick(object sender, DataGridViewCellEventArgs e)
+    {
+        if (e.RowIndex >= 0)
+        {
+            DataGridViewRow row = dgv_attendance.Rows[e.RowIndex];
+            cbb_studentSelect.SelectedValue = row.Cells["StudentIdReference"].Value;
+            cbb_eventSelect.SelectedValue = row.Cells["EventIdReference"].Value;
+            dtp_checkIn.Value = Convert.ToDateTime(row.Cells["CheckInTime"].Value);
+            cbb_status.SelectedItem = row.Cells["Status"].Value?.ToString();
+        }
     }
 }

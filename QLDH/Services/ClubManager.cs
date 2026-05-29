@@ -6,18 +6,14 @@ namespace QLDH.Service
 {
     public class ClubManager : BaseManager<Club>
     {
-        private const string FileName = "clubs.json";
-
-        public ClubManager()
+        public ClubManager() : base("clubs.json")
         {
-            items = FileHelper.Load<Club>(FileName);
         }
 
         // 1. C - Create
         public override void Add(Club item)
         {
             base.Add(item);
-            FileHelper.Save<Club>(FileName, items);
         }
 
         // 2. R - Read
@@ -35,14 +31,12 @@ namespace QLDH.Service
         public override void Update(Club item)
         {
             base.Update(item);
-            FileHelper.Save<Club>(FileName, items);
         }
 
         // 4. D - Delete
         public override void Delete(string id)
         {
             base.Delete(id);
-            FileHelper.Save<Club>(FileName, items);
         }
 
         // Search function

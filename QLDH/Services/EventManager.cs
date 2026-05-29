@@ -7,19 +7,16 @@ namespace QLDH.Service
 {
     public class EventManager : BaseManager<UnionEvent>
     {
-        private const string FileName = "events.json";
         private const string HistoryFileName = "participation.json";
 
-        public EventManager()
+        public EventManager() : base("events.json")
         {
-            items = FileHelper.Load<UnionEvent>(FileName);
         }
 
         // 1. C - Create
         public override void Add(UnionEvent item)
         {
             base.Add(item);
-            FileHelper.Save<UnionEvent>(FileName, items);
         }
 
         // 2. R - Read
@@ -37,14 +34,12 @@ namespace QLDH.Service
         public override void Update(UnionEvent item)
         {
             base.Update(item);
-            FileHelper.Save<UnionEvent>(FileName, items);
         }
 
         // 4. D - Delete
         public override void Delete(string id)
         {
             base.Delete(id);
-            FileHelper.Save<UnionEvent>(FileName, items);
         }
 
         // Search function

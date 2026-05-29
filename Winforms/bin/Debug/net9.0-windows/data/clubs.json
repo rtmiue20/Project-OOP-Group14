@@ -1,12 +1,92 @@
-{
-  "$id": "1",
-  "$values": [
-    {
-      "$id": "2",
-      "ClubId": "312124",
-      "ClubName": "KHSANG",
-      "FoundedDate": "2026-04-11T17:37:40.239",
-      "MemberCount": 23
-    }
-  ]
-}
+[
+  {
+    "ClubId": "C001",
+    "ClubName": "Kỹ năng mềm",
+    "FoundedDate": "2020-10-16T00:00:00",
+    "MemberCount": 172
+  },
+  {
+    "ClubId": "C002",
+    "ClubName": "Thể thao",
+    "FoundedDate": "2021-10-31T00:00:00",
+    "MemberCount": 77
+  },
+  {
+    "ClubId": "C003",
+    "ClubName": "Kinh doanh trẻ",
+    "FoundedDate": "2011-01-25T00:00:00",
+    "MemberCount": 96
+  },
+  {
+    "ClubId": "C004",
+    "ClubName": "Dynamic UEH",
+    "FoundedDate": "2015-11-08T00:00:00",
+    "MemberCount": 217
+  },
+  {
+    "ClubId": "C005",
+    "ClubName": "Kỹ năng mềm",
+    "FoundedDate": "2018-03-04T00:00:00",
+    "MemberCount": 202
+  },
+  {
+    "ClubId": "C006",
+    "ClubName": "Thể thao",
+    "FoundedDate": "2020-02-16T00:00:00",
+    "MemberCount": 54
+  },
+  {
+    "ClubId": "C007",
+    "ClubName": "Văn nghệ xung kích",
+    "FoundedDate": "2011-10-07T00:00:00",
+    "MemberCount": 54
+  },
+  {
+    "ClubId": "C008",
+    "ClubName": "Thể thao",
+    "FoundedDate": "2022-02-09T00:00:00",
+    "MemberCount": 244
+  },
+  {
+    "ClubId": "C009",
+    "ClubName": "Văn nghệ xung kích",
+    "FoundedDate": "2015-06-23T00:00:00",
+    "MemberCount": 240
+  },
+  {
+    "ClubId": "C010",
+    "ClubName": "Kỹ năng mềm",
+    "FoundedDate": "2011-01-09T00:00:00",
+    "MemberCount": 237
+  },
+  {
+    "ClubId": "C011",
+    "ClubName": "CLB Sở thích số 11 11",
+    "FoundedDate": "2017-08-31T00:00:00",
+    "MemberCount": 70
+  },
+  {
+    "ClubId": "C012",
+    "ClubName": "CLB Sở thích số 12 12",
+    "FoundedDate": "2019-11-05T00:00:00",
+    "MemberCount": 85
+  },
+  {
+    "ClubId": "C013",
+    "ClubName": "CLB Sở thích số 13 13",
+    "FoundedDate": "2013-09-10T00:00:00",
+    "MemberCount": 121
+  },
+  {
+    "ClubId": "C014",
+    "ClubName": "CLB Sở thích số 14 14",
+    "FoundedDate": "2012-03-11T00:00:00",
+    "MemberCount": 109
+  },
+  {
+    "ClubId": "C015",
+    "ClubName": "CLB Sở thích số 15 15",
+    "FoundedDate": "2010-02-26T00:00:00",
+    "MemberCount": 229
+  }
+]

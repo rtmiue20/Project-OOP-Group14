@@ -14,7 +14,7 @@ namespace QLDH.Data
         private static readonly JsonSerializerOptions Options = new JsonSerializerOptions
         {
             WriteIndented = true,
-            ReferenceHandler = ReferenceHandler.Preserve
+            PropertyNameCaseInsensitive = true
         };
 
         private static string GetFilePath(string fileName)

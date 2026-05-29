@@ -6,18 +6,14 @@ namespace QLDH.Service
 {
     public class FacultyManager : BaseManager<Faculty>
     {
-        private const string FileName = "faculties.json";
-
-        public FacultyManager()
+        public FacultyManager() : base("faculties.json")
         {
-            items = FileHelper.Load<Faculty>(FileName);
         }
 
         // 1. C - Create
         public override void Add(Faculty item)
         {
             base.Add(item);
-            FileHelper.Save<Faculty>(FileName, items);
         }
 
         // 2. R - Read
@@ -35,14 +31,12 @@ namespace QLDH.Service
         public override void Update(Faculty item)
         {
             base.Update(item);
-            FileHelper.Save<Faculty>(FileName, items);
         }
 
         // 4. D - Delete
         public override void Delete(string id)
         {
             base.Delete(id);
-            FileHelper.Save<Faculty>(FileName, items);
         }
 
         // Search function

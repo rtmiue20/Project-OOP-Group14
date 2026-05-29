@@ -6,18 +6,14 @@ namespace QLDH.Service
 {
     public class OfficialManager : BaseManager<Official>
     {
-        private const string FileName = "officials.json";
-
-        public OfficialManager()
+        public OfficialManager() : base("officials.json")
         {
-            items = FileHelper.Load<Official>(FileName);
         }
 
         // 1. C - Create
         public override void Add(Official item)
         {
             base.Add(item);
-            FileHelper.Save<Official>(FileName, items);
         }
 
         // 2. R - Read
@@ -35,14 +31,12 @@ namespace QLDH.Service
         public override void Update(Official item)
         {
             base.Update(item);
-            FileHelper.Save<Official>(FileName, items);
         }
 
         // 4. D - Delete
         public override void Delete(string id)
         {
             base.Delete(id);
-            FileHelper.Save<Official>(FileName, items);
         }
 
         // Search function
