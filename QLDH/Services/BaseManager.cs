@@ -5,7 +5,7 @@ using System.Text.Json;
 
 namespace QLDH.Service
 {
-    public abstract class BaseManager<T> : IManager<T>
+    public abstract class BaseManager<T> : IManager<T> 
     {
         // Khai báo delegate và event cho việc thay đổi dữ liệu
         public delegate void DataChangedEventHandler(object sender, EventArgs e);

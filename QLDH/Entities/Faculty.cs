@@ -1,10 +1,11 @@
 using System;
+using QLDH.Entities.Interface;
 
 
 namespace QLDH.Entities
 {
     [Serializable]
-    public class Faculty
+    public class Faculty : ISearchable
     {
         public string FacultyId { get; set; }
         public string FacultyName { get; set; }
@@ -21,6 +22,15 @@ namespace QLDH.Entities
             this.FacultyId = facultyId;
             this.FacultyName = facultyName;
             this.DeanName = deanName;
+        }
+        
+        public bool Matches(string keyword)
+        {
+            if (string.IsNullOrEmpty(keyword)) return true;
+            string k = keyword.ToLower();
+            return FacultyId?.ToLower().Contains(k) == true ||
+                   FacultyName?.ToLower().Contains(k) == true ||
+                   DeanName?.ToLower().Contains(k) == true;
         }
     }
 }

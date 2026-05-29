@@ -738,6 +738,7 @@ partial class FormMain
         // num_memberCount
         // 
         num_memberCount.Location = new System.Drawing.Point(256, 199);
+        num_memberCount.Maximum = new decimal(new int[] { 10000, 0, 0, 0 });
         num_memberCount.Name = "num_memberCount";
         num_memberCount.Size = new System.Drawing.Size(330, 47);
         num_memberCount.TabIndex = 9;
@@ -809,7 +810,7 @@ partial class FormMain
         tp_KT.Location = new System.Drawing.Point(10, 58);
         tp_KT.Name = "tp_KT";
         tp_KT.Padding = new System.Windows.Forms.Padding(3);
-        tp_KT.Size = new System.Drawing.Size(1888, 978);
+        tp_KT.Size = new System.Drawing.Size(2333, 978);
         tp_KT.TabIndex = 3;
         tp_KT.Text = "Khen thưởng";
         tp_KT.UseVisualStyleBackColor = true;

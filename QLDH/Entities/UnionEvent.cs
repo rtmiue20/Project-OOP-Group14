@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using QLDH.Entities.Interface;
 
 
 namespace QLDH.Entities
 {
     [Serializable]
-    public class UnionEvent
+    public class UnionEvent : IComparable<UnionEvent>, ISearchable
     {
         private string eventId;
         private string eventName;
@@ -22,5 +22,19 @@ namespace QLDH.Entities
         public UnionEvent() { }
 
         public List<ParticipationHistory> Participants { get; set; } = new List<ParticipationHistory>();
+        
+        public int CompareTo(UnionEvent? other)
+        {
+            if (other == null) return 1;
+            return other.BonusScore.CompareTo(this.BonusScore); // Sắp xếp theo điểm thưởng
+        }
+
+        public bool Matches(string keyword)
+        {
+            if (string.IsNullOrEmpty(keyword)) return true;
+            string k = keyword.ToLower();
+            return EventId?.ToLower().Contains(k) == true ||
+                   EventName?.ToLower().Contains(k) == true;
+        }
     }
 }

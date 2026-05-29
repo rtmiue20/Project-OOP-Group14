@@ -1,52 +1,57 @@
 [
   {
     "FacultyId": "F001",
-    "FacultyName": "Khoa Kinh doanh quốc tế - Marketing",
-    "DeanName": "PGS.TS. Huỳnh Đức Quân"
+    "FacultyName": "Khoa Kinh doanh qu\u1ED1c t\u1EBF - Marketing",
+    "DeanName": "PGS.TS. Hu\u1EF3nh \u0110\u1EE9c Qu\u00E2n"
   },
   {
     "FacultyId": "F002",
-    "FacultyName": "Khoa Công nghệ thông tin kinh doanh",
-    "DeanName": "PGS.TS. Võ Ngọc An"
+    "FacultyName": "Khoa C\u00F4ng ngh\u1EC7 th\u00F4ng tin kinh doanh",
+    "DeanName": "PGS.TS. V\u00F5 Ng\u1ECDc An"
   },
   {
     "FacultyId": "F003",
-    "FacultyName": "Khoa Tài chính",
-    "DeanName": "PGS.TS. Trần Tuấn Nam"
+    "FacultyName": "Khoa T\u00E0i ch\u00EDnh",
+    "DeanName": "PGS.TS. Tr\u1EA7n Tu\u1EA5n Nam"
   },
   {
     "FacultyId": "F004",
-    "FacultyName": "Khoa Ngân hàng",
-    "DeanName": "PGS.TS. Ngô Thị Tùng"
+    "FacultyName": "Khoa Ng\u00E2n h\u00E0ng",
+    "DeanName": "PGS.TS. Ng\u00F4 Th\u1ECB T\u00F9ng"
   },
   {
     "FacultyId": "F005",
-    "FacultyName": "Khoa Kế toán",
+    "FacultyName": "Khoa K\u1EBF to\u00E1n",
     "DeanName": "PGS.TS. Phan Minh Nga"
   },
   {
     "FacultyId": "F006",
-    "FacultyName": "Khoa Luật",
-    "DeanName": "PGS.TS. Trần Thu Đạt"
+    "FacultyName": "Khoa Lu\u1EADt",
+    "DeanName": "PGS.TS. Tr\u1EA7n Thu \u0110\u1EA1t"
   },
   {
     "FacultyId": "F007",
-    "FacultyName": "Khoa Ngoại ngữ",
-    "DeanName": "PGS.TS. Dương Quỳnh Quân"
+    "FacultyName": "Khoa Ngo\u1EA1i ng\u1EEF",
+    "DeanName": "PGS.TS. D\u01B0\u01A1ng Qu\u1EF3nh Qu\u00E2n"
   },
   {
     "FacultyId": "F008",
-    "FacultyName": "Khoa Quản trị kinh doanh",
-    "DeanName": "PGS.TS. Hoàng Đức An"
+    "FacultyName": "Khoa Qu\u1EA3n tr\u1ECB kinh doanh",
+    "DeanName": "PGS.TS. Ho\u00E0ng \u0110\u1EE9c An"
   },
   {
     "FacultyId": "F009",
-    "FacultyName": "Khoa Du lịch",
-    "DeanName": "PGS.TS. Bùi Thu Linh"
+    "FacultyName": "Khoa Du l\u1ECBch",
+    "DeanName": "PGS.TS. B\u00F9i Thu Linh"
   },
   {
     "FacultyId": "F010",
-    "FacultyName": "Khoa Kinh tế",
-    "DeanName": "PGS.TS. Hoàng Thảo Vy"
+    "FacultyName": "Khoa Kinh t\u1EBF",
+    "DeanName": "PGS.TS. Ho\u00E0ng Th\u1EA3o Vy"
+  },
+  {
+    "FacultyId": "F011",
+    "FacultyName": "Khoa To\u00E1n Th\u1ED1ng k\u00EA",
+    "DeanName": "PGS.TS. Ng\u00F4 Tr\u1ECDng Ph\u00FAc"
   }
 ]

@@ -1,10 +1,11 @@
 using System;
+using QLDH.Entities.Interface;
 
 
 namespace QLDH.Entities
 {
     [Serializable]
-    public class Reward
+    public class Reward : ISearchable
     {
         public string RewardId { get; set; }
         public string RewardName { get; set; }
@@ -25,6 +26,14 @@ namespace QLDH.Entities
             this.RewardName = rewardName;
             this.IssueDate = issueDate;
             this.StudentId = studentId;
+        }
+        
+        public bool Matches(string keyword)
+        {
+            if (string.IsNullOrEmpty(keyword)) return true;
+            string k = keyword.ToLower();
+            return RewardId?.ToLower().Contains(k) == true ||
+                   RewardName?.ToLower().Contains(k) == true;
         }
     }
 }

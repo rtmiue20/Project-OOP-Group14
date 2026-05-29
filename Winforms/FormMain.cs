@@ -76,21 +76,21 @@ public partial class FormMain : Form
         this.btn_rewardDelete.Click += btn_rewardDelete_Click;
         this.btn_rewardSearch.Click += btn_rewardSearch_Click;
 
-        // Tab Khoa
+        // Tab 5: Khoa
         this.dgv_faculty.CellClick += dgv_faculty_CellClick;
         this.btn_facultyAdd.Click += btn_facultyAdd_Click;
         this.btn_facultyUpdate.Click += btn_facultyUpdate_Click;
         this.btn_facultyDelete.Click += btn_facultyDelete_Click;
         this.btn_facultySearch.Click += btn_facultySearch_Click;
 
-        // Tab Giảng viên
+        // Tab 6: Giảng viên
         this.dgv_lecturer.CellClick += dgv_lecturer_CellClick;
         this.btn_lecturerAdd.Click += btn_lecturerAdd_Click;
         this.btn_lecturerUpdate.Click += btn_lecturerUpdate_Click;
         this.btn_lecturerDelete.Click += btn_lecturerDelete_Click;
         this.btn_lecturerSearch.Click += btn_lecturerSearch_Click;
 
-        // Tab Điểm danh
+        // Tab 7: Điểm danh
         this.dgv_attendance.CellClick += dgv_attendance_CellClick;
         this.btn_ddAdd.Click += btn_ddAdd_Click;
         this.btn_ddSearch.Click += btn_ddSearch_Click;
@@ -127,6 +127,10 @@ public partial class FormMain : Form
 
         if (currentUser.Role == "User")
         {
+            LoadFacultyData();
+            LoadStudentData();
+            LoadEventData();
+            LoadClubData();
             // Nếu là User thường, ẩn các chức năng quan trọng
             // Giả sử ẩn tab Điểm danh, Khen thưởng và Giảng viên
             if (tc_demo.TabPages.Contains(tp_DD)) tc_demo.TabPages.Remove(tp_DD);
@@ -1607,8 +1611,42 @@ public partial class FormMain : Form
     // 4. UpdateAttendance function (button1)
     private void btn_ddUpdate_Click(object sender, EventArgs e)
     {
-        // Logic cập nhật điểm danh nếu cần (thường chỉ sửa Status)
-        MessageBox.Show("Chức năng đang được cập nhật!");
+        if (dgv_attendance.CurrentRow == null)
+        {
+            MessageBox.Show("Vui lòng chọn một dòng điểm danh để cập nhật!", "Thông báo");
+            return;
+        }
+
+        if (cbb_studentSelect.SelectedValue == null || cbb_eventSelect.SelectedValue == null)
+        {
+            MessageBox.Show("Vui lòng chọn Sinh viên và Sự kiện!", "Thông báo");
+            return;
+        }
+
+        string studentId = cbb_studentSelect.SelectedValue.ToString();
+        string eventId = cbb_eventSelect.SelectedValue.ToString();
+        DateTime checkInTime = dtp_checkIn.Value;
+        string status = cbb_status.SelectedItem?.ToString() ?? "Có mặt";
+
+        List<ParticipationHistory> list = FileHelper.Load<ParticipationHistory>("participants.json");
+
+        var existing = list.FirstOrDefault(x => 
+            x.StudentIdReference == studentId && x.EventIdReference == eventId);
+
+        if (existing != null)
+        {
+            existing.CheckInTime = checkInTime;
+            existing.Status = status;
+
+            FileHelper.Save<ParticipationHistory>("participants.json", list);
+
+            MessageBox.Show("Cập nhật điểm danh thành công!", "Thành công");
+            LoadAttendanceData();
+        }
+        else
+        {
+            MessageBox.Show("Không tìm thấy bản ghi điểm danh để cập nhật!", "Lỗi");
+        }
     }
 
     // 5. DeleteAttendance function (button2)
