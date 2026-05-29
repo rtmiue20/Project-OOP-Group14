@@ -1,0 +1,442 @@
+[
+  {
+    "LecturerId": "L001",
+    "Department": "Tài chính",
+    "FullName": "TS. Vũ Hoàng Trang",
+    "BirthYear": 1976,
+    "ResidentAddress": {
+      "HouseNumber": "423A",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "LecturerId": "L002",
+    "Department": "Ngoại ngữ",
+    "FullName": "ThS. Lê Hải Bình",
+    "BirthYear": 1975,
+    "ResidentAddress": {
+      "HouseNumber": "277A",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "LecturerId": "L003",
+    "Department": "Quản trị kinh doanh",
+    "FullName": "TS. Phạm Bảo Tùng",
+    "BirthYear": 1988,
+    "ResidentAddress": {
+      "HouseNumber": "338",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "LecturerId": "L004",
+    "Department": "Kế toán",
+    "FullName": "TS. Phạm Gia Tùng",
+    "BirthYear": 1986,
+    "ResidentAddress": {
+      "HouseNumber": "224",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "LecturerId": "L005",
+    "Department": "Du lịch",
+    "FullName": "TS. Bùi Tuấn Linh",
+    "BirthYear": 1980,
+    "ResidentAddress": {
+      "HouseNumber": "152",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "LecturerId": "L006",
+    "Department": "Ngân hàng",
+    "FullName": "TS. Nguyễn Gia An",
+    "BirthYear": 1988,
+    "ResidentAddress": {
+      "HouseNumber": "408",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "LecturerId": "L007",
+    "Department": "Tài chính",
+    "FullName": "ThS. Huỳnh Văn Cường",
+    "BirthYear": 1991,
+    "ResidentAddress": {
+      "HouseNumber": "430",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "LecturerId": "L008",
+    "Department": "Kinh tế",
+    "FullName": "ThS. Huỳnh Hoàng Nam",
+    "BirthYear": 1976,
+    "ResidentAddress": {
+      "HouseNumber": "217",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "LecturerId": "L009",
+    "Department": "Kế toán",
+    "FullName": "ThS. Dương Tuấn An",
+    "BirthYear": 1993,
+    "ResidentAddress": {
+      "HouseNumber": "409B",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "LecturerId": "L010",
+    "Department": "Luật",
+    "FullName": "ThS. Võ Minh Khánh",
+    "BirthYear": 1992,
+    "ResidentAddress": {
+      "HouseNumber": "153A",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "LecturerId": "L011",
+    "Department": "Quản trị kinh doanh",
+    "FullName": "TS. Trần Hữu Linh",
+    "BirthYear": 1985,
+    "ResidentAddress": {
+      "HouseNumber": "214",
+      "Street": "Pasteur",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "LecturerId": "L012",
+    "Department": "Công nghệ thông tin kinh doanh",
+    "FullName": "ThS. Đỗ Thu Hùng",
+    "BirthYear": 1991,
+    "ResidentAddress": {
+      "HouseNumber": "64B",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "LecturerId": "L013",
+    "Department": "Công nghệ thông tin kinh doanh",
+    "FullName": "TS. Trần Hữu Hùng",
+    "BirthYear": 1993,
+    "ResidentAddress": {
+      "HouseNumber": "241A",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "LecturerId": "L014",
+    "Department": "Du lịch",
+    "FullName": "TS. Hồ Minh Hải",
+    "BirthYear": 1982,
+    "ResidentAddress": {
+      "HouseNumber": "423A",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "LecturerId": "L015",
+    "Department": "Kinh doanh quốc tế - Marketing",
+    "FullName": "ThS. Nguyễn Đức Nga",
+    "BirthYear": 1976,
+    "ResidentAddress": {
+      "HouseNumber": "118B",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "LecturerId": "L016",
+    "Department": "Kinh tế",
+    "FullName": "TS. Đỗ Thanh Bình",
+    "BirthYear": 1975,
+    "ResidentAddress": {
+      "HouseNumber": "9B",
+      "Street": "Lê Lợi",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "LecturerId": "L017",
+    "Department": "Kinh doanh quốc tế - Marketing",
+    "FullName": "ThS. Trần Hoàng Vy",
+    "BirthYear": 1980,
+    "ResidentAddress": {
+      "HouseNumber": "136A",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận Gò Vấp"
+    }
+  },
+  {
+    "LecturerId": "L018",
+    "Department": "Công nghệ thông tin kinh doanh",
+    "FullName": "ThS. Nguyễn Gia Dương",
+    "BirthYear": 1981,
+    "ResidentAddress": {
+      "HouseNumber": "277A",
+      "Street": "Lý Thường Kiệt",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "LecturerId": "L019",
+    "Department": "Quản trị kinh doanh",
+    "FullName": "TS. Bùi Đức Hương",
+    "BirthYear": 1976,
+    "ResidentAddress": {
+      "HouseNumber": "383B",
+      "Street": "Điện Biên Phủ",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "LecturerId": "L020",
+    "Department": "Du lịch",
+    "FullName": "ThS. Lý Văn Dũng",
+    "BirthYear": 1990,
+    "ResidentAddress": {
+      "HouseNumber": "148A",
+      "Street": "Pasteur",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "LecturerId": "L021",
+    "Department": "Kinh doanh quốc tế - Marketing",
+    "FullName": "ThS. Đỗ Bảo Nam",
+    "BirthYear": 1977,
+    "ResidentAddress": {
+      "HouseNumber": "38B",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "LecturerId": "L022",
+    "Department": "Tài chính",
+    "FullName": "ThS. Phạm Thị Khánh",
+    "BirthYear": 1984,
+    "ResidentAddress": {
+      "HouseNumber": "40",
+      "Street": "Lê Lợi",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "LecturerId": "L023",
+    "Department": "Ngoại ngữ",
+    "FullName": "TS. Lê Thảo An",
+    "BirthYear": 1979,
+    "ResidentAddress": {
+      "HouseNumber": "279A",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "LecturerId": "L024",
+    "Department": "Tài chính",
+    "FullName": "ThS. Huỳnh Thanh Tùng",
+    "BirthYear": 1976,
+    "ResidentAddress": {
+      "HouseNumber": "193A",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "LecturerId": "L025",
+    "Department": "Ngân hàng",
+    "FullName": "ThS. Vũ Quỳnh Đạt",
+    "BirthYear": 1981,
+    "ResidentAddress": {
+      "HouseNumber": "47A",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "LecturerId": "L026",
+    "Department": "Ngân hàng",
+    "FullName": "ThS. Võ Ngọc Nga",
+    "BirthYear": 1983,
+    "ResidentAddress": {
+      "HouseNumber": "401",
+      "Street": "Pasteur",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "LecturerId": "L027",
+    "Department": "Kinh doanh quốc tế - Marketing",
+    "FullName": "ThS. Phan Gia Nga",
+    "BirthYear": 1984,
+    "ResidentAddress": {
+      "HouseNumber": "137",
+      "Street": "Pasteur",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "LecturerId": "L028",
+    "Department": "Tài chính",
+    "FullName": "ThS. Phan Gia Trang",
+    "BirthYear": 1983,
+    "ResidentAddress": {
+      "HouseNumber": "124B",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "LecturerId": "L029",
+    "Department": "Kinh doanh quốc tế - Marketing",
+    "FullName": "TS. Đặng Đức Hùng",
+    "BirthYear": 1990,
+    "ResidentAddress": {
+      "HouseNumber": "181A",
+      "Street": "Nam Kỳ Khởi Nghĩa",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "LecturerId": "L030",
+    "Department": "Kinh tế",
+    "FullName": "TS. Trần Đức Dương",
+    "BirthYear": 1978,
+    "ResidentAddress": {
+      "HouseNumber": "176A",
+      "Street": "Nguyễn Trãi",
+      "District": "Quận 10"
+    }
+  },
+  {
+    "LecturerId": "L031",
+    "Department": "Tài chính",
+    "FullName": "ThS. Đỗ Quỳnh Bình",
+    "BirthYear": 1987,
+    "ResidentAddress": {
+      "HouseNumber": "36B",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "LecturerId": "L032",
+    "Department": "Ngoại ngữ",
+    "FullName": "TS. Đặng Hữu Nga",
+    "BirthYear": 1988,
+    "ResidentAddress": {
+      "HouseNumber": "460B",
+      "Street": "Pasteur",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "LecturerId": "L033",
+    "Department": "Du lịch",
+    "FullName": "ThS. Hồ Hoàng Trang",
+    "BirthYear": 1980,
+    "ResidentAddress": {
+      "HouseNumber": "442",
+      "Street": "Pasteur",
+      "District": "Quận Phú Nhuận"
+    }
+  },
+  {
+    "LecturerId": "L034",
+    "Department": "Tài chính",
+    "FullName": "ThS. Lê Bảo Hùng",
+    "BirthYear": 1983,
+    "ResidentAddress": {
+      "HouseNumber": "45",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "LecturerId": "L035",
+    "Department": "Kinh doanh quốc tế - Marketing",
+    "FullName": "TS. Ngô Thảo Quân",
+    "BirthYear": 1988,
+    "ResidentAddress": {
+      "HouseNumber": "337",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận Bình Thạnh"
+    }
+  },
+  {
+    "LecturerId": "L036",
+    "Department": "Kinh tế",
+    "FullName": "ThS. Phan Thảo Đạt",
+    "BirthYear": 1990,
+    "ResidentAddress": {
+      "HouseNumber": "250B",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận 1"
+    }
+  },
+  {
+    "LecturerId": "L037",
+    "Department": "Luật",
+    "FullName": "TS. Vũ Quỳnh Dương",
+    "BirthYear": 1978,
+    "ResidentAddress": {
+      "HouseNumber": "463A",
+      "Street": "Nguyễn Đình Chiểu",
+      "District": "Quận Tân Bình"
+    }
+  },
+  {
+    "LecturerId": "L038",
+    "Department": "Du lịch",
+    "FullName": "TS. Vũ Đức Mai",
+    "BirthYear": 1983,
+    "ResidentAddress": {
+      "HouseNumber": "349B",
+      "Street": "Cách Mạng Tháng 8",
+      "District": "Quận 3"
+    }
+  },
+  {
+    "LecturerId": "L039",
+    "Department": "Kế toán",
+    "FullName": "ThS. Bùi Thị Phong",
+    "BirthYear": 1983,
+    "ResidentAddress": {
+      "HouseNumber": "290B",
+      "Street": "Trần Hưng Đạo",
+      "District": "Quận 5"
+    }
+  },
+  {
+    "LecturerId": "L040",
+    "Department": "Luật",
+    "FullName": "TS. Phạm Tuấn Trang",
+    "BirthYear": 1985,
+    "ResidentAddress": {
+      "HouseNumber": "9",
+      "Street": "Ba Tháng Hai",
+      "District": "Quận Phú Nhuận"
+    }
+  }
+]

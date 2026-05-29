@@ -1,0 +1,52 @@
+[
+  {
+    "FacultyId": "F001",
+    "FacultyName": "Khoa Kinh doanh quốc tế - Marketing",
+    "DeanName": "PGS.TS. Huỳnh Đức Quân"
+  },
+  {
+    "FacultyId": "F002",
+    "FacultyName": "Khoa Công nghệ thông tin kinh doanh",
+    "DeanName": "PGS.TS. Võ Ngọc An"
+  },
+  {
+    "FacultyId": "F003",
+    "FacultyName": "Khoa Tài chính",
+    "DeanName": "PGS.TS. Trần Tuấn Nam"
+  },
+  {
+    "FacultyId": "F004",
+    "FacultyName": "Khoa Ngân hàng",
+    "DeanName": "PGS.TS. Ngô Thị Tùng"
+  },
+  {
+    "FacultyId": "F005",
+    "FacultyName": "Khoa Kế toán",
+    "DeanName": "PGS.TS. Phan Minh Nga"
+  },
+  {
+    "FacultyId": "F006",
+    "FacultyName": "Khoa Luật",
+    "DeanName": "PGS.TS. Trần Thu Đạt"
+  },
+  {
+    "FacultyId": "F007",
+    "FacultyName": "Khoa Ngoại ngữ",
+    "DeanName": "PGS.TS. Dương Quỳnh Quân"
+  },
+  {
+    "FacultyId": "F008",
+    "FacultyName": "Khoa Quản trị kinh doanh",
+    "DeanName": "PGS.TS. Hoàng Đức An"
+  },
+  {
+    "FacultyId": "F009",
+    "FacultyName": "Khoa Du lịch",
+    "DeanName": "PGS.TS. Bùi Thu Linh"
+  },
+  {
+    "FacultyId": "F010",
+    "FacultyName": "Khoa Kinh tế",
+    "DeanName": "PGS.TS. Hoàng Thảo Vy"
+  }
+]

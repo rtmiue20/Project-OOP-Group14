@@ -27,7 +27,7 @@ public partial class FormLogin : Form
             {
                 MessageBox.Show($"Chào mừng {acc.Role}: {acc.Username}!", "Thành công");
                 // Mở Form chính sau khi đăng nhập thành công
-                FormMain main = new FormMain();
+                FormMain main = new FormMain(acc);
                 this.Hide();
                 main.ShowDialog();
                 this.Close();

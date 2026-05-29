@@ -7,7 +7,7 @@ namespace QLDH.Service
 {
     public class EventManager : BaseManager<UnionEvent>
     {
-        private const string HistoryFileName = "participation.json";
+        private const string HistoryFileName = "participants.json";
 
         public EventManager() : base("events.json")
         {

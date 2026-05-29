@@ -1,0 +1,2402 @@
+[
+  {
+    "CheckInTime": "2024-03-01T10:12:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211025428",
+    "EventIdReference": "E039"
+  },
+  {
+    "CheckInTime": "2024-04-17T11:45:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201027991",
+    "EventIdReference": "E028"
+  },
+  {
+    "CheckInTime": "2024-04-12T10:57:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211022241",
+    "EventIdReference": "E037"
+  },
+  {
+    "CheckInTime": "2024-01-18T09:41:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211029383",
+    "EventIdReference": "E020"
+  },
+  {
+    "CheckInTime": "2024-02-22T13:24:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211025993",
+    "EventIdReference": "E002"
+  },
+  {
+    "CheckInTime": "2024-01-12T15:33:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211028827",
+    "EventIdReference": "E045"
+  },
+  {
+    "CheckInTime": "2024-05-28T07:08:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211021452",
+    "EventIdReference": "E010"
+  },
+  {
+    "CheckInTime": "2024-02-10T16:12:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211028953",
+    "EventIdReference": "E027"
+  },
+  {
+    "CheckInTime": "2024-03-17T16:36:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211028562",
+    "EventIdReference": "E042"
+  },
+  {
+    "CheckInTime": "2024-01-19T10:03:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211021422",
+    "EventIdReference": "E008"
+  },
+  {
+    "CheckInTime": "2024-03-13T15:15:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211022491",
+    "EventIdReference": "E002"
+  },
+  {
+    "CheckInTime": "2024-03-19T13:11:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201028938",
+    "EventIdReference": "E009"
+  },
+  {
+    "CheckInTime": "2024-04-25T09:06:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211025037",
+    "EventIdReference": "E014"
+  },
+  {
+    "CheckInTime": "2024-02-17T11:04:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201021607",
+    "EventIdReference": "E014"
+  },
+  {
+    "CheckInTime": "2024-05-07T12:04:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211022588",
+    "EventIdReference": "E039"
+  },
+  {
+    "CheckInTime": "2024-02-08T08:45:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201022852",
+    "EventIdReference": "E028"
+  },
+  {
+    "CheckInTime": "2024-04-12T09:50:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201025173",
+    "EventIdReference": "E023"
+  },
+  {
+    "CheckInTime": "2024-05-25T13:30:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211028136",
+    "EventIdReference": "E035"
+  },
+  {
+    "CheckInTime": "2024-03-25T15:08:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211025573",
+    "EventIdReference": "E028"
+  },
+  {
+    "CheckInTime": "2024-01-10T15:06:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211029563",
+    "EventIdReference": "E018"
+  },
+  {
+    "CheckInTime": "2024-01-06T12:20:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211024804",
+    "EventIdReference": "E028"
+  },
+  {
+    "CheckInTime": "2024-04-27T16:53:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211027095",
+    "EventIdReference": "E039"
+  },
+  {
+    "CheckInTime": "2024-03-16T07:30:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211028696",
+    "EventIdReference": "E025"
+  },
+  {
+    "CheckInTime": "2024-03-22T11:10:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211027097",
+    "EventIdReference": "E046"
+  },
+  {
+    "CheckInTime": "2024-03-10T09:11:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211025296",
+    "EventIdReference": "E050"
+  },
+  {
+    "CheckInTime": "2024-03-21T11:25:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211023943",
+    "EventIdReference": "E024"
+  },
+  {
+    "CheckInTime": "2024-03-12T14:00:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201025614",
+    "EventIdReference": "E004"
+  },
+  {
+    "CheckInTime": "2024-04-04T10:46:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201024791",
+    "EventIdReference": "E035"
+  },
+  {
+    "CheckInTime": "2024-04-12T15:31:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211028882",
+    "EventIdReference": "E007"
+  },
+  {
+    "CheckInTime": "2024-01-30T11:39:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201029926",
+    "EventIdReference": "E006"
+  },
+  {
+    "CheckInTime": "2024-01-20T12:19:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211026374",
+    "EventIdReference": "E027"
+  },
+  {
+    "CheckInTime": "2024-02-11T11:18:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211028827",
+    "EventIdReference": "E012"
+  },
+  {
+    "CheckInTime": "2024-01-12T15:08:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211021852",
+    "EventIdReference": "E035"
+  },
+  {
+    "CheckInTime": "2024-05-18T15:28:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211022518",
+    "EventIdReference": "E001"
+  },
+  {
+    "CheckInTime": "2024-01-19T16:51:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211022534",
+    "EventIdReference": "E024"
+  },
+  {
+    "CheckInTime": "2024-04-07T10:59:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201029414",
+    "EventIdReference": "E011"
+  },
+  {
+    "CheckInTime": "2024-03-29T14:13:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211021422",
+    "EventIdReference": "E033"
+  },
+  {
+    "CheckInTime": "2024-03-05T12:16:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211029766",
+    "EventIdReference": "E031"
+  },
+  {
+    "CheckInTime": "2024-01-28T11:10:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201021802",
+    "EventIdReference": "E002"
+  },
+  {
+    "CheckInTime": "2024-05-09T09:46:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211027864",
+    "EventIdReference": "E040"
+  },
+  {
+    "CheckInTime": "2024-03-06T11:32:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201025173",
+    "EventIdReference": "E014"
+  },
+  {
+    "CheckInTime": "2024-02-01T13:35:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211024318",
+    "EventIdReference": "E015"
+  },
+  {
+    "CheckInTime": "2024-04-13T07:59:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211028156",
+    "EventIdReference": "E019"
+  },
+  {
+    "CheckInTime": "2024-01-02T14:48:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201024514",
+    "EventIdReference": "E009"
+  },
+  {
+    "CheckInTime": "2024-03-23T14:21:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211028064",
+    "EventIdReference": "E049"
+  },
+  {
+    "CheckInTime": "2024-02-05T16:15:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211029807",
+    "EventIdReference": "E031"
+  },
+  {
+    "CheckInTime": "2024-03-06T12:32:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211022518",
+    "EventIdReference": "E044"
+  },
+  {
+    "CheckInTime": "2024-02-08T07:26:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211026384",
+    "EventIdReference": "E029"
+  },
+  {
+    "CheckInTime": "2024-05-16T08:10:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201025614",
+    "EventIdReference": "E001"
+  },
+  {
+    "CheckInTime": "2024-05-30T16:13:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211027097",
+    "EventIdReference": "E004"
+  },
+  {
+    "CheckInTime": "2024-02-19T15:11:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211028235",
+    "EventIdReference": "E014"
+  },
+  {
+    "CheckInTime": "2024-05-24T11:12:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201028099",
+    "EventIdReference": "E044"
+  },
+  {
+    "CheckInTime": "2024-04-01T08:18:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201028099",
+    "EventIdReference": "E019"
+  },
+  {
+    "CheckInTime": "2024-04-18T13:27:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211023619",
+    "EventIdReference": "E044"
+  },
+  {
+    "CheckInTime": "2024-02-17T13:34:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211024246",
+    "EventIdReference": "E038"
+  },
+  {
+    "CheckInTime": "2024-04-09T08:32:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201029414",
+    "EventIdReference": "E016"
+  },
+  {
+    "CheckInTime": "2024-01-24T10:13:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211029770",
+    "EventIdReference": "E035"
+  },
+  {
+    "CheckInTime": "2024-04-18T14:36:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211027959",
+    "EventIdReference": "E012"
+  },
+  {
+    "CheckInTime": "2024-01-22T09:07:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201026162",
+    "EventIdReference": "E006"
+  },
+  {
+    "CheckInTime": "2024-04-20T13:22:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201021377",
+    "EventIdReference": "E032"
+  },
+  {
+    "CheckInTime": "2024-03-09T13:48:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201027117",
+    "EventIdReference": "E033"
+  },
+  {
+    "CheckInTime": "2024-01-05T12:09:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201024498",
+    "EventIdReference": "E014"
+  },
+  {
+    "CheckInTime": "2024-01-06T07:16:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211022524",
+    "EventIdReference": "E024"
+  },
+  {
+    "CheckInTime": "2024-05-18T09:14:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211021803",
+    "EventIdReference": "E034"
+  },
+  {
+    "CheckInTime": "2024-04-29T14:56:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211021452",
+    "EventIdReference": "E011"
+  },
+  {
+    "CheckInTime": "2024-05-27T08:57:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211023281",
+    "EventIdReference": "E015"
+  },
+  {
+    "CheckInTime": "2024-03-19T10:18:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211023489",
+    "EventIdReference": "E035"
+  },
+  {
+    "CheckInTime": "2024-03-10T16:30:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211021241",
+    "EventIdReference": "E047"
+  },
+  {
+    "CheckInTime": "2024-01-06T14:48:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211029742",
+    "EventIdReference": "E027"
+  },
+  {
+    "CheckInTime": "2024-03-28T10:38:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211021818",
+    "EventIdReference": "E004"
+  },
+  {
+    "CheckInTime": "2024-03-09T15:02:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211029959",
+    "EventIdReference": "E025"
+  },
+  {
+    "CheckInTime": "2024-05-28T10:05:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211022492",
+    "EventIdReference": "E032"
+  },
+  {
+    "CheckInTime": "2024-03-09T13:32:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211028614",
+    "EventIdReference": "E040"
+  },
+  {
+    "CheckInTime": "2024-01-23T14:28:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211027790",
+    "EventIdReference": "E034"
+  },
+  {
+    "CheckInTime": "2024-01-10T10:38:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201021993",
+    "EventIdReference": "E030"
+  },
+  {
+    "CheckInTime": "2024-01-11T15:08:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201027117",
+    "EventIdReference": "E045"
+  },
+  {
+    "CheckInTime": "2024-03-02T12:35:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211027848",
+    "EventIdReference": "E047"
+  },
+  {
+    "CheckInTime": "2024-02-21T07:20:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211028191",
+    "EventIdReference": "E033"
+  },
+  {
+    "CheckInTime": "2024-04-14T12:48:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211026795",
+    "EventIdReference": "E050"
+  },
+  {
+    "CheckInTime": "2024-02-18T15:24:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211022233",
+    "EventIdReference": "E030"
+  },
+  {
+    "CheckInTime": "2024-03-25T14:55:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211025705",
+    "EventIdReference": "E037"
+  },
+  {
+    "CheckInTime": "2024-01-17T13:18:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211023619",
+    "EventIdReference": "E043"
+  },
+  {
+    "CheckInTime": "2024-04-05T07:29:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211029497",
+    "EventIdReference": "E030"
+  },
+  {
+    "CheckInTime": "2024-02-29T14:54:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201021802",
+    "EventIdReference": "E005"
+  },
+  {
+    "CheckInTime": "2024-02-06T09:09:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211023489",
+    "EventIdReference": "E040"
+  },
+  {
+    "CheckInTime": "2024-04-25T10:29:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201029414",
+    "EventIdReference": "E040"
+  },
+  {
+    "CheckInTime": "2024-03-02T11:14:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201024514",
+    "EventIdReference": "E006"
+  },
+  {
+    "CheckInTime": "2024-03-01T11:14:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201024732",
+    "EventIdReference": "E030"
+  },
+  {
+    "CheckInTime": "2024-03-11T13:45:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201024930",
+    "EventIdReference": "E020"
+  },
+  {
+    "CheckInTime": "2024-02-02T11:44:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211026795",
+    "EventIdReference": "E022"
+  },
+  {
+    "CheckInTime": "2024-03-31T14:38:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211021660",
+    "EventIdReference": "E048"
+  },
+  {
+    "CheckInTime": "2024-05-20T16:51:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201021993",
+    "EventIdReference": "E002"
+  },
+  {
+    "CheckInTime": "2024-05-21T07:19:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211029870",
+    "EventIdReference": "E010"
+  },
+  {
+    "CheckInTime": "2024-02-17T08:30:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211029742",
+    "EventIdReference": "E045"
+  },
+  {
+    "CheckInTime": "2024-04-18T15:41:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211021531",
+    "EventIdReference": "E048"
+  },
+  {
+    "CheckInTime": "2024-02-10T10:33:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211028241",
+    "EventIdReference": "E049"
+  },
+  {
+    "CheckInTime": "2024-01-24T14:03:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211026791",
+    "EventIdReference": "E036"
+  },
+  {
+    "CheckInTime": "2024-03-08T12:53:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211022492",
+    "EventIdReference": "E029"
+  },
+  {
+    "CheckInTime": "2024-05-15T15:40:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211024494",
+    "EventIdReference": "E022"
+  },
+  {
+    "CheckInTime": "2024-01-08T07:19:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211021396",
+    "EventIdReference": "E012"
+  },
+  {
+    "CheckInTime": "2024-03-14T16:33:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211021241",
+    "EventIdReference": "E023"
+  },
+  {
+    "CheckInTime": "2024-01-04T09:32:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211026930",
+    "EventIdReference": "E009"
+  },
+  {
+    "CheckInTime": "2024-02-15T11:08:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211023273",
+    "EventIdReference": "E008"
+  },
+  {
+    "CheckInTime": "2024-05-24T13:28:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211021489",
+    "EventIdReference": "E041"
+  },
+  {
+    "CheckInTime": "2024-03-30T08:34:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211029959",
+    "EventIdReference": "E048"
+  },
+  {
+    "CheckInTime": "2024-05-22T07:17:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211024882",
+    "EventIdReference": "E015"
+  },
+  {
+    "CheckInTime": "2024-01-02T11:57:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211025395",
+    "EventIdReference": "E001"
+  },
+  {
+    "CheckInTime": "2024-02-04T11:23:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211023619",
+    "EventIdReference": "E044"
+  },
+  {
+    "CheckInTime": "2024-03-05T08:00:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211022265",
+    "EventIdReference": "E047"
+  },
+  {
+    "CheckInTime": "2024-03-10T15:55:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201028099",
+    "EventIdReference": "E011"
+  },
+  {
+    "CheckInTime": "2024-05-01T07:23:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211023704",
+    "EventIdReference": "E043"
+  },
+  {
+    "CheckInTime": "2024-04-07T07:43:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211029662",
+    "EventIdReference": "E018"
+  },
+  {
+    "CheckInTime": "2024-03-02T09:20:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211022491",
+    "EventIdReference": "E048"
+  },
+  {
+    "CheckInTime": "2024-02-24T07:36:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201024498",
+    "EventIdReference": "E024"
+  },
+  {
+    "CheckInTime": "2024-02-28T11:08:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211026194",
+    "EventIdReference": "E022"
+  },
+  {
+    "CheckInTime": "2024-04-02T09:45:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211026299",
+    "EventIdReference": "E013"
+  },
+  {
+    "CheckInTime": "2024-01-20T10:38:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211027745",
+    "EventIdReference": "E037"
+  },
+  {
+    "CheckInTime": "2024-03-23T14:38:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201029926",
+    "EventIdReference": "E034"
+  },
+  {
+    "CheckInTime": "2024-05-18T09:11:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211024602",
+    "EventIdReference": "E042"
+  },
+  {
+    "CheckInTime": "2024-01-23T08:31:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211022913",
+    "EventIdReference": "E027"
+  },
+  {
+    "CheckInTime": "2024-01-03T16:30:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211022686",
+    "EventIdReference": "E010"
+  },
+  {
+    "CheckInTime": "2024-02-03T13:21:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201025353",
+    "EventIdReference": "E015"
+  },
+  {
+    "CheckInTime": "2024-03-04T08:01:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211025601",
+    "EventIdReference": "E037"
+  },
+  {
+    "CheckInTime": "2024-05-15T11:21:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211026791",
+    "EventIdReference": "E025"
+  },
+  {
+    "CheckInTime": "2024-03-31T08:24:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201026217",
+    "EventIdReference": "E007"
+  },
+  {
+    "CheckInTime": "2024-02-10T09:12:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211024404",
+    "EventIdReference": "E013"
+  },
+  {
+    "CheckInTime": "2024-02-04T07:44:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211025573",
+    "EventIdReference": "E046"
+  },
+  {
+    "CheckInTime": "2024-04-11T12:32:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211022492",
+    "EventIdReference": "E004"
+  },
+  {
+    "CheckInTime": "2024-05-30T10:38:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211029173",
+    "EventIdReference": "E015"
+  },
+  {
+    "CheckInTime": "2024-05-11T15:38:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201028099",
+    "EventIdReference": "E044"
+  },
+  {
+    "CheckInTime": "2024-03-29T16:33:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211027095",
+    "EventIdReference": "E017"
+  },
+  {
+    "CheckInTime": "2024-04-03T11:22:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211024964",
+    "EventIdReference": "E038"
+  },
+  {
+    "CheckInTime": "2024-02-19T07:20:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211029090",
+    "EventIdReference": "E020"
+  },
+  {
+    "CheckInTime": "2024-05-16T07:42:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211024804",
+    "EventIdReference": "E044"
+  },
+  {
+    "CheckInTime": "2024-02-15T08:31:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201023508",
+    "EventIdReference": "E006"
+  },
+  {
+    "CheckInTime": "2024-03-01T08:03:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201027993",
+    "EventIdReference": "E043"
+  },
+  {
+    "CheckInTime": "2024-03-03T16:31:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211024514",
+    "EventIdReference": "E039"
+  },
+  {
+    "CheckInTime": "2024-02-17T15:04:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211029807",
+    "EventIdReference": "E035"
+  },
+  {
+    "CheckInTime": "2024-01-24T14:57:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211028156",
+    "EventIdReference": "E042"
+  },
+  {
+    "CheckInTime": "2024-04-02T09:53:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211025601",
+    "EventIdReference": "E001"
+  },
+  {
+    "CheckInTime": "2024-02-12T13:29:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211022322",
+    "EventIdReference": "E007"
+  },
+  {
+    "CheckInTime": "2024-03-15T16:34:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211028321",
+    "EventIdReference": "E037"
+  },
+  {
+    "CheckInTime": "2024-01-14T16:58:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211026311",
+    "EventIdReference": "E018"
+  },
+  {
+    "CheckInTime": "2024-01-26T14:52:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211025705",
+    "EventIdReference": "E037"
+  },
+  {
+    "CheckInTime": "2024-03-21T08:46:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211024242",
+    "EventIdReference": "E009"
+  },
+  {
+    "CheckInTime": "2024-04-30T12:17:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201028823",
+    "EventIdReference": "E042"
+  },
+  {
+    "CheckInTime": "2024-04-02T16:22:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201021993",
+    "EventIdReference": "E011"
+  },
+  {
+    "CheckInTime": "2024-03-16T12:53:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211027000",
+    "EventIdReference": "E036"
+  },
+  {
+    "CheckInTime": "2024-01-19T11:04:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201029050",
+    "EventIdReference": "E002"
+  },
+  {
+    "CheckInTime": "2024-02-23T16:51:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211022241",
+    "EventIdReference": "E036"
+  },
+  {
+    "CheckInTime": "2024-04-27T15:20:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201024854",
+    "EventIdReference": "E025"
+  },
+  {
+    "CheckInTime": "2024-03-30T16:57:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211024787",
+    "EventIdReference": "E034"
+  },
+  {
+    "CheckInTime": "2024-05-07T12:48:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211028191",
+    "EventIdReference": "E008"
+  },
+  {
+    "CheckInTime": "2024-05-09T08:57:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211025831",
+    "EventIdReference": "E037"
+  },
+  {
+    "CheckInTime": "2024-05-03T14:20:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211027706",
+    "EventIdReference": "E008"
+  },
+  {
+    "CheckInTime": "2024-03-07T13:43:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211028820",
+    "EventIdReference": "E010"
+  },
+  {
+    "CheckInTime": "2024-05-05T15:34:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211028235",
+    "EventIdReference": "E046"
+  },
+  {
+    "CheckInTime": "2024-01-25T11:31:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211027281",
+    "EventIdReference": "E048"
+  },
+  {
+    "CheckInTime": "2024-01-21T14:22:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211029503",
+    "EventIdReference": "E014"
+  },
+  {
+    "CheckInTime": "2024-04-01T08:16:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211027776",
+    "EventIdReference": "E035"
+  },
+  {
+    "CheckInTime": "2024-02-06T13:03:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201024930",
+    "EventIdReference": "E019"
+  },
+  {
+    "CheckInTime": "2024-03-02T12:45:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211028353",
+    "EventIdReference": "E045"
+  },
+  {
+    "CheckInTime": "2024-04-03T15:41:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211026086",
+    "EventIdReference": "E033"
+  },
+  {
+    "CheckInTime": "2024-04-26T09:36:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211023536",
+    "EventIdReference": "E042"
+  },
+  {
+    "CheckInTime": "2024-01-08T13:37:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211022915",
+    "EventIdReference": "E023"
+  },
+  {
+    "CheckInTime": "2024-03-05T07:37:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211027706",
+    "EventIdReference": "E041"
+  },
+  {
+    "CheckInTime": "2024-02-05T11:43:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211026159",
+    "EventIdReference": "E011"
+  },
+  {
+    "CheckInTime": "2024-03-24T07:33:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211024571",
+    "EventIdReference": "E030"
+  },
+  {
+    "CheckInTime": "2024-01-03T11:47:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211026791",
+    "EventIdReference": "E018"
+  },
+  {
+    "CheckInTime": "2024-03-12T16:31:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211029497",
+    "EventIdReference": "E048"
+  },
+  {
+    "CheckInTime": "2024-03-30T13:35:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211023943",
+    "EventIdReference": "E021"
+  },
+  {
+    "CheckInTime": "2024-01-20T16:22:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211028630",
+    "EventIdReference": "E048"
+  },
+  {
+    "CheckInTime": "2024-01-11T10:23:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211023943",
+    "EventIdReference": "E020"
+  },
+  {
+    "CheckInTime": "2024-04-05T09:23:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211022268",
+    "EventIdReference": "E008"
+  },
+  {
+    "CheckInTime": "2024-01-24T15:24:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201028938",
+    "EventIdReference": "E021"
+  },
+  {
+    "CheckInTime": "2024-02-09T12:53:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211023273",
+    "EventIdReference": "E020"
+  },
+  {
+    "CheckInTime": "2024-05-13T08:27:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211021871",
+    "EventIdReference": "E025"
+  },
+  {
+    "CheckInTime": "2024-01-22T16:59:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201025067",
+    "EventIdReference": "E003"
+  },
+  {
+    "CheckInTime": "2024-04-20T13:51:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211026976",
+    "EventIdReference": "E039"
+  },
+  {
+    "CheckInTime": "2024-03-23T08:00:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211021241",
+    "EventIdReference": "E003"
+  },
+  {
+    "CheckInTime": "2024-05-02T14:46:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211021531",
+    "EventIdReference": "E043"
+  },
+  {
+    "CheckInTime": "2024-02-15T07:32:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211028262",
+    "EventIdReference": "E046"
+  },
+  {
+    "CheckInTime": "2024-01-22T13:44:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211021818",
+    "EventIdReference": "E050"
+  },
+  {
+    "CheckInTime": "2024-03-18T13:42:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201028909",
+    "EventIdReference": "E010"
+  },
+  {
+    "CheckInTime": "2024-04-09T12:10:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211027072",
+    "EventIdReference": "E016"
+  },
+  {
+    "CheckInTime": "2024-04-24T13:35:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211026399",
+    "EventIdReference": "E050"
+  },
+  {
+    "CheckInTime": "2024-01-18T11:59:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211022898",
+    "EventIdReference": "E006"
+  },
+  {
+    "CheckInTime": "2024-03-11T12:02:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211029503",
+    "EventIdReference": "E013"
+  },
+  {
+    "CheckInTime": "2024-02-15T10:58:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211027420",
+    "EventIdReference": "E024"
+  },
+  {
+    "CheckInTime": "2024-01-11T13:32:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211024514",
+    "EventIdReference": "E047"
+  },
+  {
+    "CheckInTime": "2024-01-21T08:40:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211023359",
+    "EventIdReference": "E046"
+  },
+  {
+    "CheckInTime": "2024-02-07T15:11:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201025067",
+    "EventIdReference": "E023"
+  },
+  {
+    "CheckInTime": "2024-02-21T10:01:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201029414",
+    "EventIdReference": "E002"
+  },
+  {
+    "CheckInTime": "2024-02-09T11:33:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211023489",
+    "EventIdReference": "E018"
+  },
+  {
+    "CheckInTime": "2024-03-01T16:06:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211028882",
+    "EventIdReference": "E044"
+  },
+  {
+    "CheckInTime": "2024-05-17T12:13:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211026791",
+    "EventIdReference": "E001"
+  },
+  {
+    "CheckInTime": "2024-01-19T09:17:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211027281",
+    "EventIdReference": "E031"
+  },
+  {
+    "CheckInTime": "2024-01-09T14:16:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211026929",
+    "EventIdReference": "E042"
+  },
+  {
+    "CheckInTime": "2024-01-18T09:47:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211028562",
+    "EventIdReference": "E040"
+  },
+  {
+    "CheckInTime": "2024-01-30T10:56:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211023622",
+    "EventIdReference": "E017"
+  },
+  {
+    "CheckInTime": "2024-05-20T16:44:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211023704",
+    "EventIdReference": "E046"
+  },
+  {
+    "CheckInTime": "2024-02-20T13:19:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211027095",
+    "EventIdReference": "E001"
+  },
+  {
+    "CheckInTime": "2024-04-21T12:41:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211024246",
+    "EventIdReference": "E022"
+  },
+  {
+    "CheckInTime": "2024-02-02T15:49:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211025395",
+    "EventIdReference": "E002"
+  },
+  {
+    "CheckInTime": "2024-05-12T11:36:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211023281",
+    "EventIdReference": "E045"
+  },
+  {
+    "CheckInTime": "2024-03-30T07:35:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211027281",
+    "EventIdReference": "E022"
+  },
+  {
+    "CheckInTime": "2024-03-18T16:18:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201021607",
+    "EventIdReference": "E032"
+  },
+  {
+    "CheckInTime": "2024-04-20T08:31:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211026142",
+    "EventIdReference": "E015"
+  },
+  {
+    "CheckInTime": "2024-03-18T13:08:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201024791",
+    "EventIdReference": "E024"
+  },
+  {
+    "CheckInTime": "2024-01-25T14:45:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211026976",
+    "EventIdReference": "E028"
+  },
+  {
+    "CheckInTime": "2024-02-08T08:22:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201024732",
+    "EventIdReference": "E008"
+  },
+  {
+    "CheckInTime": "2024-04-05T10:40:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211029959",
+    "EventIdReference": "E026"
+  },
+  {
+    "CheckInTime": "2024-03-09T07:35:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211025016",
+    "EventIdReference": "E013"
+  },
+  {
+    "CheckInTime": "2024-04-01T13:00:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211027072",
+    "EventIdReference": "E007"
+  },
+  {
+    "CheckInTime": "2024-05-14T07:51:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211024514",
+    "EventIdReference": "E002"
+  },
+  {
+    "CheckInTime": "2024-03-18T13:39:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211022588",
+    "EventIdReference": "E049"
+  },
+  {
+    "CheckInTime": "2024-02-01T08:53:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211021241",
+    "EventIdReference": "E019"
+  },
+  {
+    "CheckInTime": "2024-01-21T13:16:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201027991",
+    "EventIdReference": "E034"
+  },
+  {
+    "CheckInTime": "2024-04-22T11:45:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201024025",
+    "EventIdReference": "E002"
+  },
+  {
+    "CheckInTime": "2024-05-04T16:06:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211027684",
+    "EventIdReference": "E010"
+  },
+  {
+    "CheckInTime": "2024-05-26T09:01:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211026154",
+    "EventIdReference": "E045"
+  },
+  {
+    "CheckInTime": "2024-05-26T15:09:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211028882",
+    "EventIdReference": "E019"
+  },
+  {
+    "CheckInTime": "2024-05-13T16:59:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211026624",
+    "EventIdReference": "E044"
+  },
+  {
+    "CheckInTime": "2024-05-07T13:20:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211027481",
+    "EventIdReference": "E044"
+  },
+  {
+    "CheckInTime": "2024-04-05T16:16:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211023273",
+    "EventIdReference": "E048"
+  },
+  {
+    "CheckInTime": "2024-04-13T07:01:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211029497",
+    "EventIdReference": "E015"
+  },
+  {
+    "CheckInTime": "2024-04-13T09:50:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211027543",
+    "EventIdReference": "E045"
+  },
+  {
+    "CheckInTime": "2024-05-09T16:49:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211025559",
+    "EventIdReference": "E033"
+  },
+  {
+    "CheckInTime": "2024-02-06T10:12:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211028262",
+    "EventIdReference": "E037"
+  },
+  {
+    "CheckInTime": "2024-05-03T16:54:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211026399",
+    "EventIdReference": "E017"
+  },
+  {
+    "CheckInTime": "2024-02-16T10:03:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211023981",
+    "EventIdReference": "E003"
+  },
+  {
+    "CheckInTime": "2024-05-02T11:02:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211027281",
+    "EventIdReference": "E040"
+  },
+  {
+    "CheckInTime": "2024-03-13T10:14:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211028630",
+    "EventIdReference": "E012"
+  },
+  {
+    "CheckInTime": "2024-04-24T07:31:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211022588",
+    "EventIdReference": "E025"
+  },
+  {
+    "CheckInTime": "2024-03-23T09:14:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211024766",
+    "EventIdReference": "E021"
+  },
+  {
+    "CheckInTime": "2024-03-08T16:46:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211029770",
+    "EventIdReference": "E028"
+  },
+  {
+    "CheckInTime": "2024-05-11T09:15:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201023508",
+    "EventIdReference": "E012"
+  },
+  {
+    "CheckInTime": "2024-05-20T14:34:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211027864",
+    "EventIdReference": "E050"
+  },
+  {
+    "CheckInTime": "2024-05-29T12:00:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211029497",
+    "EventIdReference": "E050"
+  },
+  {
+    "CheckInTime": "2024-04-09T16:53:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211024909",
+    "EventIdReference": "E007"
+  },
+  {
+    "CheckInTime": "2024-03-29T13:12:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211028156",
+    "EventIdReference": "E001"
+  },
+  {
+    "CheckInTime": "2024-02-04T08:15:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211029850",
+    "EventIdReference": "E043"
+  },
+  {
+    "CheckInTime": "2024-04-06T15:05:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211024787",
+    "EventIdReference": "E012"
+  },
+  {
+    "CheckInTime": "2024-02-23T15:40:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201029555",
+    "EventIdReference": "E006"
+  },
+  {
+    "CheckInTime": "2024-02-11T14:17:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211028235",
+    "EventIdReference": "E045"
+  },
+  {
+    "CheckInTime": "2024-04-07T12:38:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211023805",
+    "EventIdReference": "E025"
+  },
+  {
+    "CheckInTime": "2024-03-27T10:45:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211027864",
+    "EventIdReference": "E003"
+  },
+  {
+    "CheckInTime": "2024-05-22T10:16:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201028909",
+    "EventIdReference": "E027"
+  },
+  {
+    "CheckInTime": "2024-01-01T15:31:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211028064",
+    "EventIdReference": "E016"
+  },
+  {
+    "CheckInTime": "2024-05-20T14:42:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211028191",
+    "EventIdReference": "E016"
+  },
+  {
+    "CheckInTime": "2024-03-11T09:56:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211022491",
+    "EventIdReference": "E022"
+  },
+  {
+    "CheckInTime": "2024-01-30T08:47:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211028064",
+    "EventIdReference": "E028"
+  },
+  {
+    "CheckInTime": "2024-03-08T13:37:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211022898",
+    "EventIdReference": "E012"
+  },
+  {
+    "CheckInTime": "2024-05-30T08:14:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211022823",
+    "EventIdReference": "E021"
+  },
+  {
+    "CheckInTime": "2024-01-09T12:49:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211025907",
+    "EventIdReference": "E006"
+  },
+  {
+    "CheckInTime": "2024-01-10T13:54:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211026159",
+    "EventIdReference": "E012"
+  },
+  {
+    "CheckInTime": "2024-04-01T13:38:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211022898",
+    "EventIdReference": "E004"
+  },
+  {
+    "CheckInTime": "2024-02-02T07:35:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211024750",
+    "EventIdReference": "E002"
+  },
+  {
+    "CheckInTime": "2024-02-10T15:26:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211024904",
+    "EventIdReference": "E047"
+  },
+  {
+    "CheckInTime": "2024-04-21T15:02:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211026782",
+    "EventIdReference": "E036"
+  },
+  {
+    "CheckInTime": "2024-05-11T11:33:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211023281",
+    "EventIdReference": "E001"
+  },
+  {
+    "CheckInTime": "2024-05-29T07:51:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211022761",
+    "EventIdReference": "E035"
+  },
+  {
+    "CheckInTime": "2024-02-10T14:30:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211023145",
+    "EventIdReference": "E033"
+  },
+  {
+    "CheckInTime": "2024-05-25T10:20:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211024896",
+    "EventIdReference": "E019"
+  },
+  {
+    "CheckInTime": "2024-01-31T12:41:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211024046",
+    "EventIdReference": "E045"
+  },
+  {
+    "CheckInTime": "2024-02-22T16:39:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201028095",
+    "EventIdReference": "E046"
+  },
+  {
+    "CheckInTime": "2024-03-09T10:20:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211029489",
+    "EventIdReference": "E049"
+  },
+  {
+    "CheckInTime": "2024-01-07T07:26:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211027864",
+    "EventIdReference": "E019"
+  },
+  {
+    "CheckInTime": "2024-05-18T08:22:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211027467",
+    "EventIdReference": "E033"
+  },
+  {
+    "CheckInTime": "2024-01-15T12:11:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211027706",
+    "EventIdReference": "E005"
+  },
+  {
+    "CheckInTime": "2024-01-31T08:50:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211028156",
+    "EventIdReference": "E018"
+  },
+  {
+    "CheckInTime": "2024-01-02T12:48:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211023359",
+    "EventIdReference": "E047"
+  },
+  {
+    "CheckInTime": "2024-03-27T08:46:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211023622",
+    "EventIdReference": "E038"
+  },
+  {
+    "CheckInTime": "2024-05-11T14:39:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211029850",
+    "EventIdReference": "E018"
+  },
+  {
+    "CheckInTime": "2024-02-06T11:26:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201024732",
+    "EventIdReference": "E010"
+  },
+  {
+    "CheckInTime": "2024-05-18T15:32:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201027991",
+    "EventIdReference": "E050"
+  },
+  {
+    "CheckInTime": "2024-03-01T16:21:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211025831",
+    "EventIdReference": "E003"
+  },
+  {
+    "CheckInTime": "2024-01-27T09:19:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211028789",
+    "EventIdReference": "E042"
+  },
+  {
+    "CheckInTime": "2024-02-23T14:15:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211029870",
+    "EventIdReference": "E050"
+  },
+  {
+    "CheckInTime": "2024-03-25T11:05:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211027687",
+    "EventIdReference": "E032"
+  },
+  {
+    "CheckInTime": "2024-03-26T16:31:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211021717",
+    "EventIdReference": "E010"
+  },
+  {
+    "CheckInTime": "2024-04-02T13:46:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211021630",
+    "EventIdReference": "E021"
+  },
+  {
+    "CheckInTime": "2024-04-19T15:28:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211026086",
+    "EventIdReference": "E014"
+  },
+  {
+    "CheckInTime": "2024-01-25T09:10:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211025037",
+    "EventIdReference": "E046"
+  },
+  {
+    "CheckInTime": "2024-01-31T12:22:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211022223",
+    "EventIdReference": "E009"
+  },
+  {
+    "CheckInTime": "2024-03-08T12:14:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211025367",
+    "EventIdReference": "E040"
+  },
+  {
+    "CheckInTime": "2024-02-28T13:19:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211021803",
+    "EventIdReference": "E029"
+  },
+  {
+    "CheckInTime": "2024-05-14T11:25:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201029926",
+    "EventIdReference": "E029"
+  },
+  {
+    "CheckInTime": "2024-03-15T12:17:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211023981",
+    "EventIdReference": "E003"
+  },
+  {
+    "CheckInTime": "2024-03-17T11:33:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211023916",
+    "EventIdReference": "E028"
+  },
+  {
+    "CheckInTime": "2024-03-27T11:48:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211028548",
+    "EventIdReference": "E049"
+  },
+  {
+    "CheckInTime": "2024-02-22T10:37:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211021871",
+    "EventIdReference": "E045"
+  },
+  {
+    "CheckInTime": "2024-01-14T09:10:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211029959",
+    "EventIdReference": "E042"
+  },
+  {
+    "CheckInTime": "2024-04-12T08:24:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201026217",
+    "EventIdReference": "E009"
+  },
+  {
+    "CheckInTime": "2024-05-18T15:45:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211022491",
+    "EventIdReference": "E024"
+  },
+  {
+    "CheckInTime": "2024-04-20T14:24:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211027086",
+    "EventIdReference": "E017"
+  },
+  {
+    "CheckInTime": "2024-03-04T12:52:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211027745",
+    "EventIdReference": "E036"
+  },
+  {
+    "CheckInTime": "2024-03-28T07:05:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211026208",
+    "EventIdReference": "E050"
+  },
+  {
+    "CheckInTime": "2024-05-24T08:44:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211029770",
+    "EventIdReference": "E047"
+  },
+  {
+    "CheckInTime": "2024-02-28T11:05:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211022518",
+    "EventIdReference": "E029"
+  },
+  {
+    "CheckInTime": "2024-04-26T12:03:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201026485",
+    "EventIdReference": "E040"
+  },
+  {
+    "CheckInTime": "2024-02-11T15:52:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211027543",
+    "EventIdReference": "E032"
+  },
+  {
+    "CheckInTime": "2024-01-25T09:01:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211027959",
+    "EventIdReference": "E033"
+  },
+  {
+    "CheckInTime": "2024-02-13T09:34:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211021347",
+    "EventIdReference": "E002"
+  },
+  {
+    "CheckInTime": "2024-04-09T07:29:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211028191",
+    "EventIdReference": "E045"
+  },
+  {
+    "CheckInTime": "2024-03-03T13:57:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211022588",
+    "EventIdReference": "E026"
+  },
+  {
+    "CheckInTime": "2024-01-08T10:11:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211027467",
+    "EventIdReference": "E019"
+  },
+  {
+    "CheckInTime": "2024-04-11T13:43:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211029383",
+    "EventIdReference": "E040"
+  },
+  {
+    "CheckInTime": "2024-03-11T09:29:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211025601",
+    "EventIdReference": "E007"
+  },
+  {
+    "CheckInTime": "2024-05-28T07:20:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211021852",
+    "EventIdReference": "E025"
+  },
+  {
+    "CheckInTime": "2024-04-09T11:48:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201025614",
+    "EventIdReference": "E020"
+  },
+  {
+    "CheckInTime": "2024-01-27T12:09:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201021325",
+    "EventIdReference": "E012"
+  },
+  {
+    "CheckInTime": "2024-03-24T12:56:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211022588",
+    "EventIdReference": "E017"
+  },
+  {
+    "CheckInTime": "2024-03-11T15:24:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211022311",
+    "EventIdReference": "E008"
+  },
+  {
+    "CheckInTime": "2024-04-13T11:26:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211028630",
+    "EventIdReference": "E019"
+  },
+  {
+    "CheckInTime": "2024-03-15T15:03:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211028614",
+    "EventIdReference": "E010"
+  },
+  {
+    "CheckInTime": "2024-04-22T07:21:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211023480",
+    "EventIdReference": "E046"
+  },
+  {
+    "CheckInTime": "2024-05-22T09:43:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211027072",
+    "EventIdReference": "E003"
+  },
+  {
+    "CheckInTime": "2024-02-26T15:23:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211029563",
+    "EventIdReference": "E006"
+  },
+  {
+    "CheckInTime": "2024-03-01T12:12:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201025173",
+    "EventIdReference": "E033"
+  },
+  {
+    "CheckInTime": "2024-01-20T13:38:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201025715",
+    "EventIdReference": "E025"
+  },
+  {
+    "CheckInTime": "2024-03-06T12:48:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211026782",
+    "EventIdReference": "E020"
+  },
+  {
+    "CheckInTime": "2024-03-19T08:51:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211023805",
+    "EventIdReference": "E007"
+  },
+  {
+    "CheckInTime": "2024-05-20T11:13:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211023943",
+    "EventIdReference": "E046"
+  },
+  {
+    "CheckInTime": "2024-05-03T08:08:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211021888",
+    "EventIdReference": "E003"
+  },
+  {
+    "CheckInTime": "2024-04-25T13:55:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211026930",
+    "EventIdReference": "E011"
+  },
+  {
+    "CheckInTime": "2024-01-17T14:37:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211024404",
+    "EventIdReference": "E041"
+  },
+  {
+    "CheckInTime": "2024-05-10T16:16:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211022683",
+    "EventIdReference": "E031"
+  },
+  {
+    "CheckInTime": "2024-03-14T13:34:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211028820",
+    "EventIdReference": "E007"
+  },
+  {
+    "CheckInTime": "2024-03-07T13:31:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211024964",
+    "EventIdReference": "E012"
+  },
+  {
+    "CheckInTime": "2024-02-06T07:07:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211026791",
+    "EventIdReference": "E032"
+  },
+  {
+    "CheckInTime": "2024-01-03T09:40:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211028882",
+    "EventIdReference": "E017"
+  },
+  {
+    "CheckInTime": "2024-04-02T16:57:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211026384",
+    "EventIdReference": "E015"
+  },
+  {
+    "CheckInTime": "2024-04-16T14:45:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211028630",
+    "EventIdReference": "E045"
+  },
+  {
+    "CheckInTime": "2024-04-05T13:32:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211025705",
+    "EventIdReference": "E028"
+  },
+  {
+    "CheckInTime": "2024-03-16T10:01:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211028238",
+    "EventIdReference": "E023"
+  },
+  {
+    "CheckInTime": "2024-01-12T11:26:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211025704",
+    "EventIdReference": "E042"
+  },
+  {
+    "CheckInTime": "2024-05-12T09:45:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211023359",
+    "EventIdReference": "E039"
+  },
+  {
+    "CheckInTime": "2024-02-25T10:20:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211022534",
+    "EventIdReference": "E012"
+  },
+  {
+    "CheckInTime": "2024-04-17T12:47:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201021761",
+    "EventIdReference": "E010"
+  },
+  {
+    "CheckInTime": "2024-02-03T08:40:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211021452",
+    "EventIdReference": "E040"
+  },
+  {
+    "CheckInTime": "2024-05-26T10:01:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211028064",
+    "EventIdReference": "E025"
+  },
+  {
+    "CheckInTime": "2024-04-11T15:12:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211024363",
+    "EventIdReference": "E037"
+  },
+  {
+    "CheckInTime": "2024-03-19T07:44:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201029414",
+    "EventIdReference": "E027"
+  },
+  {
+    "CheckInTime": "2024-05-24T07:15:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211029090",
+    "EventIdReference": "E043"
+  },
+  {
+    "CheckInTime": "2024-01-31T15:11:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211025316",
+    "EventIdReference": "E041"
+  },
+  {
+    "CheckInTime": "2024-03-19T07:19:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211021531",
+    "EventIdReference": "E025"
+  },
+  {
+    "CheckInTime": "2024-05-24T08:11:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211024896",
+    "EventIdReference": "E019"
+  },
+  {
+    "CheckInTime": "2024-01-03T10:49:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211029569",
+    "EventIdReference": "E017"
+  },
+  {
+    "CheckInTime": "2024-01-12T15:07:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211027269",
+    "EventIdReference": "E045"
+  },
+  {
+    "CheckInTime": "2024-01-09T16:01:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201021802",
+    "EventIdReference": "E033"
+  },
+  {
+    "CheckInTime": "2024-04-20T15:40:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211027000",
+    "EventIdReference": "E005"
+  },
+  {
+    "CheckInTime": "2024-02-27T13:23:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211026807",
+    "EventIdReference": "E032"
+  },
+  {
+    "CheckInTime": "2024-01-15T11:29:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211024494",
+    "EventIdReference": "E041"
+  },
+  {
+    "CheckInTime": "2024-05-29T07:42:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211027543",
+    "EventIdReference": "E010"
+  },
+  {
+    "CheckInTime": "2024-03-20T11:56:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211022686",
+    "EventIdReference": "E035"
+  },
+  {
+    "CheckInTime": "2024-04-16T10:50:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211027269",
+    "EventIdReference": "E010"
+  },
+  {
+    "CheckInTime": "2024-02-23T09:42:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201023508",
+    "EventIdReference": "E021"
+  },
+  {
+    "CheckInTime": "2024-05-04T15:20:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211023273",
+    "EventIdReference": "E018"
+  },
+  {
+    "CheckInTime": "2024-04-09T10:32:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201026485",
+    "EventIdReference": "E017"
+  },
+  {
+    "CheckInTime": "2024-03-02T14:23:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201024498",
+    "EventIdReference": "E005"
+  },
+  {
+    "CheckInTime": "2024-02-24T07:50:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201029555",
+    "EventIdReference": "E024"
+  },
+  {
+    "CheckInTime": "2024-02-03T08:43:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211028820",
+    "EventIdReference": "E003"
+  },
+  {
+    "CheckInTime": "2024-02-11T15:15:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211024363",
+    "EventIdReference": "E032"
+  },
+  {
+    "CheckInTime": "2024-05-27T07:37:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201025614",
+    "EventIdReference": "E043"
+  },
+  {
+    "CheckInTime": "2024-05-30T10:47:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211026086",
+    "EventIdReference": "E015"
+  },
+  {
+    "CheckInTime": "2024-01-13T10:59:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211021865",
+    "EventIdReference": "E003"
+  },
+  {
+    "CheckInTime": "2024-01-03T07:01:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211022686",
+    "EventIdReference": "E014"
+  },
+  {
+    "CheckInTime": "2024-03-23T13:39:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201022852",
+    "EventIdReference": "E007"
+  },
+  {
+    "CheckInTime": "2024-04-15T13:17:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211023684",
+    "EventIdReference": "E008"
+  },
+  {
+    "CheckInTime": "2024-05-22T10:29:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211028696",
+    "EventIdReference": "E022"
+  },
+  {
+    "CheckInTime": "2024-02-09T14:48:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211021280",
+    "EventIdReference": "E028"
+  },
+  {
+    "CheckInTime": "2024-01-02T13:20:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211027481",
+    "EventIdReference": "E039"
+  },
+  {
+    "CheckInTime": "2024-03-04T12:44:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211028502",
+    "EventIdReference": "E047"
+  },
+  {
+    "CheckInTime": "2024-01-25T13:07:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211025677",
+    "EventIdReference": "E019"
+  },
+  {
+    "CheckInTime": "2024-01-04T10:45:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201025614",
+    "EventIdReference": "E007"
+  },
+  {
+    "CheckInTime": "2024-01-13T16:49:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211021489",
+    "EventIdReference": "E046"
+  },
+  {
+    "CheckInTime": "2024-03-15T07:49:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31201026485",
+    "EventIdReference": "E029"
+  },
+  {
+    "CheckInTime": "2024-05-27T16:29:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211026827",
+    "EventIdReference": "E011"
+  },
+  {
+    "CheckInTime": "2024-03-10T09:19:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211028238",
+    "EventIdReference": "E045"
+  },
+  {
+    "CheckInTime": "2024-04-23T14:39:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211029641",
+    "EventIdReference": "E017"
+  },
+  {
+    "CheckInTime": "2024-01-24T12:13:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211022915",
+    "EventIdReference": "E036"
+  },
+  {
+    "CheckInTime": "2024-04-06T09:12:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211023204",
+    "EventIdReference": "E017"
+  },
+  {
+    "CheckInTime": "2024-02-07T10:34:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201024025",
+    "EventIdReference": "E048"
+  },
+  {
+    "CheckInTime": "2024-01-05T13:13:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211023480",
+    "EventIdReference": "E037"
+  },
+  {
+    "CheckInTime": "2024-03-14T13:06:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211022233",
+    "EventIdReference": "E016"
+  },
+  {
+    "CheckInTime": "2024-04-30T13:09:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211022265",
+    "EventIdReference": "E047"
+  },
+  {
+    "CheckInTime": "2024-02-13T12:40:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211029503",
+    "EventIdReference": "E019"
+  },
+  {
+    "CheckInTime": "2024-03-24T08:52:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211024395",
+    "EventIdReference": "E029"
+  },
+  {
+    "CheckInTime": "2024-04-26T08:52:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211022588",
+    "EventIdReference": "E016"
+  },
+  {
+    "CheckInTime": "2024-02-04T07:57:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211023431",
+    "EventIdReference": "E047"
+  },
+  {
+    "CheckInTime": "2024-04-11T13:02:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211021799",
+    "EventIdReference": "E044"
+  },
+  {
+    "CheckInTime": "2024-04-27T11:33:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211028854",
+    "EventIdReference": "E027"
+  },
+  {
+    "CheckInTime": "2024-05-05T12:50:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211027959",
+    "EventIdReference": "E044"
+  },
+  {
+    "CheckInTime": "2024-01-28T11:27:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211026208",
+    "EventIdReference": "E040"
+  },
+  {
+    "CheckInTime": "2024-01-09T07:44:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31201021607",
+    "EventIdReference": "E015"
+  },
+  {
+    "CheckInTime": "2024-04-01T16:17:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31201029644",
+    "EventIdReference": "E010"
+  },
+  {
+    "CheckInTime": "2024-05-29T07:59:00",
+    "Status": "Vắng mặt",
+    "StudentIdReference": "31211028832",
+    "EventIdReference": "E024"
+  },
+  {
+    "CheckInTime": "2024-05-12T09:59:00",
+    "Status": "Đi trễ",
+    "StudentIdReference": "31211024395",
+    "EventIdReference": "E006"
+  },
+  {
+    "CheckInTime": "2024-01-04T07:01:00",
+    "Status": "Có mặt",
+    "StudentIdReference": "31211021397",
+    "EventIdReference": "E012"
+  }
+]

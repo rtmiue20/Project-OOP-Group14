@@ -26,10 +26,23 @@ public partial class FormMain : Form
     private Button btn_navAttendance;
     private Button activeBtn;
 
-    public FormMain()
+    private Account currentUser;
+
+    public FormMain(Account account)
     {
+        this.currentUser = account;
         InitializeComponent();
         SetupModernUI();
+        ApplyRoleBasedAccess();
+
+        // Đăng ký sự kiện DataChanged cho các Manager
+        studentManager.DataChanged += (s, e) => LoadStudentData();
+        officialManager.DataChanged += (s, e) => LoadStudentData();
+        eventManager.DataChanged += (s, e) => LoadEventData();
+        clubManager.DataChanged += (s, e) => LoadClubData();
+        rewardManager.DataChanged += (s, e) => LoadRewardData();
+        facultyManager.DataChanged += (s, e) => LoadFacultyData();
+        lecturerManager.DataChanged += (s, e) => LoadLecturerData();
 
         // TabControl Event
         tc_demo.SelectedIndexChanged += tc_demo_SelectedIndexChanged;
@@ -106,6 +119,44 @@ public partial class FormMain : Form
         // Thêm hiệu ứng hover nhẹ
         btn.MouseEnter += (s, e) => btn.BackColor = ControlPaint.Light(backColor);
         btn.MouseLeave += (s, e) => btn.BackColor = backColor;
+    }
+
+    private void ApplyRoleBasedAccess()
+    {
+        if (currentUser == null) return;
+
+        if (currentUser.Role == "User")
+        {
+            // Nếu là User thường, ẩn các chức năng quan trọng
+            // Giả sử ẩn tab Điểm danh, Khen thưởng và Giảng viên
+            if (tc_demo.TabPages.Contains(tp_DD)) tc_demo.TabPages.Remove(tp_DD);
+            if (tc_demo.TabPages.Contains(tp_KT)) tc_demo.TabPages.Remove(tp_KT);
+            if (tc_demo.TabPages.Contains(tp_GV)) tc_demo.TabPages.Remove(tp_GV);
+            
+            // Ẩn các nút điều hướng tương ứng ở sidebar nếu có
+            if (btn_navAttendance != null) btn_navAttendance.Visible = false;
+            if (btn_navReward != null) btn_navReward.Visible = false;
+            if (btn_navLecturer != null) btn_navLecturer.Visible = false;
+            
+            // Có thể hạn chế thêm các nút Thêm/Sửa/Xóa ở các tab còn lại
+            btn_studentAdd.Enabled = false;
+            btn_studentUpdate.Enabled = false;
+            btn_studentDelete.Enabled = false;
+            
+            btn_eventAdd.Enabled = false;
+            btn_eventUpdate.Enabled = false;
+            btn_eventDelete.Enabled = false;
+            
+            btn_clubAdd.Enabled = false;
+            btn_clubUpdate.Enabled = false;
+            btn_clubDelete.Enabled = false;
+            
+            btn_facultyAdd.Enabled = false;
+            btn_facultyUpdate.Enabled = false;
+            btn_facultyDelete.Enabled = false;
+        }
+        
+        lbl_title.Text += $" - [{currentUser.Username} ({currentUser.Role})]";
     }
 
     private void SetupModernUI()
@@ -489,7 +540,6 @@ public partial class FormMain : Form
 
         MessageBox.Show("Thêm thành công!");
         ClearStudentForm();
-        LoadStudentData();
     }
 
     // 3. StudentUpdate function
@@ -568,8 +618,7 @@ public partial class FormMain : Form
                 }
             }
         }
-
-        LoadStudentData();
+        
         ClearStudentForm();
     }
 
@@ -780,7 +829,6 @@ public partial class FormMain : Form
         eventManager.Add(newEvent);
         MessageBox.Show("Thêm sự kiện thành công!", "Thành công");
         ClearEventForm();
-        LoadEventData();
     }
 
     // 3. UpdateEvent function
@@ -816,7 +864,6 @@ public partial class FormMain : Form
         eventManager.Update(eventUpd);
         MessageBox.Show("Cập nhật sự kiện thành công!", "Thành công");
         ClearEventForm();
-        LoadEventData();
     }
 
     private void dgv_events_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -854,7 +901,6 @@ public partial class FormMain : Form
             eventManager.Delete(eventId);
             MessageBox.Show("Xóa sự kiện thành công!", "Thành công");
             ClearEventForm();
-            LoadEventData();
         }
     }
 
@@ -982,7 +1028,6 @@ public partial class FormMain : Form
         MessageBox.Show("Thêm CLB thành công!");
 
         ClearClubForm();
-        LoadClubData();
     }
     
     // 3. UpdateClub function
@@ -1013,7 +1058,6 @@ public partial class FormMain : Form
         MessageBox.Show("Cập nhật thành công!");
 
         ClearClubForm();
-        LoadClubData();
     }
     
     // 4. DeleteClub function
@@ -1040,7 +1084,6 @@ public partial class FormMain : Form
             MessageBox.Show("Xóa thành công!");
 
             ClearClubForm();
-            LoadClubData();
         }
     }
     
@@ -1194,7 +1237,6 @@ public partial class FormMain : Form
 
         MessageBox.Show("Thêm Khen thưởng thành công!", "Thành công");
         ClearRewardForm();
-        LoadRewardData();
     }
 
     // 4. UpdateReward function
@@ -1227,7 +1269,6 @@ public partial class FormMain : Form
 
         MessageBox.Show("Cập nhật thành công!", "Thành công");
         ClearRewardForm();
-        LoadRewardData();
     }
 
     // 5. DeleteReward function
@@ -1253,7 +1294,6 @@ public partial class FormMain : Form
             rewardManager.Delete(rewId);
             MessageBox.Show("Xóa thành công!", "Thành công");
             ClearRewardForm();
-            LoadRewardData();
         }
     }
 
@@ -1343,7 +1383,6 @@ public partial class FormMain : Form
             DeanName = txt_deanName.Text
         };
         facultyManager.Add(fac);
-        LoadFacultyData();
         ClearFacultyForm();
         MessageBox.Show("Thêm khoa thành công!");
     }
@@ -1357,7 +1396,6 @@ public partial class FormMain : Form
             DeanName = txt_deanName.Text
         };
         facultyManager.Update(fac);
-        LoadFacultyData();
         MessageBox.Show("Cập nhật khoa thành công!");
     }
 
@@ -1367,7 +1405,6 @@ public partial class FormMain : Form
         if (!string.IsNullOrEmpty(id))
         {
             facultyManager.Delete(id);
-            LoadFacultyData();
             ClearFacultyForm();
             MessageBox.Show("Xóa khoa thành công!");
         }
@@ -1418,7 +1455,6 @@ public partial class FormMain : Form
             Department = "" // Cần thêm TextBox cho Department vào Designer nếu muốn nhập
         };
         lecturerManager.Add(l);
-        LoadLecturerData();
         ClearLecturerForm();
         MessageBox.Show("Thêm giảng viên thành công!");
     }
@@ -1440,7 +1476,6 @@ public partial class FormMain : Form
             l.BirthYear = (int)nud_lecturerBirthYear.Value;
             // l.Department = ... (tương tự)
             lecturerManager.Update(l);
-            LoadLecturerData();
             MessageBox.Show("Cập nhật giảng viên thành công!");
         }
     }
@@ -1452,7 +1487,6 @@ public partial class FormMain : Form
         if (id != "")
         {
             lecturerManager.Delete(id);
-            LoadLecturerData();
             ClearLecturerForm();
             MessageBox.Show("Xóa giảng viên thành công!");
         }
@@ -1492,7 +1526,7 @@ public partial class FormMain : Form
     // 1. LoadDataAttendance function
     private void LoadAttendanceData()
     {
-        List<ParticipationHistory> list = FileHelper.Load<ParticipationHistory>("participation.json");
+        List<ParticipationHistory> list = FileHelper.Load<ParticipationHistory>("participants.json");
         dgv_attendance.DataSource = null;
         dgv_attendance.DataSource = list;
 
@@ -1541,7 +1575,7 @@ public partial class FormMain : Form
         string evId = cbb_eventSelect.SelectedValue.ToString();
 
         // Kiểm tra xem đã điểm danh chưa
-        List<ParticipationHistory> list = FileHelper.Load<ParticipationHistory>("participation.json");
+        List<ParticipationHistory> list = FileHelper.Load<ParticipationHistory>("participants.json");
         if (list.Exists(x => x.StudentIdReference == stId && x.EventIdReference == evId))
         {
             MessageBox.Show("Sinh viên này đã được điểm danh trong sự kiện này!");
@@ -1601,7 +1635,7 @@ public partial class FormMain : Form
     private void btn_ddSearch_Click(object sender, EventArgs e)
     {
         string kw = txt_ddSearch.Text.Trim().ToLower();
-        List<ParticipationHistory> list = FileHelper.Load<ParticipationHistory>("participation.json");
+        List<ParticipationHistory> list = FileHelper.Load<ParticipationHistory>("participants.json");
         var result = list.FindAll(x => x.StudentIdReference.ToLower().Contains(kw) || x.EventIdReference.ToLower().Contains(kw));
         dgv_attendance.DataSource = null;
         dgv_attendance.DataSource = result;

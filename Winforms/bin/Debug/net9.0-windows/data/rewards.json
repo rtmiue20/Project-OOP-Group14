@@ -1,0 +1,602 @@
+[
+  {
+    "RewardId": "R001",
+    "RewardName": "Giải nhất NCKH trẻ",
+    "IssueDate": "2023-12-01T00:00:00",
+    "StudentId": "31211024896"
+  },
+  {
+    "RewardId": "R002",
+    "RewardName": "Khen thưởng đóng góp tích cực Chiến dịch",
+    "IssueDate": "2023-09-02T00:00:00",
+    "StudentId": "31211025037"
+  },
+  {
+    "RewardId": "R003",
+    "RewardName": "Giải nhất NCKH trẻ",
+    "IssueDate": "2024-04-07T00:00:00",
+    "StudentId": "31211029770"
+  },
+  {
+    "RewardId": "R004",
+    "RewardName": "Giải nhất NCKH trẻ",
+    "IssueDate": "2023-09-25T00:00:00",
+    "StudentId": "31211023490"
+  },
+  {
+    "RewardId": "R005",
+    "RewardName": "Cán bộ Đoàn xuất sắc",
+    "IssueDate": "2023-11-06T00:00:00",
+    "StudentId": "31201025353"
+  },
+  {
+    "RewardId": "R006",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2024-02-05T00:00:00",
+    "StudentId": "31201025353"
+  },
+  {
+    "RewardId": "R007",
+    "RewardName": "Cán bộ Đoàn xuất sắc",
+    "IssueDate": "2024-03-30T00:00:00",
+    "StudentId": "31211025907"
+  },
+  {
+    "RewardId": "R008",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2024-03-20T00:00:00",
+    "StudentId": "31211026142"
+  },
+  {
+    "RewardId": "R009",
+    "RewardName": "Cán bộ Đoàn xuất sắc",
+    "IssueDate": "2024-01-29T00:00:00",
+    "StudentId": "31211025395"
+  },
+  {
+    "RewardId": "R010",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2024-02-27T00:00:00",
+    "StudentId": "31211028354"
+  },
+  {
+    "RewardId": "R011",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2023-12-07T00:00:00",
+    "StudentId": "31211024751"
+  },
+  {
+    "RewardId": "R012",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2024-04-25T00:00:00",
+    "StudentId": "31211028456"
+  },
+  {
+    "RewardId": "R013",
+    "RewardName": "Thanh niên tiên tiến làm theo lời Bác",
+    "IssueDate": "2024-03-13T00:00:00",
+    "StudentId": "31201028909"
+  },
+  {
+    "RewardId": "R014",
+    "RewardName": "Thanh niên tiên tiến làm theo lời Bác",
+    "IssueDate": "2023-09-17T00:00:00",
+    "StudentId": "31211021818"
+  },
+  {
+    "RewardId": "R015",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2024-03-03T00:00:00",
+    "StudentId": "31211025705"
+  },
+  {
+    "RewardId": "R016",
+    "RewardName": "Thanh niên tiên tiến làm theo lời Bác",
+    "IssueDate": "2024-04-01T00:00:00",
+    "StudentId": "31211021865"
+  },
+  {
+    "RewardId": "R017",
+    "RewardName": "Khen thưởng đóng góp tích cực Chiến dịch",
+    "IssueDate": "2023-10-12T00:00:00",
+    "StudentId": "31211028241"
+  },
+  {
+    "RewardId": "R018",
+    "RewardName": "Thanh niên tiên tiến làm theo lời Bác",
+    "IssueDate": "2024-01-31T00:00:00",
+    "StudentId": "31211023913"
+  },
+  {
+    "RewardId": "R019",
+    "RewardName": "Giải nhất NCKH trẻ",
+    "IssueDate": "2024-04-22T00:00:00",
+    "StudentId": "31211026624"
+  },
+  {
+    "RewardId": "R020",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2024-02-25T00:00:00",
+    "StudentId": "31201028823"
+  },
+  {
+    "RewardId": "R021",
+    "RewardName": "Cán bộ Đoàn xuất sắc",
+    "IssueDate": "2024-02-19T00:00:00",
+    "StudentId": "31211028354"
+  },
+  {
+    "RewardId": "R022",
+    "RewardName": "Cán bộ Đoàn xuất sắc",
+    "IssueDate": "2024-01-01T00:00:00",
+    "StudentId": "31211024750"
+  },
+  {
+    "RewardId": "R023",
+    "RewardName": "Khen thưởng đóng góp tích cực Chiến dịch",
+    "IssueDate": "2023-09-06T00:00:00",
+    "StudentId": "31211027659"
+  },
+  {
+    "RewardId": "R024",
+    "RewardName": "Giải nhất NCKH trẻ",
+    "IssueDate": "2024-02-28T00:00:00",
+    "StudentId": "31211024896"
+  },
+  {
+    "RewardId": "R025",
+    "RewardName": "Cán bộ Đoàn xuất sắc",
+    "IssueDate": "2024-01-29T00:00:00",
+    "StudentId": "31211028191"
+  },
+  {
+    "RewardId": "R026",
+    "RewardName": "Giải nhất NCKH trẻ",
+    "IssueDate": "2023-12-08T00:00:00",
+    "StudentId": "31211026299"
+  },
+  {
+    "RewardId": "R027",
+    "RewardName": "Cán bộ Đoàn xuất sắc",
+    "IssueDate": "2024-04-26T00:00:00",
+    "StudentId": "31201024388"
+  },
+  {
+    "RewardId": "R028",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2024-01-17T00:00:00",
+    "StudentId": "31201029555"
+  },
+  {
+    "RewardId": "R029",
+    "RewardName": "Thanh niên tiên tiến làm theo lời Bác",
+    "IssueDate": "2023-09-30T00:00:00",
+    "StudentId": "31211027000"
+  },
+  {
+    "RewardId": "R030",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2023-12-08T00:00:00",
+    "StudentId": "31211029807"
+  },
+  {
+    "RewardId": "R031",
+    "RewardName": "Khen thưởng đóng góp tích cực Chiến dịch",
+    "IssueDate": "2024-04-04T00:00:00",
+    "StudentId": "31211023913"
+  },
+  {
+    "RewardId": "R032",
+    "RewardName": "Thanh niên tiên tiến làm theo lời Bác",
+    "IssueDate": "2024-05-05T00:00:00",
+    "StudentId": "31201021377"
+  },
+  {
+    "RewardId": "R033",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2023-09-04T00:00:00",
+    "StudentId": "31211027528"
+  },
+  {
+    "RewardId": "R034",
+    "RewardName": "Cán bộ Đoàn xuất sắc",
+    "IssueDate": "2024-04-04T00:00:00",
+    "StudentId": "31211022761"
+  },
+  {
+    "RewardId": "R035",
+    "RewardName": "Cán bộ Đoàn xuất sắc",
+    "IssueDate": "2024-02-06T00:00:00",
+    "StudentId": "31211028540"
+  },
+  {
+    "RewardId": "R036",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2024-02-17T00:00:00",
+    "StudentId": "31201028099"
+  },
+  {
+    "RewardId": "R037",
+    "RewardName": "Cán bộ Đoàn xuất sắc",
+    "IssueDate": "2023-10-06T00:00:00",
+    "StudentId": "31211027467"
+  },
+  {
+    "RewardId": "R038",
+    "RewardName": "Cán bộ Đoàn xuất sắc",
+    "IssueDate": "2024-02-02T00:00:00",
+    "StudentId": "31211021871"
+  },
+  {
+    "RewardId": "R039",
+    "RewardName": "Cán bộ Đoàn xuất sắc",
+    "IssueDate": "2024-03-26T00:00:00",
+    "StudentId": "31211029492"
+  },
+  {
+    "RewardId": "R040",
+    "RewardName": "Giải nhất NCKH trẻ",
+    "IssueDate": "2023-11-20T00:00:00",
+    "StudentId": "31201021761"
+  },
+  {
+    "RewardId": "R041",
+    "RewardName": "Khen thưởng đóng góp tích cực Chiến dịch",
+    "IssueDate": "2024-05-05T00:00:00",
+    "StudentId": "31211023913"
+  },
+  {
+    "RewardId": "R042",
+    "RewardName": "Thanh niên tiên tiến làm theo lời Bác",
+    "IssueDate": "2024-02-22T00:00:00",
+    "StudentId": "31211027522"
+  },
+  {
+    "RewardId": "R043",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2023-09-22T00:00:00",
+    "StudentId": "31201024854"
+  },
+  {
+    "RewardId": "R044",
+    "RewardName": "Thanh niên tiên tiến làm theo lời Bác",
+    "IssueDate": "2024-03-16T00:00:00",
+    "StudentId": "31201028330"
+  },
+  {
+    "RewardId": "R045",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2023-09-30T00:00:00",
+    "StudentId": "31201024498"
+  },
+  {
+    "RewardId": "R046",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2024-02-08T00:00:00",
+    "StudentId": "31211029766"
+  },
+  {
+    "RewardId": "R047",
+    "RewardName": "Thanh niên tiên tiến làm theo lời Bác",
+    "IssueDate": "2024-03-01T00:00:00",
+    "StudentId": "31211028832"
+  },
+  {
+    "RewardId": "R048",
+    "RewardName": "Thanh niên tiên tiến làm theo lời Bác",
+    "IssueDate": "2023-12-24T00:00:00",
+    "StudentId": "31201029644"
+  },
+  {
+    "RewardId": "R049",
+    "RewardName": "Thanh niên tiên tiến làm theo lời Bác",
+    "IssueDate": "2023-09-04T00:00:00",
+    "StudentId": "31211024787"
+  },
+  {
+    "RewardId": "R050",
+    "RewardName": "Giải nhất NCKH trẻ",
+    "IssueDate": "2023-09-25T00:00:00",
+    "StudentId": "31211021422"
+  },
+  {
+    "RewardId": "R051",
+    "RewardName": "Cán bộ Đoàn xuất sắc",
+    "IssueDate": "2024-04-18T00:00:00",
+    "StudentId": "31211028696"
+  },
+  {
+    "RewardId": "R052",
+    "RewardName": "Khen thưởng đóng góp tích cực Chiến dịch",
+    "IssueDate": "2023-10-21T00:00:00",
+    "StudentId": "31201027537"
+  },
+  {
+    "RewardId": "R053",
+    "RewardName": "Giải nhất NCKH trẻ",
+    "IssueDate": "2024-03-16T00:00:00",
+    "StudentId": "31211022385"
+  },
+  {
+    "RewardId": "R054",
+    "RewardName": "Khen thưởng đóng góp tích cực Chiến dịch",
+    "IssueDate": "2024-04-22T00:00:00",
+    "StudentId": "31211024696"
+  },
+  {
+    "RewardId": "R055",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2024-01-20T00:00:00",
+    "StudentId": "31211026795"
+  },
+  {
+    "RewardId": "R056",
+    "RewardName": "Khen thưởng đóng góp tích cực Chiến dịch",
+    "IssueDate": "2024-02-28T00:00:00",
+    "StudentId": "31211029742"
+  },
+  {
+    "RewardId": "R057",
+    "RewardName": "Thanh niên tiên tiến làm theo lời Bác",
+    "IssueDate": "2023-12-28T00:00:00",
+    "StudentId": "31201022031"
+  },
+  {
+    "RewardId": "R058",
+    "RewardName": "Cán bộ Đoàn xuất sắc",
+    "IssueDate": "2024-03-11T00:00:00",
+    "StudentId": "31211026795"
+  },
+  {
+    "RewardId": "R059",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2023-09-05T00:00:00",
+    "StudentId": "31211024750"
+  },
+  {
+    "RewardId": "R060",
+    "RewardName": "Cán bộ Đoàn xuất sắc",
+    "IssueDate": "2023-11-15T00:00:00",
+    "StudentId": "31211024787"
+  },
+  {
+    "RewardId": "R061",
+    "RewardName": "Khen thưởng đóng góp tích cực Chiến dịch",
+    "IssueDate": "2024-01-29T00:00:00",
+    "StudentId": "31211027522"
+  },
+  {
+    "RewardId": "R062",
+    "RewardName": "Cán bộ Đoàn xuất sắc",
+    "IssueDate": "2024-02-23T00:00:00",
+    "StudentId": "31211024552"
+  },
+  {
+    "RewardId": "R063",
+    "RewardName": "Cán bộ Đoàn xuất sắc",
+    "IssueDate": "2024-03-21T00:00:00",
+    "StudentId": "31201029050"
+  },
+  {
+    "RewardId": "R064",
+    "RewardName": "Khen thưởng đóng góp tích cực Chiến dịch",
+    "IssueDate": "2024-03-17T00:00:00",
+    "StudentId": "31211028064"
+  },
+  {
+    "RewardId": "R065",
+    "RewardName": "Khen thưởng đóng góp tích cực Chiến dịch",
+    "IssueDate": "2024-05-07T00:00:00",
+    "StudentId": "31201023508"
+  },
+  {
+    "RewardId": "R066",
+    "RewardName": "Giải nhất NCKH trẻ",
+    "IssueDate": "2023-10-15T00:00:00",
+    "StudentId": "31211025559"
+  },
+  {
+    "RewardId": "R067",
+    "RewardName": "Khen thưởng đóng góp tích cực Chiến dịch",
+    "IssueDate": "2024-02-22T00:00:00",
+    "StudentId": "31211022683"
+  },
+  {
+    "RewardId": "R068",
+    "RewardName": "Khen thưởng đóng góp tích cực Chiến dịch",
+    "IssueDate": "2023-11-16T00:00:00",
+    "StudentId": "31201024854"
+  },
+  {
+    "RewardId": "R069",
+    "RewardName": "Giải nhất NCKH trẻ",
+    "IssueDate": "2024-03-09T00:00:00",
+    "StudentId": "31201024854"
+  },
+  {
+    "RewardId": "R070",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2023-12-20T00:00:00",
+    "StudentId": "31201028099"
+  },
+  {
+    "RewardId": "R071",
+    "RewardName": "Khen thưởng đóng góp tích cực Chiến dịch",
+    "IssueDate": "2023-09-03T00:00:00",
+    "StudentId": "31211029055"
+  },
+  {
+    "RewardId": "R072",
+    "RewardName": "Khen thưởng đóng góp tích cực Chiến dịch",
+    "IssueDate": "2024-05-08T00:00:00",
+    "StudentId": "31211028978"
+  },
+  {
+    "RewardId": "R073",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2024-02-28T00:00:00",
+    "StudentId": "31211029807"
+  },
+  {
+    "RewardId": "R074",
+    "RewardName": "Giải nhất NCKH trẻ",
+    "IssueDate": "2024-03-24T00:00:00",
+    "StudentId": "31211027684"
+  },
+  {
+    "RewardId": "R075",
+    "RewardName": "Khen thưởng đóng góp tích cực Chiến dịch",
+    "IssueDate": "2023-11-19T00:00:00",
+    "StudentId": "31201028330"
+  },
+  {
+    "RewardId": "R076",
+    "RewardName": "Giải nhất NCKH trẻ",
+    "IssueDate": "2024-01-18T00:00:00",
+    "StudentId": "31211028540"
+  },
+  {
+    "RewardId": "R077",
+    "RewardName": "Giải nhất NCKH trẻ",
+    "IssueDate": "2023-12-28T00:00:00",
+    "StudentId": "31211021497"
+  },
+  {
+    "RewardId": "R078",
+    "RewardName": "Thanh niên tiên tiến làm theo lời Bác",
+    "IssueDate": "2023-11-07T00:00:00",
+    "StudentId": "31211021799"
+  },
+  {
+    "RewardId": "R079",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2024-04-17T00:00:00",
+    "StudentId": "31201025885"
+  },
+  {
+    "RewardId": "R080",
+    "RewardName": "Khen thưởng đóng góp tích cực Chiến dịch",
+    "IssueDate": "2024-03-03T00:00:00",
+    "StudentId": "31211022683"
+  },
+  {
+    "RewardId": "R081",
+    "RewardName": "Thanh niên tiên tiến làm theo lời Bác",
+    "IssueDate": "2023-10-30T00:00:00",
+    "StudentId": "31211021852"
+  },
+  {
+    "RewardId": "R082",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2023-11-25T00:00:00",
+    "StudentId": "31211024552"
+  },
+  {
+    "RewardId": "R083",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2023-12-29T00:00:00",
+    "StudentId": "31211029497"
+  },
+  {
+    "RewardId": "R084",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2023-11-25T00:00:00",
+    "StudentId": "31211023008"
+  },
+  {
+    "RewardId": "R085",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2024-03-02T00:00:00",
+    "StudentId": "31201029414"
+  },
+  {
+    "RewardId": "R086",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2024-04-27T00:00:00",
+    "StudentId": "31211023359"
+  },
+  {
+    "RewardId": "R087",
+    "RewardName": "Cán bộ Đoàn xuất sắc",
+    "IssueDate": "2023-11-30T00:00:00",
+    "StudentId": "31211021888"
+  },
+  {
+    "RewardId": "R088",
+    "RewardName": "Giải nhất NCKH trẻ",
+    "IssueDate": "2024-01-05T00:00:00",
+    "StudentId": "31201028099"
+  },
+  {
+    "RewardId": "R089",
+    "RewardName": "Thanh niên tiên tiến làm theo lời Bác",
+    "IssueDate": "2023-11-29T00:00:00",
+    "StudentId": "31211029599"
+  },
+  {
+    "RewardId": "R090",
+    "RewardName": "Giải nhất NCKH trẻ",
+    "IssueDate": "2024-04-13T00:00:00",
+    "StudentId": "31211027213"
+  },
+  {
+    "RewardId": "R091",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2023-09-25T00:00:00",
+    "StudentId": "31201029555"
+  },
+  {
+    "RewardId": "R092",
+    "RewardName": "Giải nhất NCKH trẻ",
+    "IssueDate": "2023-10-21T00:00:00",
+    "StudentId": "31211025395"
+  },
+  {
+    "RewardId": "R093",
+    "RewardName": "Thanh niên tiên tiến làm theo lời Bác",
+    "IssueDate": "2023-11-27T00:00:00",
+    "StudentId": "31211021396"
+  },
+  {
+    "RewardId": "R094",
+    "RewardName": "Thanh niên tiên tiến làm theo lời Bác",
+    "IssueDate": "2024-02-22T00:00:00",
+    "StudentId": "31211024494"
+  },
+  {
+    "RewardId": "R095",
+    "RewardName": "Thanh niên tiên tiến làm theo lời Bác",
+    "IssueDate": "2024-02-06T00:00:00",
+    "StudentId": "31211021396"
+  },
+  {
+    "RewardId": "R096",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2023-11-04T00:00:00",
+    "StudentId": "31211021222"
+  },
+  {
+    "RewardId": "R097",
+    "RewardName": "Cán bộ Đoàn xuất sắc",
+    "IssueDate": "2024-01-23T00:00:00",
+    "StudentId": "31211028548"
+  },
+  {
+    "RewardId": "R098",
+    "RewardName": "Giải nhất NCKH trẻ",
+    "IssueDate": "2023-10-14T00:00:00",
+    "StudentId": "31211021347"
+  },
+  {
+    "RewardId": "R099",
+    "RewardName": "Sinh viên 5 tốt cấp Trường",
+    "IssueDate": "2023-12-01T00:00:00",
+    "StudentId": "31201025272"
+  },
+  {
+    "RewardId": "R100",
+    "RewardName": "Giải nhất NCKH trẻ",
+    "IssueDate": "2023-11-22T00:00:00",
+    "StudentId": "31211021241"
+  }
+]

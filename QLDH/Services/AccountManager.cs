@@ -8,10 +8,11 @@ namespace QLDH.Service
     {
         public AccountManager() : base("accounts.json")
         {
-            // Tạo tài khoản admin mặc định nếu chưa có
+            // Tạo tài khoản mặc định nếu chưa có
             if (items.Count == 0)
             {
                 items.Add(new Account("admin", "admin123", "Admin"));
+                items.Add(new Account("user", "user123", "User"));
                 SaveToFile();
             }
         }

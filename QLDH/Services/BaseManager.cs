@@ -7,8 +7,17 @@ namespace QLDH.Service
 {
     public abstract class BaseManager<T> : IManager<T>
     {
+        // Khai báo delegate và event cho việc thay đổi dữ liệu
+        public delegate void DataChangedEventHandler(object sender, EventArgs e);
+        public event DataChangedEventHandler DataChanged;
+
         protected List<T> items;
         protected string filePath;
+
+        protected virtual void OnDataChanged()
+        {
+            DataChanged?.Invoke(this, EventArgs.Empty);
+        }
 
         protected BaseManager(string fileName)
         {
@@ -83,6 +92,7 @@ namespace QLDH.Service
             LoadFromFile();
             items.Add(item);
             SaveToFile();
+            OnDataChanged();
         }
 
         public abstract List<T> GetAll();
@@ -113,6 +123,7 @@ namespace QLDH.Service
                 }
             }
             SaveToFile();
+            OnDataChanged();
         }
 
         public virtual void Delete(string id)
@@ -127,6 +138,7 @@ namespace QLDH.Service
                 }
             }
             SaveToFile();
+            OnDataChanged();
         }
 
         public abstract List<T> Search(string keyword);
