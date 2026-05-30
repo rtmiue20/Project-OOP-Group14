@@ -970,7 +970,7 @@ public partial class FormMain : Form
     private void label9_Click_1(object sender, EventArgs e)
     {
     }
-
+/* ========= TAB 3: Club Management ========*/
     // 1. LoadClubData function
     private void LoadClubData()
     {
