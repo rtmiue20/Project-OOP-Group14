@@ -4,7 +4,7 @@
 
 > **Môn học:** Lập trình hướng đối tượng  
 > **Nhóm:** Group 14  
-> **Trường:** Đại học Kinh Tế TPHCM ()
+> **Trường:** Đại học Kinh Tế TPHCM (UEH)
 
 ---
 
